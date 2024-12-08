@@ -12,7 +12,6 @@ class DriverWindow:
         # Grundlæggende opsætning
         self.root = ctk.CTk()
         self.root.title("RIO Chauffør Oversigt")
-        self.root.geometry("1200x800")
         
         # Farver - samme som hovedapplikationen
         self.colors = {
@@ -91,6 +90,18 @@ class DriverWindow:
             text_color=self.colors["text_secondary"]
         )
         subtitle.pack(pady=(5, 0))
+        
+        # Tilføj gruppe knap
+        group_button = ctk.CTkButton(
+            title_frame,
+            text="Administrer Grupper",
+            font=("Segoe UI", 12),
+            fg_color=self.colors["primary"],
+            hover_color="#1874CD",
+            command=self.open_group_window,
+            width=150
+        )
+        group_button.pack(side="right", padx=10)
 
     def create_filter_section(self, parent):
         filter_frame = ctk.CTkFrame(parent, fg_color=self.colors["card"])
@@ -145,7 +156,6 @@ class DriverWindow:
         
         unique_drivers = set()
         
-        # Gennemgå alle chauffør databaser
         for file in os.listdir('databases'):
             if file.startswith('chauffør_data_') and file.endswith('.db'):
                 try:
@@ -154,7 +164,6 @@ class DriverWindow:
                     df = pd.read_sql_query(query, conn)
                     conn.close()
                     
-                    # Tilføj chauffører til set'et (ignorerer dubletter automatisk)
                     for driver in df['Chauffør'].unique():
                         if isinstance(driver, str) and not driver.startswith(self.EXCLUDE_TEXT):
                             unique_drivers.add(driver)
@@ -348,13 +357,16 @@ class DriverWindow:
             messagebox.showerror("Fejl", f"Kunne ikke indlæse chaufførdata: {str(e)}")
 
     def run(self):
-        # Centrer vinduet
-        self.root.update_idletasks()
-        width = self.root.winfo_width()
-        height = self.root.winfo_height()
-        x = (self.root.winfo_screenwidth() // 2) - (width // 2)
-        y = (self.root.winfo_screenheight() // 2) - (height // 2)
-        self.root.geometry(f'{width}x{height}+{x}+{y}')
+        try:
+            # Sæt vinduet til maksimeret tilstand
+            self.root.state("zoomed")  # Maksimer vinduet
+    
+            # Tilføj protocol handler for window closure
+            self.root.protocol("WM_DELETE_WINDOW", self.destroy)
+    
+            self.root.mainloop()
+        except Exception as e:
+            messagebox.showerror("Fatal Fejl", f"Applikationen kunne ikke starte: {str(e)}")
 
     def destroy(self):
         """Lukker vinduet og frigør ressourcer"""
@@ -367,27 +379,24 @@ class DriverWindow:
             # Destroy hovedvinduet
             self.root.destroy()
             
+            # Afbryd mainloop
+            self.root.quit()
+            
         except Exception as e:
             print(f"Fejl ved lukning af driver vindue: {str(e)}")
 
-    def run(self):
-        """Starter applikationen"""
+    def open_group_window(self):
+        """Åbner gruppe administrations vinduet"""
         try:
-            # Centrer vinduet
-            self.root.update_idletasks()
-            width = self.root.winfo_width()
-            height = self.root.winfo_height()
-            x = (self.root.winfo_screenwidth() // 2) - (width // 2)
-            y = (self.root.winfo_screenheight() // 2) - (height // 2)
-            self.root.geometry(f'{width}x{height}+{x}+{y}')
+            # Importer GroupWindow
+            from group_view import GroupWindow
             
-            # Tilføj protocol handler for window closure
-            self.root.protocol("WM_DELETE_WINDOW", self.destroy)
-            
-            self.root.mainloop()
+            # Opret og vis gruppe vinduet med reference til dette vindue
+            group_window = GroupWindow(parent=self.root)
+            group_window.run()
             
         except Exception as e:
-            messagebox.showerror("Fatal Fejl", f"Applikationen kunne ikke starte: {str(e)}")
+            messagebox.showerror("Fejl", f"Kunne ikke åbne gruppe administration: {str(e)}")
 
 
 if __name__ == "__main__":

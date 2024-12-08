@@ -9,16 +9,36 @@ from fpdf import FPDF
 from tkinter import messagebox
 import matplotlib.pyplot as plt
 from PIL import Image
+import logging
+from word_report import WordReportGenerator
+
+class DatabaseConnection:
+    def __init__(self, db_path):
+        self.db_path = db_path
+        self.conn = None
+        
+    def __enter__(self):
+        self.conn = sqlite3.connect(self.db_path)
+        return self.conn
+        
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        if self.conn:
+            self.conn.close()
 
 class ReportWindow:
-    def __init__(self):
+    def __init__(self, parent):
+        # Definer parent som CTkToplevel
+        self.root = ctk.CTkToplevel(parent)
+        self.root.title("RIO Rapport Generator")
+        
+        # Fjern maksimering for Toplevel, hvis nødvendigt
+        # self.root.state("zoomed")  # Valgfri: kan fjernes eller justeres
+        
         # Tilføj DPI awareness
         ctk.deactivate_automatic_dpi_awareness()
         
         # Grundlæggende opsætning
-        self.root = ctk.CTk()
         self.root.title("RIO Rapport Generator")
-        self.root.geometry("1000x800")
         
         
         # Farver - samme som hovedapplikationen
@@ -96,28 +116,38 @@ class ReportWindow:
         type_frame = ctk.CTkFrame(parent, fg_color="transparent")
         type_frame.pack(fill="x", padx=40, pady=10)
         
-        # Container for de to bokse
+        # Container for de tre bokse (nu med gruppe rapport)
         boxes_frame = ctk.CTkFrame(type_frame, fg_color="transparent")
         boxes_frame.pack(expand=True, fill="both")
         boxes_frame.grid_columnconfigure(0, weight=1)
         boxes_frame.grid_columnconfigure(1, weight=1)
+        boxes_frame.grid_columnconfigure(2, weight=1)
         
-        # Chauffør rapport boks
+        # Samlet rapport boks
         self.create_type_box(
             boxes_frame, 
-            "Chauffør Rapport", 
-            "Generer rapport over\nchauffør præstationer",
-            "Inkluderer kørselsmønstre,\nbrændstofforbrug og performance",
+            "Samlet Rapport", 
+            "Generer samlet rapport over\nalle kvalificerede chauffører",
+            "Inkluderer alle chauffører\nmed minimum kørestrækning",
             0
         )
         
-        # Køretøjs rapport boks
+        # Gruppe rapport boks
         self.create_type_box(
             boxes_frame, 
-            "Køretøjs Rapport", 
-            "Generer rapport over\nkøretøjs data",
-            "Inkluderer driftstid,\nvedligeholdelse og effektivitet",
+            "Gruppe Rapport", 
+            "Generer rapport for\nspecifik chauffør gruppe",
+            "Vælg en gruppe og generer\nrapport for dens medlemmer",
             1
+        )
+        
+        # Individuel rapport boks
+        self.create_type_box(
+            boxes_frame, 
+            "Individuel Rapport", 
+            "Generer rapport for\nenkelt chauffør",
+            "Vælg en specifik chauffør\nog generer rapport",
+            2
         )
 
     def create_type_box(self, parent, title, description, details, column):
@@ -163,6 +193,7 @@ class ReportWindow:
         select_button.pack(pady=(0, 20))
 
     def create_database_section(self):
+        """Opretter database vælger sektion"""
         self.db_frame.pack(fill="x", padx=40, pady=10)
         
         # Overskrift
@@ -214,6 +245,7 @@ class ReportWindow:
         db_dropdown.pack(pady=5)
 
     def create_format_section(self):
+        """Opretter format vælger sektion"""
         self.format_frame.pack(fill="x", padx=40, pady=10)
         
         # Overskrift
@@ -309,11 +341,15 @@ class ReportWindow:
                 break
 
     def type_selected(self, type_name):
-        self.selected_type = type_name.lower().split()[0]  # "chauffør" eller "køretøjs"
+        self.selected_type = type_name.lower().split()[0]  # "samlet", "gruppe" eller "individuel"
         
         # Fjern tidligere frames hvis de eksisterer
         self.db_frame.pack_forget()
         self.format_frame.pack_forget()
+        
+        # Vis relevant vælger baseret på type
+        if self.selected_type == "gruppe":
+            self.create_group_selector(self.main_container)
         
         # Opret database vælger
         self.create_database_section()
@@ -324,11 +360,12 @@ class ReportWindow:
         )
 
     def get_available_databases(self):
+        """Henter tilgængelige databaser baseret på valgt rapport type"""
         if not os.path.exists('databases'):
             return []
             
         databases = []
-        prefix = f"{self.selected_type}_data"
+        prefix = "chauffør_data"  # Standard prefix for chauffør databaser
         
         for file in os.listdir('databases'):
             if file.startswith(prefix) and file.endswith('.db'):
@@ -353,58 +390,54 @@ class ReportWindow:
                 text_color="red"
             )
             return
-                
+            
         try:
-            # Opret rapport mappe hvis den ikke eksisterer
             if not os.path.exists('rapporter'):
                 os.makedirs('rapporter')
             
-            # Generer filnavn
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f"{self.selected_type}_rapport_{timestamp}"
+            # Opret WordReportGenerator
+            word_generator = WordReportGenerator(self.selected_database)
             
-            if self.selected_format == 'docx':
-                try:
-                    # Importer WordReportGenerator
-                    from word_report import WordReportGenerator
-                    
-                    # Opret en instance af WordReportGenerator
-                    word_generator = WordReportGenerator(self.selected_database)
-                    
-                    # Generer rapporten
-                    generated_filename = word_generator.generer_rapport()
-                    
-                    self.status_label.configure(
-                        text=f"Word rapport genereret: {generated_filename}",
-                        text_color="green"
-                    )
-                    
-                    # Vis bekræftelsesbesked
-                    messagebox.showinfo(
-                        "Rapport Genereret",
-                        f"Rapporten er blevet gemt som:\n{generated_filename}\n\ni mappen 'rapporter'"
-                    )
-                    
-                except Exception as e:
-                    raise Exception(f"Fejl i Word rapport generering: {str(e)}")
-                    
-            else:
-                # Hent data fra database
-                conn = sqlite3.connect(self.selected_database)
-                df = pd.read_sql_query(f"SELECT * FROM {self.selected_type}_data_data", conn)
-                conn.close()
+            if self.selected_type == "samlet":
+                # Generer samlet rapport
+                generated_filename = word_generator.generer_rapport()
+                success_message = "Samlet rapport genereret"
+            elif self.selected_type == "gruppe":
+                if not hasattr(self, 'selected_group') or not self.selected_group.get():
+                    messagebox.showerror("Fejl", "Vælg venligst en gruppe")
+                    return
+                # Generer gruppe rapport
+                generated_filename = word_generator.generer_gruppe_rapport(
+                    self.selected_group.get()
+                )
+                success_message = "Gruppe rapport genereret"
+            elif self.selected_type == "individuel":
+                # Generer individuelle rapporter for alle kvalificerede chauffører
+                generated_filenames = word_generator.generer_individuelle_rapporter()
+                success_message = f"{len(generated_filenames)} individuelle rapporter genereret"
                 
-                if self.selected_format == 'pdf':
-                    self.generate_pdf_report(filename, df)
-                elif self.selected_format == 'xlsx':
-                    self.generate_excel_report(filename, df)
-                
-                # Vis bekræftelsesbesked
+                if not generated_filenames:
+                    messagebox.showerror("Fejl", "Ingen kvalificerede chauffører fundet")
+                    return
+                    
+                # Vis bekræftelse med antal genererede rapporter
+                messagebox.showinfo(
+                    "Rapporter Genereret",
+                    f"{len(generated_filenames)} individuelle rapporter er blevet gemt i mappen 'rapporter'"
+                )
+                return
+            
+            self.status_label.configure(
+                text=success_message,
+                text_color="green"
+            )
+            
+            if self.selected_type != "individuel":
                 messagebox.showinfo(
                     "Rapport Genereret",
-                    f"Rapporten er blevet gemt som:\n{filename}.{self.selected_format}\n\ni mappen 'rapporter'"
+                    f"Rapporten er blevet gemt som:\n{generated_filename}\n\ni mappen 'rapporter'"
                 )
-                
+            
         except Exception as e:
             self.status_label.configure(
                 text=f"Fejl under generering af rapport: {str(e)}",
@@ -433,7 +466,7 @@ class ReportWindow:
                 for i, value in enumerate(row):
                     cells[i].text = str(value)
                     
-            # Tilføj grundlæggende statistik
+            # Tilføj grundlggende statistik
             doc.add_heading('Statistik', level=1)
             for column in df.select_dtypes(include=['float64', 'int64']).columns:
                 doc.add_paragraph(
@@ -517,16 +550,80 @@ class ReportWindow:
         # Gem og luk
         writer.close()
 
-    def run(self):
-        # Centrer vinduet
-        self.root.update_idletasks()
-        width = self.root.winfo_width()
-        height = self.root.winfo_height()
-        x = (self.root.winfo_screenwidth() // 2) - (width // 2)
-        y = (self.root.winfo_screenheight() // 2) - (height // 2)
-        self.root.geometry(f'{width}x{height}+{x}+{y}')
+    def create_group_selector(self, parent):
+        """Opretter gruppe vælger sektion"""
+        group_frame = ctk.CTkFrame(parent, fg_color=self.colors["card"])
+        group_frame.pack(fill="x", padx=20, pady=10)
         
-        self.root.mainloop()
+        group_label = ctk.CTkLabel(
+            group_frame,
+            text="Vælg Gruppe:",
+            font=("Segoe UI", 14),
+            text_color=self.colors["text_primary"]
+        )
+        group_label.pack(pady=10)
+        
+        # Hent grupper fra databasen
+        groups = self.get_available_groups()
+        if not groups:
+            no_groups_label = ctk.CTkLabel(
+                group_frame,
+                text="Ingen grupper fundet",
+                font=("Segoe UI", 12),
+                text_color=self.colors["text_secondary"]
+            )
+            no_groups_label.pack(pady=10)
+            return
+        
+        # Gruppe dropdown
+        self.selected_group = ctk.StringVar()
+        group_dropdown = ctk.CTkOptionMenu(
+            group_frame,
+            values=[group[1] for group in groups],
+            variable=self.selected_group,
+            width=300
+        )
+        group_dropdown.pack(pady=10)
+
+    def get_available_groups(self):
+        """Henter tilgængelige grupper fra databasen"""
+        try:
+            with DatabaseConnection('databases/settings.db') as conn:
+                cursor = conn.cursor()
+                cursor.execute('SELECT id, name FROM groups')
+                return cursor.fetchall()
+        except Exception as e:
+            logging.error(f"Fejl ved hentning af grupper: {str(e)}")
+            return []
+
+    def run(self):
+        try:
+            # Konfigurer root vinduet
+            self.root.protocol("WM_DELETE_WINDOW", self.destroy)
+            
+            # Start mainloop for Toplevel
+            # self.root.mainloop()  # Fjern denne linje
+            # Da Toplevel deler mainloop med hovedvinduet, er det ikke nødvendigt
+        except Exception as e:
+            messagebox.showerror("Fejl", f"Fejl i run metoden: {str(e)}")
+            self.destroy()
+
+    def destroy(self):
+        """Lukker vinduet og frigør ressourcer"""
+        try:
+            # Destroy alle child windows først
+            for widget in self.root.winfo_children():
+                if isinstance(widget, ctk.CTkToplevel):
+                    widget.destroy()
+            
+            # Destroy hovedvinduet
+            self.root.destroy()
+            
+            # Afbryd mainloop
+            self.root.quit()
+            
+        except Exception as e:
+            print(f"Fejl ved lukning af rapport vindue: {str(e)}")
 
 if __name__ == "__main__":
     app = ReportWindow()

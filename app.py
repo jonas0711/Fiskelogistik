@@ -22,16 +22,16 @@ class ModernRIOMenu:
         # Grundlæggende opsætning
         self.root = ctk.CTk()
         self.root.title("RIO Chauffør Rapport Generator")
-        self.root.geometry("1200x800")
+        self.root.state("zoomed")  # Maksimer vinduet
         
         # Farver - inspireret af det lyse moderne design
         self.colors = {
-            "primary": "#1E90FF",    # Bright blue
-            "secondary": "#7F8C8D",   # Medium gray (tilføjet)
-            "background": "#F5F7FA",  # Light gray
-            "card": "#FFFFFF",        # White
-            "text_primary": "#2C3E50",# Dark blue/gray
-            "text_secondary": "#7F8C8D"# Medium gray
+            "primary": "#1E90FF",    
+            "secondary": "#7F8C8D",   
+            "background": "#F5F7FA",  
+            "card": "#FFFFFF",        
+            "text_primary": "#2C3E50",
+            "text_secondary": "#7F8C8D"
         }
         
         # Tema indstillinger
@@ -65,6 +65,15 @@ class ModernRIOMenu:
             
         except Exception as e:
             messagebox.showerror("Fejl", f"Fejl ved oprettelse af brugergrænsefladen: {str(e)}")
+
+    def open_group_window(self):
+        """Åbner gruppe administrations vinduet"""
+        try:
+            from group_view import GroupWindow
+            group_window = GroupWindow(parent=self.root)
+            group_window.run()
+        except Exception as e:
+            messagebox.showerror("Fejl", f"Kunne ikke åbne gruppe administration: {str(e)}")
 
     def create_top_bar(self):
         try:
@@ -308,7 +317,7 @@ class ModernRIOMenu:
                 settings_window = SettingsWindow()
                 settings_window.run()
             elif title == "Rapporter":
-                report_window = ReportWindow()
+                report_window = ReportWindow(parent=self.root)
                 report_window.run()
             else:
                 messagebox.showinfo("Information", f"Funktionen '{title}' er under udvikling")
@@ -334,23 +343,21 @@ class ModernRIOMenu:
             # Destroy hovedvinduet
             self.root.destroy()
             
+            # Afbryd mainloop
+            self.root.quit()
+            
         except Exception as e:
             print(f"Fejl ved lukning af applikation: {str(e)}")
 
     def run(self):
         """Starter applikationen"""
         try:
-            # Centrer vinduet
-            self.root.update_idletasks()
-            width = self.root.winfo_width()
-            height = self.root.winfo_height()
-            x = (self.root.winfo_screenwidth() // 2) - (width // 2)
-            y = (self.root.winfo_screenheight() // 2) - (height // 2)
-            self.root.geometry(f'{width}x{height}+{x}+{y}')
-            
+            # Sæt vinduet til maksimeret tilstand
+            self.root.state("zoomed")  # Maksimer vinduet
+    
             # Tilføj protocol handler for window closure
             self.root.protocol("WM_DELETE_WINDOW", self.destroy)
-            
+    
             self.root.mainloop()
         except Exception as e:
             messagebox.showerror("Fatal Fejl", f"Applikationen kunne ikke starte: {str(e)}")

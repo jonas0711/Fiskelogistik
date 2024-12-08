@@ -8,6 +8,21 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import numpy as np
 from dateutil.relativedelta import relativedelta
 import calendar
+from functools import lru_cache
+import logging
+
+class DatabaseConnection:
+    def __init__(self, db_path):
+        self.db_path = db_path
+        self.conn = None
+        
+    def __enter__(self):
+        self.conn = sqlite3.connect(self.db_path)
+        return self.conn
+        
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        if self.conn:
+            self.conn.close()
 
 class KPIWindow:
     def __init__(self):
@@ -17,7 +32,7 @@ class KPIWindow:
         # Grundlæggende opsætning
         self.root = ctk.CTk()
         self.root.title("RIO KPI Oversigt")
-        self.root.geometry("1200x800")
+        self.root.state("zoomed")  # Maksimer vinduet
         
         # Farver - opdateret med alle nødvendige farver
         self.colors = {
@@ -40,49 +55,49 @@ class KPIWindow:
                 "hoejere_er_bedre": False,
                 "enhed": "%",
                 "beskrivelse": "Andel af motordriftstid i tomgang",
-                "maal": {"min": 0, "max": 10, "optimal": "under 10%"}
+                "maal": {"min": 0, "max": 5, "optimal": "under 5%"}
             },
             "Fartpilot Anvendelse": {
                 "er_hoved_kpi": False,
                 "hoejere_er_bedre": True,
                 "enhed": "%",
                 "beskrivelse": "Andel af kørsel med fartpilot",
-                "maal": {"min": 70, "max": 100, "optimal": "over 70%"}
+                "maal": {"min": 85, "max": 100, "optimal": "over 85%"}
             },
             "Brug af Motorbremse": {
                 "er_hoved_kpi": False,
                 "hoejere_er_bedre": True,
                 "enhed": "%",
                 "beskrivelse": "Andel af bremsning med motorbremse",
-                "maal": {"min": 30, "max": 100, "optimal": "over 30%"}
+                # "maal": {}  # Ingen mål defineret endnu
             },
             "Påløbsdrift": {
                 "er_hoved_kpi": False,
                 "hoejere_er_bedre": True,
                 "enhed": "%",
                 "beskrivelse": "Andel af kørsel i påløbsdrift",
-                "maal": {"min": 5, "max": 100, "optimal": "over 5%"}
+                # "maal": {}  # Ingen mål defineret endnu
             },
             "Diesel Effektivitet": {
                 "er_hoved_kpi": True,
                 "hoejere_er_bedre": True,
                 "enhed": "km/l",
                 "beskrivelse": "Kilometer kørt pr. liter diesel",
-                "maal": {"min": 2.5, "max": 5, "optimal": "over 2.5 km/l"}
+                # "maal": {}  # Ingen mål defineret endnu
             },
             "Vægtkorrigeret Forbrug": {
                 "er_hoved_kpi": False,
                 "hoejere_er_bedre": False,
                 "enhed": "l/100km/t",
                 "beskrivelse": "Brændstofforbrug pr. 100 km pr. ton",
-                "maal": {"min": 0, "max": 2, "optimal": "under 2 l/100km/t"}
+                # "maal": {}  # Ingen mål defineret endnu
             },
             "Overspeed Andel": {
                 "er_hoved_kpi": False,
                 "hoejere_er_bedre": False,
                 "enhed": "%",
                 "beskrivelse": "Andel af kørsel over hastighedsgrænsen",
-                "maal": {"min": 0, "max": 5, "optimal": "under 5%"}
+                # "maal": {}  # Ingen mål defineret endnu
             }
         }
         
@@ -92,11 +107,31 @@ class KPIWindow:
         # Hent historisk data
         self.historical_data = {}
         
+        # Hent måned og år fra den nyeste database
+        databases = self.find_all_databases()
+        if databases:
+            latest_db = databases[0]  # Den nyeste database
+            self.month_year = latest_db['display_date']  # Gem måned og år
+        else:
+            self.month_year = "Ukendt"  # Standardværdi hvis ingen databaser findes
+        
         # Setup UI
         self.setup_ui()
         
         # Tilføj window closure handler
         self.root.protocol("WM_DELETE_WINDOW", self.destroy)
+        
+        self._noegletal_cache = {}
+        
+        self.setup_logging()
+        
+    def setup_logging(self):
+        """Implementer proper logging"""
+        logging.basicConfig(
+            filename='kpi_view.log',
+            level=logging.INFO,
+            format='%(asctime)s - %(levelname)s - %(message)s'
+        )
         
     def destroy(self):
         """Lukker vinduet og frigør ressourcer"""
@@ -149,8 +184,8 @@ class KPIWindow:
                             'display_date': f"{month.capitalize()} {year}"
                         })
         
-        # Sorter efter år og måned
-        return sorted(databases, key=lambda x: (x['year'], x['month_num']))
+        # Sorter efter år og måned i faldende rækkefølge
+        return sorted(databases, key=lambda x: (x['year'], x['month_num']), reverse=True)
 
     def convert_time_to_seconds(self, time_str):
         """Konverterer tid fra 'HH:MM:SS' format til sekunder"""
@@ -160,53 +195,23 @@ class KPIWindow:
         except:
             return 0
 
-    def beregn_noegletal(self, data):
-        """Beregner nøgletal baseret på kørselsdata"""
-        noegletal = {}
-        
+    @lru_cache(maxsize=128)
+    def beregn_noegletal(self, data_tuple):
+        """Beregner nøgletal for given data med caching"""
         try:
-            # Beregn tomgangsprocent
-            motor_tid = self.convert_time_to_seconds(data['Motordriftstid [hh:mm:ss]'])
-            tomgangs_tid = self.convert_time_to_seconds(data['Tomgang / stilstandstid [hh:mm:ss]'])
-            noegletal['Tomgang'] = (tomgangs_tid / motor_tid) * 100 if motor_tid > 0 else 0
-            
-            # Beregn cruise control andel
-            distance_over_50 = float(data['Afstand med kørehastighedsregulering (> 50 km/h) [km]']) + \
-                             float(data['Afstand > 50 km/h uden kørehastighedsregulering [km]'])
-            cruise_distance = float(data['Afstand med kørehastighedsregulering (> 50 km/h) [km]'])
-            noegletal['Fartpilot Anvendelse'] = (cruise_distance / distance_over_50) * 100 if distance_over_50 > 0 else 0
-            
-            # Beregn motorbremse andel
-            driftsbremse = float(data['Driftsbremse (km) [km]'])
-            motorbremse = float(data['Afstand motorbremse [km]'])
-            total_bremse = driftsbremse + motorbremse
-            noegletal['Brug af Motorbremse'] = (motorbremse / total_bremse) * 100 if total_bremse > 0 else 0
-            
-            # Beregn påløbsdrift andel
-            total_distance = float(data['Kørestrækning [km]'])
-            paalobsdrift = float(data['Aktiv påløbsdrift (km) [km]']) + float(data['Afstand i påløbsdrift [km]'])
-            noegletal['Påløbsdrift'] = (paalobsdrift / total_distance) * 100 if total_distance > 0 else 0
-            
-            # Beregn diesel effektivitet
-            forbrug = float(data['Forbrug [l]'])
-            noegletal['Diesel Effektivitet'] = total_distance / forbrug if forbrug > 0 else 0
-            
-            # Beregn vægtkorrigeret forbrug
-            total_vaegt = float(data.get('Ø totalvægt [t]', 0))
-            if total_vaegt > 0 and total_distance > 0:
-                noegletal['Vægtkorrigeret Forbrug'] = (forbrug / total_distance * 100) / total_vaegt
+            # Konverter tuple tilbage til dictionary
+            if isinstance(data_tuple, tuple):
+                data = dict(data_tuple)
             else:
-                noegletal['Vægtkorrigeret Forbrug'] = 0
+                data = data_tuple
                 
-            # Beregn overspeed andel
-            overspeed = float(data['Overspeed (km uden påløbsdrift) [km]'])
-            noegletal['Overspeed Andel'] = (overspeed / total_distance) * 100 if total_distance > 0 else 0
-            
+            noegletal = self._calculate_noegletal(data)
+            logging.info(f"Nøgletal beregnet for chauffør")
+            return noegletal
+                
         except Exception as e:
-            print(f"Fejl ved beregning af nøgletal: {str(e)}")
-            return {}
-            
-        return noegletal
+            logging.error(f"Fejl i nøgletalsberegning: {str(e)}")
+            raise
 
     def get_kpi_historical_data(self):
         """Henter historisk KPI data fra alle databaser"""
@@ -215,29 +220,30 @@ class KPIWindow:
         
         for db_info in databases:
             try:
-                conn = sqlite3.connect(db_info['path'])
-                query = f'''
-                    SELECT * FROM chauffør_data_data 
-                    WHERE "Kørestrækning [km]" >= {self.min_km}
-                '''
-                df = pd.read_sql_query(query, conn)
-                conn.close()
-                
-                if not df.empty:
-                    # Beregn gennemsnit af KPIer for kvalificerede chauffører
-                    kpis = {}
-                    for _, row in df.iterrows():
-                        current_kpis = self.beregn_noegletal(dict(row))
-                        for key, value in current_kpis.items():
-                            kpis[key] = kpis.get(key, []) + [value]
+                with DatabaseConnection(db_info['path']) as conn:
+                    query = f'''
+                        SELECT * FROM chauffør_data_data 
+                        WHERE "Kørestrækning [km]" >= {self.min_km}
+                    '''
+                    df = pd.read_sql_query(query, conn)
                     
-                    # Beregn gennemsnit for hver KPI
-                    avg_kpis = {k: sum(v)/len(v) for k, v in kpis.items() if v}
-                    historical_data[db_info['display_date']] = avg_kpis
-                    
+                    if not df.empty:
+                        # Beregn gennemsnit af KPIer for kvalificerede chauffører
+                        kpis = {}
+                        for _, row in df.iterrows():
+                            # Konverter row til tuple for caching
+                            row_tuple = tuple(row.items())
+                            current_kpis = self.beregn_noegletal(row_tuple)
+                            for key, value in current_kpis.items():
+                                kpis[key] = kpis.get(key, []) + [value]
+                        
+                        # Beregn gennemsnit for hver KPI
+                        avg_kpis = {k: sum(v)/len(v) for k, v in kpis.items() if v}
+                        historical_data[db_info['display_date']] = avg_kpis
+                            
             except Exception as e:
-                print(f"Fejl ved læsning af {db_info['path']}: {str(e)}")
-                
+                logging.error(f"Fejl ved læsning af {db_info['path']}: {str(e)}")
+                    
         return historical_data
 
     def setup_ui(self):
@@ -258,7 +264,7 @@ class KPIWindow:
             
             if self.historical_data:
                 # Få seneste KPI værdier
-                current_values = list(self.historical_data.values())[-1]
+                current_values = list(self.historical_data.values())[0]  # Tag den første værdi (nyeste)
                 
                 # KPI Cards sektion
                 self.create_kpi_cards(current_values)
@@ -284,6 +290,15 @@ class KPIWindow:
         )
         title.pack()
         
+        # Tilføj måned og årstal fra instansvariablen
+        month_year_label = ctk.CTkLabel(
+            title_frame,
+            text=f"Data for: {self.month_year}",
+            font=("Segoe UI", 14),
+            text_color=self.colors["text_secondary"]
+        )
+        month_year_label.pack(pady=(5, 0))
+
         subtitle = ctk.CTkLabel(
             title_frame,
             text="Nøgletal og udvikling over tid",
@@ -317,202 +332,233 @@ class KPIWindow:
             cards_frame.grid_columnconfigure(i, weight=1)
 
     def create_kpi_card(self, parent, title, current_value):
-            """Opretter et KPI kort med farver og pile baseret på udvikling"""
-            card = ctk.CTkFrame(parent, fg_color=self.colors["card"])
+        """Opretter et KPI kort med farver og pile baseret på udvikling"""
+        card = ctk.CTkFrame(parent, fg_color=self.colors["card"])
+        
+        # Find forrige måneds værdi
+        dates = list(self.historical_data.keys())
+        if len(dates) >= 2:
+            # Nyeste måned er index 0, så den forrige er index 1
+            prev_month = dates[1]
+            prev_value = self.historical_data[prev_month].get(title, 0)
             
-            # Find forrige måneds værdi
-            dates = list(self.historical_data.keys())
-            if len(dates) >= 2:
-                prev_month = dates[-2]
-                prev_value = self.historical_data[prev_month].get(title, 0)
-                
-                # Beregn ændring
-                pct_change = ((current_value - prev_value) / prev_value * 100 
-                            if prev_value != 0 else 0)
-                
-                # Bestem farve og pil baseret på om højere er bedre
-                higher_is_better = self.kpi_config[title]['hoejere_er_bedre']
-                is_improvement = (pct_change > 0) == higher_is_better
-                
-                color = self.colors["success"] if is_improvement else self.colors["danger"]
-                arrow = "↑" if pct_change > 0 else "↓"
-            else:
-                color = self.colors["primary"]
-                pct_change = 0
-                arrow = ""
+            # Beregn ændring
+            pct_change = ((current_value - prev_value) / prev_value * 100 
+                        if prev_value != 0 else 0)
             
-            # KPI titel og beskrivelse
-            desc_label = ctk.CTkLabel(
-                card,
-                text=self.kpi_config[title]['beskrivelse'],
-                font=("Segoe UI", 12),
-                text_color=self.colors["text_secondary"]
-            )
-            desc_label.pack(pady=(10, 0))
+            # Bestem farve og pil baseret på om højere er bedre
+            higher_is_better = self.kpi_config[title]['hoejere_er_bedre']
             
-            title_label = ctk.CTkLabel(
-                card,
-                text=title,
-                font=("Segoe UI", 16, "bold"),
-                text_color=self.colors["primary"]
-            )
-            title_label.pack(pady=(0, 5))
+            # Hvis højere er bedre:
+            #   - Positivt ændring (pil op) og højere er bedre = grøn
+            #   - Negativt ændring (pil ned) og højere er bedre = rød
+            # Hvis lavere er bedre:
+            #   - Positivt ændring (pil op) og lavere er bedre = rød
+            #   - Negativt ændring (pil ned) og lavere er bedre = grøn
+            is_improvement = (pct_change > 0) == higher_is_better
             
-            # KPI værdi med ændring
-            value_frame = ctk.CTkFrame(card, fg_color="transparent")
-            value_frame.pack(pady=5)
-            
-            value_label = ctk.CTkLabel(
+            color = self.colors["success"] if is_improvement else self.colors["danger"]
+            arrow = "↑" if pct_change > 0 else "↓"
+        else:
+            color = self.colors["primary"]
+            pct_change = 0
+            arrow = ""
+        
+        # KPI titel og beskrivelse
+        desc_label = ctk.CTkLabel(
+            card,
+            text=self.kpi_config[title]['beskrivelse'],
+            font=("Segoe UI", 12),
+            text_color=self.colors["text_secondary"]
+        )
+        desc_label.pack(pady=(10, 0))
+        
+        title_label = ctk.CTkLabel(
+            card,
+            text=title,
+            font=("Segoe UI", 16, "bold"),
+            text_color=self.colors["primary"]
+        )
+        title_label.pack(pady=(0, 5))
+        
+        # KPI værdi med ændring
+        value_frame = ctk.CTkFrame(card, fg_color="transparent")
+        value_frame.pack(pady=5)
+        
+        value_label = ctk.CTkLabel(
+            value_frame,
+            text=f"{current_value:.1f}{self.kpi_config[title]['enhed']}",
+            font=("Segoe UI", 24, "bold"),
+            text_color=color
+        )
+        value_label.pack(side="left", padx=5)
+        
+        if arrow:
+            change_label = ctk.CTkLabel(
                 value_frame,
-                text=f"{current_value:.1f}{self.kpi_config[title]['enhed']}",
-                font=("Segoe UI", 24, "bold"),
+                text=f"{arrow} {abs(pct_change):.1f}%",
+                font=("Segoe UI", 14),
                 text_color=color
             )
-            value_label.pack(side="left", padx=5)
-            
-            if arrow:
-                change_label = ctk.CTkLabel(
-                    value_frame,
-                    text=f"{arrow} {abs(pct_change):.1f}%",
-                    font=("Segoe UI", 14),
-                    text_color=color
-                )
-                change_label.pack(side="left")
-            
-            return card
+            change_label.pack(side="left")
+        
+        return card
 
     def create_kpi_graphs(self):
-            """Opretter KPI grafer"""
-            # Overskrift for grafsektionen
-            graphs_title = ctk.CTkLabel(
-                self.main_container,
-                text="KPI Detaljer",
-                font=("Segoe UI", 20, "bold"),
-                text_color=self.colors["primary"]
-            )
-            graphs_title.pack(pady=(20, 10))
-            
-            # Container til alle grafer
-            graphs_container = ctk.CTkFrame(self.main_container, fg_color=self.colors["card"])
-            graphs_container.pack(fill="x", padx=40, pady=10)
-            
-            # Opret graf for hver KPI
-            for kpi_name in self.kpi_config.keys():
-                self.create_interactive_kpi_graph(graphs_container, kpi_name)
+        """Forbedret memory management for grafer"""
+        # Ryd tidligere grafer
+        if hasattr(self, '_current_figures'):
+            for fig in self._current_figures:
+                plt.close(fig)
+        self._current_figures = []
+        
+        # Container til alle grafer
+        graphs_container = ctk.CTkFrame(self.main_container, fg_color=self.colors["card"])
+        graphs_container.pack(fill="x", padx=40, pady=10)
+        
+        # Opret nye grafer med kontrolleret memory brug
+        for kpi_name in self.kpi_config.keys():
+            self.create_interactive_kpi_graph(graphs_container, kpi_name)
 
     def create_interactive_kpi_graph(self, parent, kpi_name):
-            """Opretter en interaktiv graf for en KPI"""
-            # Graf container
-            graph_frame = ctk.CTkFrame(parent, fg_color=self.colors["background"])
-            graph_frame.pack(fill="x", padx=20, pady=10)
+        """Opretter en interaktiv graf for en KPI"""
+        # Graf container
+        graph_frame = ctk.CTkFrame(parent, fg_color=self.colors["background"])
+        graph_frame.pack(fill="x", padx=20, pady=10)
+        
+        # Graf titel og beskrivelse
+        title_frame = ctk.CTkFrame(graph_frame, fg_color="transparent")
+        title_frame.pack(pady=5)
+        
+        title = ctk.CTkLabel(
+            title_frame,
+            text=kpi_name,
+            font=("Segoe UI", 16, "bold"),
+            text_color=self.colors["primary"]
+        )
+        title.pack()
+        
+        description = ctk.CTkLabel(
+            title_frame,
+            text=self.kpi_config[kpi_name]['beskrivelse'],
+            font=("Segoe UI", 12),
+            text_color=self.colors["text_secondary"]
+        )
+        description.pack()
+        
+        try:
+            # Opret figur og axes med specifik størrelse og DPI
+            fig, ax = plt.subplots(figsize=(12, 4), dpi=100)
+            self._current_figures.append(fig)
             
-            # Graf titel og beskrivelse
-            title_frame = ctk.CTkFrame(graph_frame, fg_color="transparent")
-            title_frame.pack(pady=5)
+            # Stil indstillinger
+            fig.patch.set_facecolor(self.colors["background"])
+            ax.set_facecolor(self.colors["background"])
             
-            title = ctk.CTkLabel(
-                title_frame,
-                text=kpi_name,
-                font=("Segoe UI", 16, "bold"),
-                text_color=self.colors["primary"]
-            )
-            title.pack()
+            # Forbered data
+            dates = list(reversed(self.historical_data.keys()))  # Vend rækkefølgen
+            values = [self.historical_data[date][kpi_name] for date in dates]
             
-            description = ctk.CTkLabel(
-                title_frame,
-                text=self.kpi_config[kpi_name]['beskrivelse'],
-                font=("Segoe UI", 12),
-                text_color=self.colors["text_secondary"]
-            )
-            description.pack()
+            # Plot hovedlinje med punkter
+            line = ax.plot(dates, values, 'o-', color=self.colors["primary"], 
+                        linewidth=2, markersize=8, label='Faktisk værdi')[0]
             
-            try:
-                # Opret figur og axes med specifik størrelse og DPI
-                fig, ax = plt.subplots(figsize=(12, 4), dpi=100)
-                
-                # Stil indstillinger
-                fig.patch.set_facecolor(self.colors["background"])
-                ax.set_facecolor(self.colors["background"])
-                
-                # Forbered data
-                dates = list(self.historical_data.keys())
-                values = [self.historical_data[date][kpi_name] for date in dates]
-                
-                # Plot hovedlinje med punkter
-                line = ax.plot(dates, values, 'o-', color=self.colors["primary"], 
-                            linewidth=2, markersize=8, label='Faktisk værdi')[0]
-                
-                # Tilføj trend line hvis der er mere end ét datapunkt
-                if len(values) > 1:
-                    z = np.polyfit(range(len(values)), values, 1)
-                    p = np.poly1d(z)
-                    ax.plot(dates, p(range(len(values))), "--", 
-                        color=self.colors["text_secondary"], alpha=0.8, 
-                        label='Trend', linewidth=1.5)
-                
-                # Konfigurer graf
-                ax.grid(True, linestyle='--', alpha=0.3)
-                ax.set_ylabel(f"Værdi ({self.kpi_config[kpi_name]['enhed']})")
-                plt.xticks(rotation=45)
-                
-                # Tilføj målområde hvis defineret
-                if 'maal' in self.kpi_config[kpi_name]:
-                    maal = self.kpi_config[kpi_name]['maal']
-                    if self.kpi_config[kpi_name]['hoejere_er_bedre']:
-                        ax.axhspan(maal['min'], maal['max'], 
-                                color=self.colors["success"], alpha=0.1,
-                                label=f"Målområde ({maal['optimal']})")
-                    else:
-                        ax.axhspan(0, maal['max'], 
-                                color=self.colors["success"], alpha=0.1,
-                                label=f"Målområde ({maal['optimal']})")
-                
-                # Tilføj legend med transparent baggrund
-                ax.legend(loc='upper right', facecolor=self.colors["background"], 
-                        framealpha=0.8)
-                
-                # Tilføj tooltips
-                tooltip = ax.annotate("", 
-                                    xy=(0,0), xytext=(20,20),
-                                    textcoords="offset points",
-                                    bbox=dict(boxstyle="round", fc="w", ec="0.5", alpha=0.9),
-                                    arrowprops=dict(arrowstyle="->"))
-                tooltip.set_visible(False)
-                
-                def hover(event):
-                    if event.inaxes == ax:
-                        cont, ind = line.contains(event)
-                        if cont:
-                            x = dates[ind["ind"][0]]
-                            y = values[ind["ind"][0]]
-                            tooltip.xy = (x, y)
-                            tooltip.set_text(f"{x}\n{y:.2f}{self.kpi_config[kpi_name]['enhed']}")
-                            tooltip.set_visible(True)
-                            fig.canvas.draw_idle()
+            # Tilføj trend line hvis der er mere end ét datapunkt
+            if len(values) > 1:
+                z = np.polyfit(range(len(values)), values, 1)
+                p = np.poly1d(z)
+                ax.plot(dates, p(range(len(values))), "--", 
+                    color=self.colors["text_secondary"], alpha=0.8, 
+                    label='Trend', linewidth=1.5)
+            
+            # Konfigurer graf
+            ax.grid(True, linestyle='--', alpha=0.3)
+            ax.set_ylabel(f"Værdi ({self.kpi_config[kpi_name]['enhed']})")
+            plt.xticks(rotation=45)
+            
+            # Tilføj målområde hvis defineret
+            if 'maal' in self.kpi_config[kpi_name]:
+                maal = self.kpi_config[kpi_name]['maal']
+                if self.kpi_config[kpi_name]['hoejere_er_bedre']:
+                    ax.axhspan(maal['min'], maal['max'], 
+                            color=self.colors["success"], alpha=0.1,
+                            label=f"Målområde ({maal['optimal']})")
+                else:
+                    ax.axhspan(0, maal['max'], 
+                            color=self.colors["success"], alpha=0.1,
+                            label=f"Målområde ({maal['optimal']})")
+            
+            # Tilføj legend med transparent baggrund
+            ax.legend(loc='upper right', facecolor=self.colors["background"], 
+                    framealpha=0.8)
+            
+            # Tilføj tooltips med dynamisk positionering
+            tooltip = ax.annotate("", 
+                xy=(0,0), 
+                xytext=(20,20),
+                textcoords="offset points",
+                bbox=dict(
+                    boxstyle="round,pad=0.5", 
+                    fc="white", 
+                    ec="0.5", 
+                    alpha=0.9
+                ),
+                arrowprops=dict(arrowstyle="->"))
+            tooltip.set_visible(False)
+
+            def hover(event):
+                if event.inaxes == ax:
+                    cont, ind = line.contains(event)
+                    if cont:
+                        x = dates[ind["ind"][0]]
+                        y = values[ind["ind"][0]]
+                        
+                        # Brug kun y-værdien til transformation da x er en dato string
+                        display_coords = ax.transData.transform([(0, float(y))])[0]
+                        fig_coords = fig.transFigure.inverted().transform(display_coords)
+                        
+                        # Juster position baseret på x-koordinat i plot
+                        x_pos = ind["ind"][0] / (len(dates)-1)  # Normaliseret x-position (0-1)
+                        
+                        # Bestem tooltip position
+                        if x_pos > 0.8:  # Hvis punktet er i højre side
+                            tooltip.set_position((-120, 20))
                         else:
-                            tooltip.set_visible(False)
-                            fig.canvas.draw_idle()
-                
-                # Tilføj hover event
-                fig.canvas.mpl_connect("motion_notify_event", hover)
-                
-                # Juster layout
-                plt.tight_layout()
-                
-                # Embed graf i Tkinter
-                canvas = FigureCanvasTkAgg(fig, graph_frame)
-                canvas.draw()
-                canvas.get_tk_widget().pack(fill="both", expand=True)
-                
-            except Exception as e:
-                print(f"Fejl ved oprettelse af graf for {kpi_name}: {str(e)}")
-                error_label = ctk.CTkLabel(
-                    graph_frame,
-                    text=f"Kunne ikke oprette graf for {kpi_name}",
-                    font=("Segoe UI", 12),
-                    text_color=self.colors["danger"]
-                )
-                error_label.pack(pady=10)
+                            tooltip.set_position((20, 20))
+                            
+                        # Juster y position hvis punktet er nær top
+                        if fig_coords[1] > 0.8:
+                            tooltip.set_position((tooltip.xyann[0], -20))
+                            
+                        # Sæt tooltip data og position
+                        tooltip.xy = (x, y)
+                        tooltip.set_text(f"{x}\n{y:.2f}{self.kpi_config[kpi_name]['enhed']}")
+                        tooltip.set_visible(True)
+                        fig.canvas.draw_idle()
+                    else:
+                        tooltip.set_visible(False)
+                        fig.canvas.draw_idle()
+
+            # Tilføj hover event
+            fig.canvas.mpl_connect("motion_notify_event", hover)
+            
+            # Juster layout
+            plt.tight_layout()
+            
+            # Embed graf i Tkinter ved hjælp af FigureCanvasTkAgg
+            canvas = FigureCanvasTkAgg(fig, graph_frame)
+            canvas.draw()
+            canvas.get_tk_widget().pack(fill="both", expand=True)
+            
+        except Exception as e:
+            logging.error(f"Fejl ved oprettelse af graf for {kpi_name}: {str(e)}")
+            error_label = ctk.CTkLabel(
+                graph_frame,
+                text=f"Kunne ikke oprette graf for {kpi_name}",
+                font=("Segoe UI", 12),
+                text_color=self.colors["danger"]
+            )
+            error_label.pack(pady=10)
 
     def show_no_data_message(self):
             """Viser besked når ingen data er tilgængelig"""
@@ -533,17 +579,158 @@ class KPIWindow:
     def run(self):
             """Starter applikationen"""
             try:
-                # Centrer vinduet
-                self.root.update_idletasks()
-                width = self.root.winfo_width()
-                height = self.root.winfo_height()
-                x = (self.root.winfo_screenwidth() // 2) - (width // 2)
-                y = (self.root.winfo_screenheight() // 2) - (height // 2)
-                self.root.geometry(f'{width}x{height}+{x}+{y}')
-                
+                # Sæt vinduet til maksimeret tilstand
+                self.root.state("zoomed")  # Maksimer vinduet
+    
+                # Tilføj protocol handler for window closure
+                self.root.protocol("WM_DELETE_WINDOW", self.destroy)
+    
                 self.root.mainloop()
             except Exception as e:
                 print(f"Fejl i run metoden: {str(e)}")
+
+    def get_historical_data(self):
+        """Implementer progressiv data loading med progress feedback"""
+        try:
+            databases = self.find_all_databases()
+            total_chunks = (len(databases) + 9) // 10  # Ceil division
+            
+            # Opret progress bar
+            progress_window = ctk.CTkToplevel()
+            progress_window.title("Indlæser data")
+            progress_window.geometry("300x150")
+            
+            # Centrer progress window
+            progress_window.update_idletasks()
+            x = (progress_window.winfo_screenwidth() // 2) - (300 // 2)
+            y = (progress_window.winfo_screenheight() // 2) - (150 // 2)
+            progress_window.geometry(f'+{x}+{y}')
+            
+            progress_label = ctk.CTkLabel(
+                progress_window,
+                text="Indlæser historisk data...",
+                font=("Segoe UI", 12)
+            )
+            progress_label.pack(pady=20)
+            
+            progress_bar = ctk.CTkProgressBar(progress_window)
+            progress_bar.pack(pady=10, padx=20, fill="x")
+            progress_bar.set(0)
+            
+            def load_chunk(start_idx, chunk_size=10):
+                end_idx = min(start_idx + chunk_size, len(databases))
+                chunk_data = databases[start_idx:end_idx]
+                return {db['display_date']: self._process_database(db) 
+                        for db in chunk_data}
+            
+            self.historical_data = {}
+            for i in range(0, len(databases), 10):
+                chunk = load_chunk(i)
+                self.historical_data.update(chunk)
+                
+                # Opdater progress
+                progress = (i + 10) / len(databases)
+                progress_bar.set(min(progress, 1.0))
+                progress_label.configure(
+                    text=f"Indlæser historisk data... {int(progress * 100)}%"
+                )
+                progress_window.update()
+                
+                self.update_ui()
+                    
+            logging.info("Historisk data indlæst succesfuldt")
+            progress_window.destroy()
+                
+        except Exception as e:
+            logging.error(f"Fejl ved indlæsning af historisk data: {str(e)}")
+            self.historical_data = {}
+            if 'progress_window' in locals():
+                progress_window.destroy()
+
+    def _calculate_noegletal(self, data):
+        """Beregner nøgletal baseret på kørselsdata"""
+        try:
+            noegletal = {}
+            
+            # Beregn tomgangsprocent
+            motor_tid = self.convert_time_to_seconds(data['Motordriftstid [hh:mm:ss]'])
+            tomgangs_tid = self.convert_time_to_seconds(data['Tomgang / stilstandstid [hh:mm:ss]'])
+            noegletal['Tomgang'] = (tomgangs_tid / motor_tid) * 100 if motor_tid > 0 else 0
+            
+            # Beregn cruise control andel
+            distance_over_50 = float(data['Afstand med kørehastighedsregulering (> 50 km/h) [km]']) + \
+                              float(data['Afstand > 50 km/h uden kørehastighedsregulering [km]'])
+            cruise_distance = float(data['Afstand med kørehastighedsregulering (> 50 km/h) [km]'])
+            noegletal['Fartpilot Anvendelse'] = (cruise_distance / distance_over_50) * 100 if distance_over_50 > 0 else 0
+            
+            # Beregn motorbremse andel
+            driftsbremse = float(data['Driftsbremse (km) [km]'])
+            motorbremse = float(data['Afstand motorbremse [km]'])
+            total_bremse = driftsbremse + motorbremse
+            noegletal['Brug af Motorbremse'] = (motorbremse / total_bremse) * 100 if total_bremse > 0 else 0
+            
+            # Beregn påløbsdrift andel
+            total_distance = float(data['Kørestrækning [km]'])
+            paalobsdrift = float(data['Aktiv påløbsdrift (km) [km]']) + float(data['Afstand i påløbsdrift [km]'])
+            noegletal['Påløbsdrift'] = (paalobsdrift / total_distance) * 100 if total_distance > 0 else 0
+            
+            # Beregn diesel effektivitet
+            forbrug = float(data['Forbrug [l]'])
+            noegletal['Diesel Effektivitet'] = total_distance / forbrug if forbrug > 0 else 0
+            
+            # Beregn vægtkorrigeret forbrug
+            total_vaegt = float(data.get('Ø totalvægt [t]', 0))
+            if total_vaegt > 0 and total_distance > 0:
+                noegletal['Vægtkorrigeret Forbrug'] = (forbrug / total_distance * 100) / total_vaegt
+            else:
+                noegletal['Vægtkorrigeret Forbrug'] = 0
+                
+            # Beregn overspeed andel
+            overspeed = float(data['Overspeed (km uden påløbsdrift) [km]'])
+            noegletal['Overspeed Andel'] = (overspeed / total_distance) * 100 if total_distance > 0 else 0
+            
+            logging.info(f"Nøgletal beregnet succesfuldt")
+            return noegletal
+            
+        except Exception as e:
+            logging.error(f"Fejl i _calculate_noegletal: {str(e)}")
+            raise
+
+    def update_ui(self):
+        """Opdaterer brugergrænsefladen med nye data"""
+        try:
+            if self.historical_data:
+                current_values = list(self.historical_data.values())[0]
+                self.create_kpi_cards(current_values)
+                self.create_kpi_graphs()
+            self.root.update()
+        except Exception as e:
+            logging.error(f"Fejl ved opdatering af UI: {str(e)}")
+
+    def _process_database(self, db_info):
+        """Processerer en database og returnerer dens KPI data"""
+        try:
+            with DatabaseConnection(db_info['path']) as conn:
+                query = f'''
+                    SELECT * FROM chauffør_data_data 
+                    WHERE "Kørestrækning [km]" >= {self.min_km}
+                '''
+                df = pd.read_sql_query(query, conn)
+                
+                if not df.empty:
+                    kpis = {}
+                    for _, row in df.iterrows():
+                        row_dict = dict(row)
+                        current_kpis = self._calculate_noegletal(row_dict)
+                        for key, value in current_kpis.items():
+                            kpis[key] = kpis.get(key, []) + [value]
+                            
+                    return {k: sum(v)/len(v) for k, v in kpis.items() if v}
+                return {}
+                
+        except Exception as e:
+            logging.error(f"Fejl ved processering af database {db_info['path']}: {str(e)}")
+            return {}
 
     if __name__ == "__main__":
         try:

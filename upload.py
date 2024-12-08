@@ -13,7 +13,7 @@ class UploadWindow:
         # Grundlæggende opsætning
         self.root = ctk.CTk()
         self.root.title("RIO Data Upload")
-        self.root.geometry("800x600")
+        self.root.state("zoomed")  # Maksimer vinduet
 
         
         # Farver - samme som hovedapplikationen
@@ -296,15 +296,33 @@ class UploadWindow:
             )
             
     def run(self):
-        # Centrer vinduet
-        self.root.update_idletasks()
-        width = self.root.winfo_width()
-        height = self.root.winfo_height()
-        x = (self.root.winfo_screenwidth() // 2) - (width // 2)
-        y = (self.root.winfo_screenheight() // 2) - (height // 2)
-        self.root.geometry(f'{width}x{height}+{x}+{y}')
-        
-        self.root.mainloop()
+        try:
+            # Sæt vinduet til maksimeret tilstand
+            self.root.state("zoomed")  # Maksimer vinduet
+    
+            # Tilføj protocol handler for window closure
+            self.root.protocol("WM_DELETE_WINDOW", self.destroy)
+    
+            self.root.mainloop()
+        except Exception as e:
+            messagebox.showerror("Fatal Fejl", f"Applikationen kunne ikke starte: {str(e)}")
+
+    def destroy(self):
+        """Lukker vinduet og frigør ressourcer"""
+        try:
+            # Destroy alle child windows først
+            for widget in self.root.winfo_children():
+                if isinstance(widget, ctk.CTkToplevel):
+                    widget.destroy()
+            
+            # Destroy hovedvinduet
+            self.root.destroy()
+            
+            # Afbryd mainloop
+            self.root.quit()
+            
+        except Exception as e:
+            print(f"Fejl ved lukning af upload vindue: {str(e)}")
 
 if __name__ == "__main__":
     app = UploadWindow()
