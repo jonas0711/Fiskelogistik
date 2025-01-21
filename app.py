@@ -2,6 +2,7 @@
 import os
 from datetime import datetime
 from tkinter import filedialog, messagebox
+import logging
 
 # Third-party biblioteker
 import customtkinter as ctk
@@ -13,33 +14,40 @@ from report_view import ReportWindow
 from kpi_view import KPIWindow
 from driver_view import DriverWindow
 from settings_view import SettingsWindow
+from logging_config import setup_logging
 
 class ModernRIOMenu:
     def __init__(self):
-        # Tilføj DPI awareness
-        ctk.deactivate_automatic_dpi_awareness()
-        
-        # Grundlæggende opsætning
-        self.root = ctk.CTk()
-        self.root.title("RIO Chauffør Rapport Generator")
-        self.root.state("zoomed")  # Maksimer vinduet
-        
-        # Farver - inspireret af det lyse moderne design
-        self.colors = {
-            "primary": "#1E90FF",    
-            "secondary": "#7F8C8D",   
-            "background": "#F5F7FA",  
-            "card": "#FFFFFF",        
-            "text_primary": "#2C3E50",
-            "text_secondary": "#7F8C8D"
-        }
-        
-        # Tema indstillinger
-        ctk.set_appearance_mode("light")
-        ctk.set_default_color_theme("blue")
-        
-        # Initialisering af UI
-        self.setup_ui()
+        logging.info("Initialiserer ModernRIOMenu")
+        try:
+            # Tilføj DPI awareness
+            ctk.deactivate_automatic_dpi_awareness()
+            
+            # Grundlæggende opsætning
+            self.root = ctk.CTk()
+            self.root.title("RIO Chauffør Rapport Generator")
+            self.root.state("zoomed")  # Maksimer vinduet
+            
+            # Farver - inspireret af det lyse moderne design
+            self.colors = {
+                "primary": "#1E90FF",    
+                "secondary": "#7F8C8D",   
+                "background": "#F5F7FA",  
+                "card": "#FFFFFF",        
+                "text_primary": "#2C3E50",
+                "text_secondary": "#7F8C8D"
+            }
+            
+            # Tema indstillinger
+            ctk.set_appearance_mode("light")
+            ctk.set_default_color_theme("blue")
+            
+            # Initialisering af UI
+            self.setup_ui()
+            logging.info("ModernRIOMenu initialiseret succesfuldt")
+        except Exception as e:
+            logging.error(f"Fejl ved initialisering af ModernRIOMenu: {str(e)}")
+            raise
 
     def setup_ui(self):
         try:
@@ -309,6 +317,7 @@ class ModernRIOMenu:
 
     def handle_button_click(self, title):
         """Håndterer klik på hovedknapperne"""
+        logging.info(f"Bruger klikkede på knap: {title}")
         try:
             if title == "Chauffører":
                 driver_window = DriverWindow()
@@ -320,8 +329,10 @@ class ModernRIOMenu:
                 report_window = ReportWindow(parent=self.root)
                 report_window.run()
             else:
+                logging.warning(f"Ukendt knap klikket: {title}")
                 messagebox.showinfo("Information", f"Funktionen '{title}' er under udvikling")
         except Exception as e:
+            logging.error(f"Fejl ved håndtering af knap {title}: {str(e)}")
             messagebox.showerror("Fejl", f"Kunne ikke åbne {title} vindue: {str(e)}")
 
     def handle_kpi_click(self):
@@ -334,6 +345,7 @@ class ModernRIOMenu:
 
     def destroy(self):
         """Lukker applikationen og alle vinduer"""
+        logging.info("Starter nedlukning af applikation")
         try:
             # Destroy alle child windows først
             for widget in self.root.winfo_children():
@@ -345,8 +357,10 @@ class ModernRIOMenu:
             
             # Afbryd mainloop
             self.root.quit()
+            logging.info("Applikation lukket succesfuldt")
             
         except Exception as e:
+            logging.error(f"Fejl ved lukning af applikation: {str(e)}")
             print(f"Fejl ved lukning af applikation: {str(e)}")
 
     def run(self):
@@ -364,7 +378,14 @@ class ModernRIOMenu:
 
 if __name__ == "__main__":
     try:
+        # Initialiser logging
+        setup_logging()
+        logging.info("=== Applikation starter ===")
+        
         app = ModernRIOMenu()
         app.run()
+        
+        logging.info("=== Applikation lukker normalt ===")
     except Exception as e:
+        logging.critical(f"Fatal fejl i applikationen: {str(e)}")
         messagebox.showerror("Fatal Fejl", f"Kunne ikke initialisere applikationen: {str(e)}")

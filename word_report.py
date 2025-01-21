@@ -26,8 +26,14 @@ class DatabaseConnection:
 
 class WordReportGenerator:
     def __init__(self, db_path):
+        logging.info(f"Initialiserer WordReportGenerator med database: {db_path}")
         self.db_path = db_path
-        self.min_km = self.get_min_km_setting()
+        try:
+            self.min_km = self.get_min_km_setting()
+            logging.info(f"Minimum kilometer sat til: {self.min_km}")
+        except Exception as e:
+            logging.error(f"Fejl ved initialisering af WordReportGenerator: {str(e)}")
+            raise
         self.doc = Document()
         
         # Definer kolonne grupper
@@ -660,13 +666,26 @@ class WordReportGenerator:
 
     def generer_gruppe_rapport(self, group_name):
         """Genererer rapport for en specifik gruppe"""
+        logging.info(f"Starter generering af gruppe rapport for: {group_name}")
         try:
             # Hent gruppe medlemmer
-            group_members = self.get_group_members(group_name)
+            with DatabaseConnection('databases/settings.db') as conn:
+                cursor = conn.cursor()
+                cursor.execute('''
+                    SELECT driver_name 
+                    FROM group_members 
+                    JOIN groups ON groups.id = group_members.group_id 
+                    WHERE groups.name = ?
+                ''', (group_name,))
+                group_members = [row[0] for row in cursor.fetchall()]
+                logging.info(f"Fandt {len(group_members)} medlemmer i gruppen")
+            
             if not group_members:
+                logging.warning(f"Ingen medlemmer fundet i gruppen: {group_name}")
                 raise Exception("Ingen medlemmer fundet i gruppen")
             
-            # Hent kvalificerede chauffører fra den valgte måned
+            # Log hver handling i processen
+            logging.info("Henter kvalificerede chauffører fra databasen")
             conn = sqlite3.connect(self.db_path)
             cursor = conn.cursor()
             
@@ -677,6 +696,7 @@ class WordReportGenerator:
             ''', (self.min_km,))
             
             qualified_drivers = [row[0] for row in cursor.fetchall()]
+            logging.info(f"Fandt {len(qualified_drivers)} kvalificerede chauffører")
             
             # Find kvalificerede gruppe medlemmer
             valid_members = [driver for driver in group_members 
@@ -740,10 +760,6 @@ class WordReportGenerator:
             
             filnavn = f"Fiskelogistik_Gruppe_{group_name}_{maaned}_{aar}_{tidsstempel}.docx"
             
-            # Tilføj forklaringssektion én gang efter alle data er tilføjet
-            self.tilfoej_sektion_overskrift("Forklaring af Data")
-            self.tilfoej_forklaringer()
-            
             # Gem dokumentet
             if not os.path.exists('rapporter'):
                 os.makedirs('rapporter')
@@ -754,7 +770,8 @@ class WordReportGenerator:
             return filnavn
             
         except Exception as e:
-            raise Exception(f"Fejl ved generering af gruppe rapport: {str(e)}")
+            logging.error(f"Fejl ved generering af gruppe rapport: {str(e)}")
+            raise
 
     def generer_individuel_rapport(self, chauffoer_navn):
         """Genererer rapport for en specifik chauffør"""
