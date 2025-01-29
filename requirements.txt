@@ -1,0 +1,16 @@
+# GUI Framework
+customtkinter
+
+# Datahåndtering
+pandas
+openpyxl
+
+# Rapportgenerering
+python-docx
+matplotlib
+
+# Billedhåndtering
+Pillow
+
+# Avanceret logging
+rich 
