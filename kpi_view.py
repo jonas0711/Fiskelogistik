@@ -50,54 +50,85 @@ class KPIWindow:
         
         # KPI definitioner og deres optimeringsmål
         self.kpi_config = {
-            "Tomgang": {
-                "er_hoved_kpi": True,
-                "hoejere_er_bedre": False,
-                "enhed": "%",
-                "beskrivelse": "Andel af motordriftstid i tomgang",
-                "maal": {"min": 0, "max": 5, "optimal": "under 5%"}
+            'Tomgangsprocent': {
+                'navn': 'Tomgang',
+                'er_hovedkpi': True,
+                'format': '{:.1f}%',
+                'maal_min': 0,
+                'maal_max': 5,
+                'hoejere_er_bedre': False,
+                'beskrivelse': 'Procentdel af total motordriftstid brugt i tomgang.',
+                'forklaring': 'Viser hvor meget tid motoren kører uden at køretøjet bevæger sig. En lavere procent er bedre, da tomgang bruger unødvendigt brændstof.'
             },
-            "Fartpilot Anvendelse": {
-                "er_hoved_kpi": False,
-                "hoejere_er_bedre": True,
-                "enhed": "%",
-                "beskrivelse": "Andel af kørsel med fartpilot",
-                "maal": {"min": 85, "max": 100, "optimal": "over 85%"}
+            'Fartpilot Andel': {
+                'navn': 'Fartpilot Anvendelse',
+                'er_hovedkpi': True,
+                'format': '{:.1f}%',
+                'maal_min': 66.5,
+                'maal_max': 100,
+                'hoejere_er_bedre': True,
+                'beskrivelse': 'Procentdel af køretid hvor fartpilot er aktivt.',
+                'forklaring': 'Viser hvor meget fartpiloten bruges. En højere procent er bedre, da det giver mere jævn og økonomisk kørsel.'
             },
-            "Brug af Motorbremse": {
-                "er_hoved_kpi": False,
-                "hoejere_er_bedre": True,
-                "enhed": "%",
-                "beskrivelse": "Andel af bremsning med motorbremse",
-                # "maal": {}  # Ingen mål defineret endnu
+            'Motorbremse Andel': {
+                'navn': 'Brug af Motorbremse',
+                'er_hovedkpi': True,
+                'format': '{:.1f}%',
+                'maal_min': 56,
+                'maal_max': 100,
+                'hoejere_er_bedre': True,
+                'beskrivelse': 'Procentdel af total bremsning udført med motorbremse.',
+                'forklaring': 'Viser hvor meget motorbremsning bruges i forhold til normale bremser. En højere procent er bedre.'
             },
-            "Påløbsdrift": {
-                "er_hoved_kpi": False,
-                "hoejere_er_bedre": True,
-                "enhed": "%",
-                "beskrivelse": "Andel af kørsel i påløbsdrift",
-                # "maal": {}  # Ingen mål defineret endnu
+            'Påløbsdrift Andel': {
+                'navn': 'Påløbsdrift',
+                'er_hovedkpi': True,
+                'format': '{:.1f}%',
+                'maal_min': 7,
+                'maal_max': 100,
+                'hoejere_er_bedre': True,
+                'beskrivelse': 'Procentdel af køretid i påløbsdrift.',
+                'forklaring': 'Viser hvor meget køretøjet ruller uden motorens trækkraft. En højere procent er bedre.'
             },
-            "Diesel Effektivitet": {
-                "er_hoved_kpi": True,
-                "hoejere_er_bedre": True,
-                "enhed": "km/l",
-                "beskrivelse": "Kilometer kørt pr. liter diesel",
-                # "maal": {}  # Ingen mål defineret endnu
+            'Diesel Effektivitet': {
+                'navn': 'Brændstofeffektivitet',
+                'er_hovedkpi': False,
+                'format': '{:.2f} km/l',
+                'maal_min': None,
+                'maal_max': None,
+                'hoejere_er_bedre': True,
+                'beskrivelse': 'Antal kilometer kørt per liter brændstof.',
+                'forklaring': 'Viser hvor langt køretøjet kører på en liter brændstof. En højere værdi er bedre.'
             },
-            "Vægtkorrigeret Forbrug": {
-                "er_hoved_kpi": False,
-                "hoejere_er_bedre": False,
-                "enhed": "l/100km/t",
-                "beskrivelse": "Brændstofforbrug pr. 100 km pr. ton",
-                # "maal": {}  # Ingen mål defineret endnu
+            'Vægtkorrigeret Forbrug': {
+                'navn': 'Vægtkorrigeret Forbrug',
+                'er_hovedkpi': False,
+                'format': '{:.2f} l/100km/t',
+                'maal_min': None,
+                'maal_max': None,
+                'hoejere_er_bedre': False,
+                'beskrivelse': 'Brændstofforbrug justeret for lastens vægt.',
+                'forklaring': 'Viser brændstofforbruget justeret for lastens vægt. En lavere værdi er bedre.'
             },
-            "Overspeed Andel": {
-                "er_hoved_kpi": False,
-                "hoejere_er_bedre": False,
-                "enhed": "%",
-                "beskrivelse": "Andel af kørsel over hastighedsgrænsen",
-                # "maal": {}  # Ingen mål defineret endnu
+            'Overspeed Andel': {
+                'navn': 'Hastighedsoverskridelser',
+                'er_hovedkpi': False,
+                'format': '{:.1f}%',
+                'maal_min': None,
+                'maal_max': None,
+                'hoejere_er_bedre': False,
+                'beskrivelse': 'Procentdel af køretid over hastighedsgrænsen.',
+                'forklaring': 'Viser hvor meget der køres over hastighedsgrænsen. En lavere procent er bedre.'
+            },
+            'CO2 Effektivitet': {
+                'navn': 'CO₂ Effektivitet',
+                'er_hovedkpi': True,
+                'format': '{:.3f} kg/tkm',
+                'maal_min': None,
+                'maal_max': None,
+                'hoejere_er_bedre': False,
+                'beskrivelse': 'CO₂-udledning per ton-kilometer',
+                'forklaring': 'Måler hvor meget CO₂ der udledes per transporteret ton-kilometer. En lavere værdi er bedre.'
             }
         }
         
@@ -375,7 +406,7 @@ class KPIWindow:
         
         title_label = ctk.CTkLabel(
             card,
-            text=title,
+            text=self.kpi_config[title]['navn'],  # Brug 'navn' i stedet for direkte titel
             font=("Segoe UI", 16, "bold"),
             text_color=self.colors["primary"]
         )
@@ -387,7 +418,7 @@ class KPIWindow:
         
         value_label = ctk.CTkLabel(
             value_frame,
-            text=f"{current_value:.1f}{self.kpi_config[title]['enhed']}",
+            text=self.kpi_config[title]['format'].format(current_value),
             font=("Segoe UI", 24, "bold"),
             text_color=color
         )
@@ -432,7 +463,7 @@ class KPIWindow:
         
         title = ctk.CTkLabel(
             title_frame,
-            text=kpi_name,
+            text=self.kpi_config[kpi_name]['navn'],
             font=("Segoe UI", 16, "bold"),
             text_color=self.colors["primary"]
         )
@@ -459,38 +490,53 @@ class KPIWindow:
             dates = list(reversed(self.historical_data.keys()))  # Vend rækkefølgen
             values = [self.historical_data[date][kpi_name] for date in dates]
             
+            # Formatér x-akse labels
+            formatted_dates = []
+            for date in dates:
+                # Fjern årstal fra visningen hvis det er samme år
+                if date.endswith('2024'):
+                    formatted_dates.append(date.replace(' 2024', ''))
+                elif date.endswith('2023'):
+                    formatted_dates.append(date.replace(' 2023', '\'23'))
+                else:
+                    formatted_dates.append(date)
+            
             # Plot hovedlinje med punkter
-            line = ax.plot(dates, values, 'o-', color=self.colors["primary"], 
-                        linewidth=2, markersize=8, label='Faktisk værdi')[0]
+            line = ax.plot(formatted_dates, values, 'o-', color=self.colors["primary"], 
+                        linewidth=2, markersize=6, label='Faktisk værdi')[0]
             
             # Tilføj trend line hvis der er mere end ét datapunkt
             if len(values) > 1:
                 z = np.polyfit(range(len(values)), values, 1)
                 p = np.poly1d(z)
-                ax.plot(dates, p(range(len(values))), "--", 
+                ax.plot(formatted_dates, p(range(len(values))), "--", 
                     color=self.colors["text_secondary"], alpha=0.8, 
                     label='Trend', linewidth=1.5)
             
             # Konfigurer graf
             ax.grid(True, linestyle='--', alpha=0.3)
-            ax.set_ylabel(f"Værdi ({self.kpi_config[kpi_name]['enhed']})")
-            plt.xticks(rotation=45)
+            ax.set_ylabel(f"Værdi ({self.kpi_config[kpi_name]['format'].split()[1] if ' ' in self.kpi_config[kpi_name]['format'] else '%'})")
+            
+            # Juster x-akse labels
+            plt.xticks(rotation=45, ha='right')
+            ax.tick_params(axis='x', labelsize=8)
             
             # Tilføj målområde hvis defineret
-            if 'maal' in self.kpi_config[kpi_name]:
-                maal = self.kpi_config[kpi_name]['maal']
+            if self.kpi_config[kpi_name]['maal_min'] is not None and self.kpi_config[kpi_name]['maal_max'] is not None:
+                maal_min = self.kpi_config[kpi_name]['maal_min']
+                maal_max = self.kpi_config[kpi_name]['maal_max']
                 if self.kpi_config[kpi_name]['hoejere_er_bedre']:
-                    ax.axhspan(maal['min'], maal['max'], 
+                    ax.axhspan(maal_min, maal_max, 
                             color=self.colors["success"], alpha=0.1,
-                            label=f"Målområde ({maal['optimal']})")
+                            label=f"Målområde")
                 else:
-                    ax.axhspan(0, maal['max'], 
+                    ax.axhspan(0, maal_max, 
                             color=self.colors["success"], alpha=0.1,
-                            label=f"Målområde ({maal['optimal']})")
+                            label=f"Målområde")
             
             # Tilføj legend med transparent baggrund
             ax.legend(loc='upper right', facecolor=self.colors["background"], 
-                    framealpha=0.8)
+                    framealpha=0.8, fontsize=8)
             
             # Tilføj tooltips med dynamisk positionering
             tooltip = ax.annotate("", 
@@ -510,7 +556,7 @@ class KPIWindow:
                 if event.inaxes == ax:
                     cont, ind = line.contains(event)
                     if cont:
-                        x = dates[ind["ind"][0]]
+                        x = formatted_dates[ind["ind"][0]]
                         y = values[ind["ind"][0]]
                         
                         # Brug kun y-værdien til transformation da x er en dato string
@@ -526,13 +572,15 @@ class KPIWindow:
                         else:
                             tooltip.set_position((20, 20))
                             
-                        # Juster y position hvis punktet er nær top
+                        # Juster y position hvis punktet er nær top eller bund
                         if fig_coords[1] > 0.8:
                             tooltip.set_position((tooltip.xyann[0], -20))
+                        elif fig_coords[1] < 0.2:
+                            tooltip.set_position((tooltip.xyann[0], 20))
                             
                         # Sæt tooltip data og position
                         tooltip.xy = (x, y)
-                        tooltip.set_text(f"{x}\n{y:.2f}{self.kpi_config[kpi_name]['enhed']}")
+                        tooltip.set_text(f"{x}\n{self.kpi_config[kpi_name]['format'].format(y)}")
                         tooltip.set_visible(True)
                         fig.canvas.draw_idle()
                     else:
@@ -545,8 +593,11 @@ class KPIWindow:
             # Juster layout
             plt.tight_layout()
             
-            # Embed graf i Tkinter ved hjælp af FigureCanvasTkAgg
-            canvas = FigureCanvasTkAgg(fig, graph_frame)
+            # Juster margener for bedre visning
+            plt.subplots_adjust(bottom=0.2, left=0.1, right=0.95, top=0.95)
+            
+            # Embed graf i tkinter vindue med korrekt størrelse
+            canvas = FigureCanvasTkAgg(fig, master=graph_frame)
             canvas.draw()
             canvas.get_tk_widget().pack(fill="both", expand=True)
             
@@ -554,11 +605,10 @@ class KPIWindow:
             logging.error(f"Fejl ved oprettelse af graf for {kpi_name}: {str(e)}")
             error_label = ctk.CTkLabel(
                 graph_frame,
-                text=f"Kunne ikke oprette graf for {kpi_name}",
-                font=("Segoe UI", 12),
+                text=f"Kunne ikke oprette graf: {str(e)}",
                 text_color=self.colors["danger"]
             )
-            error_label.pack(pady=10)
+            error_label.pack(pady=20)
 
     def show_no_data_message(self):
             """Viser besked når ingen data er tilgængelig"""
@@ -650,24 +700,24 @@ class KPIWindow:
             # Beregn tomgangsprocent
             motor_tid = self.convert_time_to_seconds(data['Motordriftstid [hh:mm:ss]'])
             tomgangs_tid = self.convert_time_to_seconds(data['Tomgang / stilstandstid [hh:mm:ss]'])
-            noegletal['Tomgang'] = (tomgangs_tid / motor_tid) * 100 if motor_tid > 0 else 0
+            noegletal['Tomgangsprocent'] = (tomgangs_tid / motor_tid) * 100 if motor_tid > 0 else 0
             
             # Beregn cruise control andel
             distance_over_50 = float(data['Afstand med kørehastighedsregulering (> 50 km/h) [km]']) + \
-                              float(data['Afstand > 50 km/h uden kørehastighedsregulering [km]'])
+                             float(data['Afstand > 50 km/h uden kørehastighedsregulering [km]'])
             cruise_distance = float(data['Afstand med kørehastighedsregulering (> 50 km/h) [km]'])
-            noegletal['Fartpilot Anvendelse'] = (cruise_distance / distance_over_50) * 100 if distance_over_50 > 0 else 0
+            noegletal['Fartpilot Andel'] = (cruise_distance / distance_over_50) * 100 if distance_over_50 > 0 else 0
             
             # Beregn motorbremse andel
             driftsbremse = float(data['Driftsbremse (km) [km]'])
             motorbremse = float(data['Afstand motorbremse [km]'])
             total_bremse = driftsbremse + motorbremse
-            noegletal['Brug af Motorbremse'] = (motorbremse / total_bremse) * 100 if total_bremse > 0 else 0
+            noegletal['Motorbremse Andel'] = (motorbremse / total_bremse) * 100 if total_bremse > 0 else 0
             
             # Beregn påløbsdrift andel
             total_distance = float(data['Kørestrækning [km]'])
             paalobsdrift = float(data['Aktiv påløbsdrift (km) [km]']) + float(data['Afstand i påløbsdrift [km]'])
-            noegletal['Påløbsdrift'] = (paalobsdrift / total_distance) * 100 if total_distance > 0 else 0
+            noegletal['Påløbsdrift Andel'] = (paalobsdrift / total_distance) * 100 if total_distance > 0 else 0
             
             # Beregn diesel effektivitet
             forbrug = float(data['Forbrug [l]'])
@@ -683,6 +733,16 @@ class KPIWindow:
             # Beregn overspeed andel
             overspeed = float(data['Overspeed (km uden påløbsdrift) [km]'])
             noegletal['Overspeed Andel'] = (overspeed / total_distance) * 100 if total_distance > 0 else 0
+            
+            # Beregn CO₂ effektivitet (kg CO₂ per ton-kilometer)
+            co2_emission = float(data['CO₂-emission [kg]'])
+            if total_distance > 0 and total_vaegt > 0:
+                # Først beregn CO₂ per kilometer
+                co2_per_km = co2_emission / total_distance
+                # Derefter normaliser med vægten for at få kg CO₂ per ton-kilometer
+                noegletal['CO2 Effektivitet'] = co2_per_km / total_vaegt
+            else:
+                noegletal['CO2 Effektivitet'] = 0
             
             logging.info(f"Nøgletal beregnet succesfuldt")
             return noegletal

@@ -86,9 +86,9 @@ class WordReportGenerator:
 
     def beregn_noegletal(self, data):
         """Beregner nøgletal baseret på kørselsdata"""
-        noegletal = {}
-        
         try:
+            noegletal = {}
+            
             # Beregn tomgangsprocent
             motor_tid = self.konverter_tid_til_sekunder(data['Motordriftstid [hh:mm:ss]'])
             tomgangs_tid = self.konverter_tid_til_sekunder(data['Tomgang / stilstandstid [hh:mm:ss]'])
@@ -99,12 +99,6 @@ class WordReportGenerator:
                              float(data['Afstand > 50 km/h uden kørehastighedsregulering [km]'])
             cruise_distance = float(data['Afstand med kørehastighedsregulering (> 50 km/h) [km]'])
             noegletal['Fartpilot Andel'] = (cruise_distance / distance_over_50) * 100 if distance_over_50 > 0 else 0
-            
-            # Beregn gennemsnitlig hastighed
-            koerselstid_sekunder = self.konverter_tid_til_sekunder(data['Køretid [hh:mm:ss]'])
-            koerselstid_timer = koerselstid_sekunder / 3600
-            total_distance = float(data['Kørestrækning [km]'])
-            noegletal['Gennemsnitlig Hastighed'] = (total_distance / koerselstid_timer) if koerselstid_timer > 0 else 0
             
             # Beregn motorbremse andel
             driftsbremse = float(data['Driftsbremse (km) [km]'])
@@ -119,7 +113,7 @@ class WordReportGenerator:
                 noegletal['Diesel Effektivitet'] = korestraekning / forbrug_liter
             else:
                 noegletal['Diesel Effektivitet'] = 0
-                
+            
             # Beregn vægtkorrigeret forbrug
             total_vaegt = float(data.get('Ø totalvægt [t]', 0))
             if total_vaegt > 0 and forbrug_liter > 0:
@@ -129,25 +123,26 @@ class WordReportGenerator:
                 noegletal['Vægtkorrigeret Forbrug'] = 0
 
             # Beregn påløbsdrift andel
+            total_distance = float(data['Kørestrækning [km]'])
             aktiv_paalobsdrift = float(data['Aktiv påløbsdrift (km) [km]'])
             afstand_paalobsdrift = float(data['Afstand i påløbsdrift [km]'])
             if total_distance > 0:
                 noegletal['Påløbsdrift Andel'] = ((aktiv_paalobsdrift + afstand_paalobsdrift) / total_distance) * 100
             else:
                 noegletal['Påløbsdrift Andel'] = 0
-
+            
             # Beregn Overspeed andel
             overspeed = float(data['Overspeed (km uden påløbsdrift) [km]'])
             if total_distance > 0:
                 noegletal['Overspeed Andel'] = (overspeed / total_distance) * 100
             else:
                 noegletal['Overspeed Andel'] = 0
-                
+            
+            return noegletal
+            
         except Exception as e:
             print(f"Fejl ved beregning af nøgletal: {str(e)}")
             return {}
-            
-        return noegletal
 
     def opret_samlet_rangering(self, kvalificerede_chauffoerer):
         """Opretter en samlet rangering baseret på de fire hovedparametre"""
@@ -155,14 +150,15 @@ class WordReportGenerator:
         
         intro_tekst = self.doc.add_paragraph()
         intro_run = intro_tekst.add_run(
-            "Den samlede rangering kombinerer præstationen på fire nøgleområder:\n\n"
-            "1. Tomgang: Minimering af unødvendig tomgangskørsel\n"
-            "2. Fartpilot: Optimal brug af fartpilot ved højere hastigheder\n"
-            "3. Motorbremse: Effektiv brug af motorbremsning\n"
-            "4. Påløbsdrift: Udnyttelse af køretøjets momentum\n\n"
+            "Den samlede rangering kombinerer præstationen på fire nøgleområder med følgende virksomhedsmål:\n\n"
+            "1. Tomgang: Mål på max 5% - Minimering af unødvendig tomgangskørsel\n"
+            "2. Fartpilot: Mål på minimum 66,5% - Optimal brug af fartpilot ved højere hastigheder\n"
+            "3. Motorbremse: Mål på minimum 56% - Effektiv brug af motorbremsning\n"
+            "4. Påløbsdrift: Mål på minimum 7% - Udnyttelse af køretøjets momentum\n\n"
             "Hver chauffør får points baseret på deres placering i hver kategori. "
             "Lavere samlet score er bedre, da det betyder bedre placeringer på tværs af kategorierne. "
             "De tre bedste chauffører er markeret med grøn for at fremhæve særligt god præstation.\n"
+            "Målene er sat af virksomheden og bruges som reference for optimal kørsel.\n"
         )
         intro_run.font.size = Pt(11)
         
@@ -310,8 +306,54 @@ class WordReportGenerator:
         self.doc.add_paragraph()
 
     def opret_noegletal_tabel(self, data, include_explanations=True):
-        """Opretter en tabel med beregnede nøgletal og sammenligning"""
+        """Opretter en tabel med nøgletal og deres forklaringer"""
         self.tilfoej_sektion_overskrift("Nøgletal")
+        
+        # Definer nøgletal og deres mål
+        noegletal_config = {
+            'Tomgangsprocent': {
+                'navn': 'Tomgang',
+                'format': '{:.1f}%',
+                'maal': 'Under 5%',
+                'forklaring': 'Procentdel af total motordriftstid brugt i tomgang. Lavere er bedre.'
+            },
+            'Fartpilot Andel': {
+                'navn': 'Fartpilot Anvendelse',
+                'format': '{:.1f}%',
+                'maal': 'Over 66,5%',
+                'forklaring': 'Procentdel af køretid hvor fartpilot er aktivt. Højere er bedre.'
+            },
+            'Motorbremse Andel': {
+                'navn': 'Brug af Motorbremse',
+                'format': '{:.1f}%',
+                'maal': 'Over 56%',
+                'forklaring': 'Procentdel af total bremsning udført med motorbremse. Højere er bedre.'
+            },
+            'Påløbsdrift Andel': {
+                'navn': 'Påløbsdrift',
+                'format': '{:.1f}%',
+                'maal': 'Over 7%',
+                'forklaring': 'Procentdel af køretid i påløbsdrift. Højere er bedre.'
+            },
+            'Diesel Effektivitet': {
+                'navn': 'Brændstofeffektivitet',
+                'format': '{:.2f} km/l',
+                'maal': '',
+                'forklaring': 'Antal kilometer kørt per liter brændstof. Højere er bedre.'
+            },
+            'Vægtkorrigeret Forbrug': {
+                'navn': 'Vægtkorrigeret Forbrug',
+                'format': '{:.2f} l/100km/t',
+                'maal': '',
+                'forklaring': 'Brændstofforbrug justeret for lastens vægt. Lavere er bedre.'
+            },
+            'Overspeed Andel': {
+                'navn': 'Hastighedsoverskridelser',
+                'format': '{:.1f}%',
+                'maal': '',
+                'forklaring': 'Procentdel af køretid over hastighedsgrænsen. Lavere er bedre.'
+            }
+        }
         
         noegletal = self.beregn_noegletal(data)
         if not noegletal:
@@ -333,72 +375,67 @@ class WordReportGenerator:
         if tidligere_data:
             tidligere_noegletal = self.beregn_noegletal(tidligere_data)
         
-        tabel = self.doc.add_table(rows=1, cols=4)
+        tabel = self.doc.add_table(rows=1, cols=5)  # Tilføjet en ekstra kolonne til mål
         tabel.style = 'Table Grid'
         tabel.autofit = True
         
-        # Tilføj headers
+        # Tilføj headers med ny rækkefølge og bedre beskrivelser
         header_celler = tabel.rows[0].cells
         header_celler[0].text = 'Parameter'
-        header_celler[1].text = 'Nuværende'
-        
         if tidligere_maaned and tidligere_aar:
-            header_celler[2].text = f'Tidligere ({tidligere_maaned} {tidligere_aar})'
+            header_celler[1].text = f'Tidligere ({tidligere_maaned} {tidligere_aar})'
         else:
-            header_celler[2].text = 'Tidligere (Ingen data)'
-        header_celler[3].text = 'Forskel'
+            header_celler[1].text = 'Tidligere (Ingen data)'
+        header_celler[2].text = 'Nuværende'
+        header_celler[3].text = 'Mål'
+        header_celler[4].text = 'Udvikling siden sidst'
         
         # Formater headers med grå baggrund
         for cell in header_celler:
             cell._tc.get_or_add_tcPr().append(parse_xml(r'<w:shd {} w:fill="E0E0E0"/>'.format(nsdecls('w'))))
         
-        # Definer formatering og beskrivelser for nøgletal
-        noegletal_format = {
-            'Tomgangsprocent': ('{:.1f}%', 'Andel af motordriftstid i tomgang', False),
-            'Fartpilot Andel': ('{:.1f}%', 'Andel af kørsel med fartpilot over 50 km/t', True),
-            'Påløbsdrift Andel': ('{:.1f}%', 'Andel af total kørestrækning i påløbsdrift', True),
-            'Gennemsnitlig Hastighed': ('{:.1f} km/t', 'Gennemsnitlig hastighed under kørsel', None),
-            'Motorbremse Andel': ('{:.1f}%', 'Andel af bremseafstand med motorbremse', True),
-            'Diesel Effektivitet': ('{:.2f} km/l', 'Kilometer kørt pr. liter diesel', True),
-            'Vægtkorrigeret Forbrug': ('{:.3f} l/100km/t', 'Brændstofforbrug pr. 100 km pr. ton totalvægt', False),
-            'Overspeed Andel': ('{:.1f}%', 'Andel af kørestrækning med for høj hastighed', False)
-        }
-        
-        # Tilføj nøgletal til tabellen
-        for noegletal_navn, (format_str, beskrivelse, higher_is_better) in noegletal_format.items():
+        # Tilføj nøgletal til tabellen med ny rækkefølge
+        for noegletal_navn, config in noegletal_config.items():
             række_celler = tabel.add_row().cells
-            række_celler[0].text = beskrivelse
+            række_celler[0].text = config['forklaring']
+            
+            # Tidligere værdi
+            if tidligere_noegletal:
+                tidligere_værdi = tidligere_noegletal.get(noegletal_navn, 0)
+                række_celler[1].text = config['format'].format(tidligere_værdi)
+            else:
+                række_celler[1].text = "Ingen data"
             
             # Nuværende værdi
             værdi = noegletal.get(noegletal_navn, 0)
-            række_celler[1].text = format_str.format(værdi)
+            række_celler[2].text = config['format'].format(værdi)
             
-            # Tidligere værdi og forskel
+            # Mål værdi
+            række_celler[3].text = config['maal']
+            
+            # Forskel/udvikling
             if tidligere_noegletal:
                 tidligere_værdi = tidligere_noegletal.get(noegletal_navn, 0)
-                række_celler[2].text = format_str.format(tidligere_værdi)
-                
-                # Beregn forskel
                 if tidligere_værdi != 0:
                     forskel_pct = ((værdi - tidligere_værdi) / tidligere_værdi) * 100
                     forskel_tekst = f"{forskel_pct:+.1f}%"
                     
                     # Bestem farve baseret på om højere er bedre
-                    if higher_is_better is not None:
-                        er_forbedring = (forskel_pct > 0) == higher_is_better
-                        farve = RGBColor(0, 128, 0) if er_forbedring else RGBColor(255, 0, 0)
-                        
-                        # Tilføj farvet tekst
-                        forskel_paragraph = række_celler[3].paragraphs[0]
-                        forskel_run = forskel_paragraph.add_run(forskel_tekst)
-                        forskel_run.font.color.rgb = farve
+                    if noegletal_navn in ['Tomgangsprocent', 'Vægtkorrigeret Forbrug', 'Overspeed Andel']:
+                        er_forbedring = forskel_pct < 0  # Lavere er bedre
                     else:
-                        række_celler[3].text = forskel_tekst
+                        er_forbedring = forskel_pct > 0  # Højere er bedre
+                    
+                    farve = RGBColor(0, 128, 0) if er_forbedring else RGBColor(255, 0, 0)
+                    
+                    # Tilføj farvet tekst
+                    forskel_paragraph = række_celler[4].paragraphs[0]
+                    forskel_run = forskel_paragraph.add_run(forskel_tekst)
+                    forskel_run.font.color.rgb = farve
                 else:
-                    række_celler[3].text = "N/A"
+                    række_celler[4].text = "N/A"
             else:
-                række_celler[2].text = "Ingen data"
-                række_celler[3].text = "N/A"
+                række_celler[4].text = "N/A"
         
         self.doc.add_paragraph()
         
@@ -407,14 +444,14 @@ class WordReportGenerator:
             forklaring = self.doc.add_paragraph()
             forklaring.add_run(
                 "Nøgletallene giver et overblik over de vigtigste præstationsindikatorer:\n\n"
-                "• Tomgangsprocent: Andel af tiden hvor motoren kører uden at køretøjet bevæger sig. "
-                "En lavere procent er bedre, da tomgang bruger unødvendigt brændstof.\n\n"
-                "• Fartpilot Andel: Hvor meget fartpiloten bruges ved hastigheder over 50 km/t. "
-                "En højere procent er bedre, da det giver mere jævn og økonomisk kørsel.\n\n"
-                "• Påløbsdrift Andel: Hvor meget køretøjet ruller uden motorens trækkraft. "
-                "En højere procent er bedre, da det sparer brændstof.\n\n"
-                "• Motorbremse Andel: Hvor meget motorbremsning bruges i forhold til normale bremser. "
-                "En højere procent er bedre, da det reducerer slid på bremserne og kan genindvinde energi.\n\n"
+                "• Tomgang: Andel af tiden hvor motoren kører uden at køretøjet bevæger sig. "
+                "En lavere procent er bedre, da tomgang bruger unødvendigt brændstof. Mål: Under 5%\n\n"
+                "• Fartpilot Anvendelse: Hvor meget fartpiloten bruges ved hastigheder over 50 km/t. "
+                "En højere procent er bedre, da det giver mere jævn og økonomisk kørsel. Mål: Over 66,5%\n\n"
+                "• Brug af Motorbremse: Hvor meget motorbremsning bruges i forhold til normale bremser. "
+                "En højere procent er bedre, da det reducerer slid på bremserne og kan genindvinde energi. Mål: Over 56%\n\n"
+                "• Påløbsdrift: Hvor meget køretøjet ruller uden motorens trækkraft. "
+                "En højere procent er bedre, da det sparer brændstof. Mål: Over 7%\n\n"
                 "• Diesel Effektivitet: Antal kilometer kørt per liter diesel. "
                 "En højere værdi er bedre, da det betyder lavere brændstofforbrug.\n\n"
                 "• Vægtkorrigeret Forbrug: Brændstofforbrug justeret efter køretøjets vægt. "
@@ -431,7 +468,7 @@ class WordReportGenerator:
         intro_run = intro_tekst.add_run(
             "Nedenstående tabeller viser rangeringen af chauffører baseret på forskellige "
             "performancemålinger. Rangeringen tager højde for om højere eller lavere værdier "
-            "er optimale for hvert parameter."
+            "er optimale for hvert parameter. Grøn markering indikerer at målet er opfyldt."
         )
         intro_run.font.size = Pt(11)
         
@@ -452,17 +489,17 @@ class WordReportGenerator:
         
         # Definer nøgletal og deres optimeringsmål
         noegletal_optimering = {
-            'Tomgangsprocent': ('Tomgang', False, '%', 'Lavere er bedre - Indikerer effektiv udnyttelse af køretøjet'),
-            'Fartpilot Andel': ('Fartpilot Anvendelse', True, '%', 'Højere er bedre - Bidrager til jævn og økonomisk kørsel'),
-            'Motorbremse Andel': ('Brug af Motorbremse', True, '%', 'Højere er bedre - Sparer på bremserne og reducerer brændstofforbrug'),
-            'Påløbsdrift Andel': ('Påløbsdrift', True, '%', 'Højere er bedre - Indikerer effektiv udnyttelse af motorbremsning'),
-            'Diesel Effektivitet': ('Brændstofeffektivitet', True, 'km/l', 'Højere er bedre - Flere kilometer pr. liter diesel'),
-            'Vægtkorrigeret Forbrug': ('Vægtkorrigeret Forbrug', False, 'l/100km/t', 'Lavere er bedre - Mere effektivt forbrug i forhold til vægt'),
-            'Overspeed Andel': ('Overspeed', False, '%', 'Lavere er bedre - Indikerer overholdelse af hastighedsgrænser')
+            'Tomgangsprocent': ('Tomgang', False, '%', 'Lavere er bedre - Mål: Under 5% - Indikerer effektiv udnyttelse af køretøjet', 5),
+            'Fartpilot Andel': ('Fartpilot Anvendelse', True, '%', 'Højere er bedre - Mål: Over 66,5% - Bidrager til jævn og økonomisk kørsel', 66.5),
+            'Motorbremse Andel': ('Brug af Motorbremse', True, '%', 'Højere er bedre - Mål: Over 56% - Sparer på bremserne og reducerer brændstofforbrug', 56),
+            'Påløbsdrift Andel': ('Påløbsdrift', True, '%', 'Højere er bedre - Mål: Over 7% - Indikerer effektiv udnyttelse af motorbremsning', 7),
+            'Diesel Effektivitet': ('Brændstofeffektivitet', True, 'km/l', 'Højere er bedre - Indikerer effektivt brændstofforbrug', None),
+            'Vægtkorrigeret Forbrug': ('Vægtkorrigeret Forbrug', False, 'l/100km/t', 'Lavere er bedre - Indikerer effektivt forbrug i forhold til vægt', None),
+            'Overspeed Andel': ('Overspeed', False, '%', 'Lavere er bedre - Indikerer overholdelse af hastighedsgrænser', None)
         }
         
         # Opret en tabel for hvert nøgletal på en ny side
-        for noegletal, (titel, hoejere_er_bedre, enhed, beskrivelse) in noegletal_optimering.items():
+        for noegletal, (titel, hoejere_er_bedre, enhed, beskrivelse, maal) in noegletal_optimering.items():
             # Tilføj titel og beskrivelse
             self.doc.add_paragraph().add_run(f"\n{titel}").bold = True
             beskrivelse_para = self.doc.add_paragraph()
@@ -502,10 +539,10 @@ class WordReportGenerator:
                 score_para = row_cells[2].paragraphs[0]
                 score_run = score_para.add_run(score_tekst)
                 
-                if index == 1:
-                    score_run.font.color.rgb = RGBColor(0, 128, 0)  # Grøn for bedste
-                elif index == len(sorterede_chauffoerer):
-                    score_run.font.color.rgb = RGBColor(255, 0, 0)  # Rød for sidste
+                # Marker med grøn hvis målet er opfyldt
+                if maal is not None:
+                    if (hoejere_er_bedre and score >= maal) or (not hoejere_er_bedre and score <= maal):
+                        score_run.font.color.rgb = RGBColor(0, 128, 0)  # Grøn for opfyldt mål
             
             self.doc.add_paragraph()
             self.doc.add_page_break()  # Tilføj sideskift efter hver rangeringstabel
@@ -947,10 +984,10 @@ class WordReportGenerator:
         forklaring = self.doc.add_paragraph()
         forklaring.add_run(
             "Nøgletallene giver et overblik over de vigtigste præstationsindikatorer:\n\n"
-            "• Tomgangsprocent: Andel af tiden hvor motoren kører uden at køretøjet bevæger sig. En lavere procent er bedre, da tomgang bruger unødvendigt brændstof.\n\n"
-            "• Fartpilot Andel: Hvor meget fartpiloten bruges ved hastigheder over 50 km/t. En højere procent er bedre, da det giver mere jævn og økonomisk kørsel.\n\n"
-            "• Påløbsdrift Andel: Hvor meget køretøjet ruller uden motorens trækkraft. En højere procent er bedre, da det sparer brændstof.\n\n"
-            "• Motorbremse Andel: Hvor meget motorbremsning bruges i forhold til normale bremser. En højere procent er bedre, da det reducerer slid på bremserne og kan genindvinde energi.\n\n"
+            "• Tomgang: Andel af tiden hvor motoren kører uden at køretøjet bevæger sig. En lavere procent er bedre, da tomgang bruger unødvendigt brændstof.\n\n"
+            "• Fartpilot Anvendelse: Hvor meget fartpiloten bruges ved hastigheder over 50 km/t. En højere procent er bedre, da det giver mere jævn og økonomisk kørsel.\n\n"
+            "• Brug af Motorbremse: Hvor meget motorbremsning bruges i forhold til normale bremser. En højere procent er bedre, da det reducerer slid på bremserne og kan genindvinde energi.\n\n"
+            "• Påløbsdrift: Hvor meget køretøjet ruller uden motorens trækkraft. En højere procent er bedre, da det sparer brændstof.\n\n"
             "• Diesel Effektivitet: Antal kilometer kørt per liter diesel. En højere værdi er bedre, da det betyder lavere brændstofforbrug.\n\n"
             "• Vægtkorrigeret Forbrug: Brændstofforbrug justeret efter køretøjets vægt. Giver mulighed for fair sammenligning mellem forskellige læs.\n\n"
             "• Overspeed Andel: Hvor meget der køres over hastighedsgrænsen. En lavere procent er bedre af hensyn til sikkerhed og brændstofforbrug.\n"
