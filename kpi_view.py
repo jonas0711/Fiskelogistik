@@ -10,6 +10,7 @@ from dateutil.relativedelta import relativedelta
 import calendar
 from functools import lru_cache
 import logging
+import tkinter.messagebox as messagebox
 
 class DatabaseConnection:
     def __init__(self, db_path):
@@ -26,13 +27,12 @@ class DatabaseConnection:
 
 class KPIWindow:
     def __init__(self):
-        # Tilføj DPI awareness
+        # Ensret DPI-indstillinger
+        ctk.set_widget_scaling(1.0)
         ctk.deactivate_automatic_dpi_awareness()
         
-        # Grundlæggende opsætning
         self.root = ctk.CTk()
-        self.root.title("RIO KPI Oversigt")
-        self.root.state("zoomed")  # Maksimer vinduet
+        self.root.after(300, self._safe_maximize)  # Kortere delay før init
         
         # Farver - opdateret med alle nødvendige farver
         self.colors = {
@@ -577,17 +577,12 @@ class KPIWindow:
             message.pack(expand=True)
 
     def run(self):
-            """Starter applikationen"""
-            try:
-                # Sæt vinduet til maksimeret tilstand
-                self.root.state("zoomed")  # Maksimer vinduet
-    
-                # Tilføj protocol handler for window closure
-                self.root.protocol("WM_DELETE_WINDOW", self.destroy)
-    
-                self.root.mainloop()
-            except Exception as e:
-                print(f"Fejl i run metoden: {str(e)}")
+        """Starter applikationen"""
+        try:
+            self.root.state("zoomed")  # Tilføj ekstra sikkerhed
+            self.root.mainloop()
+        except Exception as e:
+            messagebox.showerror("Fejl", f"Kunne ikke starte KPI-vindue: {str(e)}")
 
     def get_historical_data(self):
         """Implementer progressiv data loading med progress feedback"""
@@ -731,6 +726,13 @@ class KPIWindow:
         except Exception as e:
             logging.error(f"Fejl ved processering af database {db_info['path']}: {str(e)}")
             return {}
+
+    def _safe_maximize(self):
+        """Forhindrer minimering under load"""
+        self.root.update_idletasks()  # Opdaterer alle widgets
+        if self.root.state() != "zoomed":
+            self.root.state("zoomed")
+        self.root.minsize(1024, 768)  # Sæt minimumsstørrelse
 
     if __name__ == "__main__":
         try:

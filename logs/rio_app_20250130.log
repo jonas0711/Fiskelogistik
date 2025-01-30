@@ -1,0 +1,473 @@
+2025-01-30 10:28:27,645 [INFO] Logging system initialiseret
+2025-01-30 10:28:27,645 [INFO] === Applikation starter ===
+2025-01-30 10:28:27,648 [INFO] Initialiserer ModernRIOMenu
+2025-01-30 10:28:28,109 [INFO] ModernRIOMenu initialiseret succesfuldt
+2025-01-30 10:28:28,261 [INFO] Hovedvindue UI fuldt initialiseret
+2025-01-30 10:28:43,060 [INFO] Bruger klikkede på knap: Chauffører
+2025-01-30 10:28:46,945 [INFO] Initialiserer GroupWindow
+2025-01-30 10:28:47,541 [INFO] GroupWindow initialiseret succesfuldt
+2025-01-30 10:29:05,170 [INFO] Bruger klikkede på knap: Rapporter
+2025-01-30 10:29:06,014 [INFO] Rapportvindue fuldt initialiseret
+2025-01-30 10:29:29,700 [INFO] Bruger klikkede på knap: Rapporter
+2025-01-30 10:29:30,629 [INFO] Rapportvindue fuldt initialiseret
+2025-01-30 10:29:46,168 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,177 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,177 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,177 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,177 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,182 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,182 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,182 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,182 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,182 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,182 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,182 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,190 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,191 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,192 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,192 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,194 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,194 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,197 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,199 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,200 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,200 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,203 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,204 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,204 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,204 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,204 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,208 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,209 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,209 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,211 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,211 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,211 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,211 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,214 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,214 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,216 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,217 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,218 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,218 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,218 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,218 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,218 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,223 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,224 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,225 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,227 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,227 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,228 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,228 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,228 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,228 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,232 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,232 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,232 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,234 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,235 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,235 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,237 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,237 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,239 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,239 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,261 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,261 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,263 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,263 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,266 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,266 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,266 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,266 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,266 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,266 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,266 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,266 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,271 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,271 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,273 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,273 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,275 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,275 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,275 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,277 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,277 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,278 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,278 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,280 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,280 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,282 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,282 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,282 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,284 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,284 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,285 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,285 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,285 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,285 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,287 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,287 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,289 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,289 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,290 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,291 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,291 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,291 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,293 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,293 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,295 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,295 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,295 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,295 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,307 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,307 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,307 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,307 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,307 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,307 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,307 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,307 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,307 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,307 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,307 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,307 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,312 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,312 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,312 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,312 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,312 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,312 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,315 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,315 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,315 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,315 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,317 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,317 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,317 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,317 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,319 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,319 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,319 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,319 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,319 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,319 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,319 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,319 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,319 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,319 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,323 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,323 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,325 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,325 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,325 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,325 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,325 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,326 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,326 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,326 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,326 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,326 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,326 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,326 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,335 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,335 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,335 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,335 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,339 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,339 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,339 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,339 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,339 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,341 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,341 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,341 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,341 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,341 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,343 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,343 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,343 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,343 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,344 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,344 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,344 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,344 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,346 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,346 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,346 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,346 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,346 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,346 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,348 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,348 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,349 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,349 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,349 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,349 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,349 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,350 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,351 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,351 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,351 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,351 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,351 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,351 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,351 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,351 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,351 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,351 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,354 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,354 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,357 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,357 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,357 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,357 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,357 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,357 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,357 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,357 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,362 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,362 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,362 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,362 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,362 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,362 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,362 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,364 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,364 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,364 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,364 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,364 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,364 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,365 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,365 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,365 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,366 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,366 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,368 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,381 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,381 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,381 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,382 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,382 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,382 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,382 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,382 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,382 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,382 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,382 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,382 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,382 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,382 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,382 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,386 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,391 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,391 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,391 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,397 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,397 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,397 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,397 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,397 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,397 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,400 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,400 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,400 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,400 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,400 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,407 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,407 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,408 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,419 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,419 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,419 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,419 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,419 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,419 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,419 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,419 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,419 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,419 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,419 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,419 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,424 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,424 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,424 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,424 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,431 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,431 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,431 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,431 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,431 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,431 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,440 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,440 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,440 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,440 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,440 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,440 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,440 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,440 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,440 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,440 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,440 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,440 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,440 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,445 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,449 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,460 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,460 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,460 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,460 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,460 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,465 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,465 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,465 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,465 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,465 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,465 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,467 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,467 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,467 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,472 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,472 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,475 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,475 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,475 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,475 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,476 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,476 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,476 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,476 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,476 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,476 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,476 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,476 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,483 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,483 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,483 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,483 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,483 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,483 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,488 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,488 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,488 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,488 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,488 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,488 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,491 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,491 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,491 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,491 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,491 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,491 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,497 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,497 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,499 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,499 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,499 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,499 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,499 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,499 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,499 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,499 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,499 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,503 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,503 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,503 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,503 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,504 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,504 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,504 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,504 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,504 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,509 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,509 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,509 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,512 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,523 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,525 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,525 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,525 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,525 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,525 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,525 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,525 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,525 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,525 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,528 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,528 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,528 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,528 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,528 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,530 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,534 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,534 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,534 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,534 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,534 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,534 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,538 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,538 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:29:46,538 [INFO] Nøgletal beregnet succesfuldt
+2025-01-30 10:29:46,539 [INFO] Nøgletal beregnet for chauffør
+2025-01-30 10:30:02,369 [INFO] Starter nedlukning af applikation
+2025-01-30 10:30:02,501 [INFO] Applikation lukket succesfuldt
+2025-01-30 10:30:02,502 [INFO] === Applikation lukker normalt ===

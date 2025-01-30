@@ -20,13 +20,16 @@ class ModernRIOMenu:
     def __init__(self):
         logging.info("Initialiserer ModernRIOMenu")
         try:
-            # Tilføj DPI awareness
+            # Forbedret DPI-håndtering
+            ctk.set_widget_scaling(1.0)  # Eksplicit sæt skaleringsfaktor
             ctk.deactivate_automatic_dpi_awareness()
             
             # Grundlæggende opsætning
             self.root = ctk.CTk()
             self.root.title("RIO Chauffør Rapport Generator")
-            self.root.state("zoomed")  # Maksimer vinduet
+            
+            # Tving fuld skærm ved opstart
+            self.root.after(150, self._delayed_ui_setup)  # Reduceret forsinkelse
             
             # Farver - inspireret af det lyse moderne design
             self.colors = {
@@ -48,6 +51,13 @@ class ModernRIOMenu:
         except Exception as e:
             logging.error(f"Fejl ved initialisering af ModernRIOMenu: {str(e)}")
             raise
+
+    def _delayed_ui_setup(self):
+        """Håndterer fuld UI-initialisering i korrekt rækkefølge"""
+        self.root.update_idletasks()
+        self.root.state("zoomed")
+        self.root.minsize(1280, 720)
+        logging.info("Hovedvindue UI fuldt initialiseret")
 
     def setup_ui(self):
         try:
@@ -326,7 +336,7 @@ class ModernRIOMenu:
                 settings_window = SettingsWindow()
                 settings_window.run()
             elif title == "Rapporter":
-                report_window = ReportWindow(parent=self.root)
+                report_window = ReportWindow()
                 report_window.run()
             else:
                 logging.warning(f"Ukendt knap klikket: {title}")

@@ -6,12 +6,13 @@ from tkinter import messagebox, Canvas, Scrollbar
 
 class DriverWindow:
     def __init__(self):
-        # Tilføj DPI awareness
+        # Forbedret DPI-konfiguration
+        ctk.set_widget_scaling(1.0)
         ctk.deactivate_automatic_dpi_awareness()
         
-        # Grundlæggende opsætning
         self.root = ctk.CTk()
         self.root.title("RIO Chauffør Oversigt")
+        self.root.after(100, self._finalize_driver_window)  # Ændret til dedikeret metode
         
         # Farver - samme som hovedapplikationen
         self.colors = {
@@ -357,16 +358,12 @@ class DriverWindow:
             messagebox.showerror("Fejl", f"Kunne ikke indlæse chaufførdata: {str(e)}")
 
     def run(self):
+        """Starter applikationen"""
         try:
-            # Sæt vinduet til maksimeret tilstand
-            self.root.state("zoomed")  # Maksimer vinduet
-    
-            # Tilføj protocol handler for window closure
-            self.root.protocol("WM_DELETE_WINDOW", self.destroy)
-    
+            self.root.state("zoomed")
             self.root.mainloop()
         except Exception as e:
-            messagebox.showerror("Fatal Fejl", f"Applikationen kunne ikke starte: {str(e)}")
+            messagebox.showerror("Fejl", f"Kunne ikke starte chaufførvindue: {str(e)}")
 
     def destroy(self):
         """Lukker vinduet og frigør ressourcer"""
@@ -397,6 +394,13 @@ class DriverWindow:
             
         except Exception as e:
             messagebox.showerror("Fejl", f"Kunne ikke åbne gruppe administration: {str(e)}")
+
+    def _finalize_driver_window(self):
+        """Afslutter vinduesinitialisering efter UI-load"""
+        self.root.update_idletasks()
+        if self.root.state() != "zoomed":
+            self.root.state("zoomed")
+        self.root.minsize(1280, 720)  # Tving minimumsstørrelse for tabelvisning
 
 
 if __name__ == "__main__":

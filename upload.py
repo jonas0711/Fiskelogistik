@@ -7,13 +7,14 @@ import os
 
 class UploadWindow:
     def __init__(self):
-        # Tilføj DPI awareness
+        # Ensret DPI-indstillinger med andre vinduer
+        ctk.set_widget_scaling(1.0)
         ctk.deactivate_automatic_dpi_awareness()
         
         # Grundlæggende opsætning
         self.root = ctk.CTk()
         self.root.title("RIO Data Upload")
-        self.root.state("zoomed")  # Maksimer vinduet
+        self.root.after(300, self._safe_maximize)  # Forsinket maksimering
 
         
         # Farver - samme som hovedapplikationen
@@ -323,6 +324,13 @@ class UploadWindow:
             
         except Exception as e:
             print(f"Fejl ved lukning af upload vindue: {str(e)}")
+
+    def _safe_maximize(self):
+        """Håndterer vinduesstørrelse efter UI-initialisering"""
+        self.root.update_idletasks()
+        if self.root.state() != "zoomed":
+            self.root.state("zoomed")
+        self.root.minsize(1024, 768)  # Mindste størrelse for upload interface
 
 if __name__ == "__main__":
     app = UploadWindow()

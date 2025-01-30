@@ -26,33 +26,26 @@ class DatabaseConnection:
             self.conn.close()
 
 class ReportWindow:
-    def __init__(self, parent):
-        # Definer parent som CTkToplevel
-        self.root = ctk.CTkToplevel(parent)
-        self.root.title("RIO Rapport Generator")
-        
-        # Fjern maksimering for Toplevel, hvis nødvendigt
-        # self.root.state("zoomed")  # Valgfri: kan fjernes eller justeres
-        
-        # Tilføj DPI awareness
+    def __init__(self):
+        # Tilføj DPI-konfiguration som i andre vinduer
+        ctk.set_widget_scaling(1.0)
         ctk.deactivate_automatic_dpi_awareness()
         
-        # Grundlæggende opsætning
+        self.root = ctk.CTk()
         self.root.title("RIO Rapport Generator")
         
+        # Udskyd maksimering til efter UI er bygget
+        self.root.after(500, self._finalize_window_init)  # Øget forsinkelse
         
-        # Farver - samme som hovedapplikationen
+        # Eksplicit farvedefinition
         self.colors = {
-            "primary": "#1E90FF",    # Bright blue
-            "background": "#F5F7FA",  # Light gray
-            "card": "#FFFFFF",        # White
-            "text_primary": "#2C3E50",# Dark blue/gray
-            "text_secondary": "#7F8C8D"# Medium gray
+            "background": "#F5F7FA",  # Tving hex-kode istedet for farvenavn
+            "primary": "#007BFF",
+            "secondary": "#6C757D",
+            "text_primary": "#343A40",
+            "text_secondary": "#6C757D",
+            "card": "#FFFFFF"
         }
-        
-        # Tema indstillinger
-        ctk.set_appearance_mode("light")
-        ctk.set_default_color_theme("blue")
         
         # Variables
         self.selected_type = None
@@ -61,6 +54,12 @@ class ReportWindow:
         self.selected_database = None
         
         self.setup_ui()
+        
+    def _finalize_window_init(self):
+        """Håndterer vinduesinitialisering efter UI-load"""
+        self.root.update_idletasks()  # Tvinger fuld UI-opdatering
+        self.root.state("zoomed")
+        logging.info("Rapportvindue fuldt initialiseret")
         
     def setup_ui(self):
         # Hovedcontainer med scrolling
@@ -597,16 +596,12 @@ class ReportWindow:
             return []
 
     def run(self):
+        """Starter applikationen"""
         try:
-            # Konfigurer root vinduet
-            self.root.protocol("WM_DELETE_WINDOW", self.destroy)
-            
-            # Start mainloop for Toplevel
-            # self.root.mainloop()  # Fjern denne linje
-            # Da Toplevel deler mainloop med hovedvinduet, er det ikke nødvendigt
+            self.root.state("zoomed")
+            self.root.mainloop()
         except Exception as e:
-            messagebox.showerror("Fejl", f"Fejl i run metoden: {str(e)}")
-            self.destroy()
+            messagebox.showerror("Fejl", f"Kunne ikke starte rapportvindue: {str(e)}")
 
     def destroy(self):
         """Lukker vinduet og frigør ressourcer"""

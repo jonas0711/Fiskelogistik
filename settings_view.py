@@ -1,18 +1,18 @@
 import customtkinter as ctk
 import sqlite3
 import os
+import logging
 
 class SettingsWindow:
     def __init__(self):
-        # Tilføj DPI awareness
+        # Tilføj DPI-konfiguration som i andre vinduer
+        ctk.set_widget_scaling(1.0)
         ctk.deactivate_automatic_dpi_awareness()
         
         # Grundlæggende opsætning
         self.root = ctk.CTk()
         self.root.title("RIO Indstillinger")
-        self.root.geometry("800x600")
-        
-
+        self.root.after(300, self._safe_window_init)  # Forsinket initialisering
         
         # Farver - samme som hovedapplikationen
         self.colors = {
@@ -225,6 +225,13 @@ class SettingsWindow:
             command=self.save_settings
         )
         save_button.pack(pady=20)
+
+    def _safe_window_init(self):
+        """Sikrer korrekt vinduesstørrelse efter UI-load"""
+        self.root.update_idletasks()
+        self.root.state("zoomed")
+        self.root.minsize(800, 600)  # Minimumsstørrelse for indstillinger
+        logging.info("Indstillingsvindue fuldt initialiseret")
 
     def run(self):
         # Centrer vinduet
