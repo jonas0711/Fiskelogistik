@@ -10,19 +10,7 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 import calendar
 import logging
-
-class DatabaseConnection:
-    def __init__(self, db_path):
-        self.db_path = db_path
-        self.conn = None
-        
-    def __enter__(self):
-        self.conn = sqlite3.connect(self.db_path)
-        return self.conn
-        
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        if self.conn:
-            self.conn.close()
+from database_connection import DatabaseConnection
 
 class WordReportGenerator:
     def __init__(self, db_path):
@@ -275,7 +263,7 @@ class WordReportGenerator:
         overskrift = self.doc.add_paragraph()
         overskrift_tekst = overskrift.add_run(tekst)
         overskrift_tekst.font.bold = True
-        overskrift_tekst.font.size = Pt(14)
+        overskrift_tekst.font.size = Pt(16)
         overskrift_tekst.font.color.rgb = RGBColor(30, 144, 255)
 
     def opret_data_tabel(self, data, kolonner, titel):
@@ -442,23 +430,22 @@ class WordReportGenerator:
         # Kun tilføj forklaringer hvis det er specificeret
         if include_explanations:
             forklaring = self.doc.add_paragraph()
-            forklaring.add_run(
+            forklaring_tekst = forklaring.add_run(
                 "Nøgletallene giver et overblik over de vigtigste præstationsindikatorer:\n\n"
-                "• Tomgang: Andel af tiden hvor motoren kører uden at køretøjet bevæger sig. "
-                "En lavere procent er bedre, da tomgang bruger unødvendigt brændstof. Mål: Under 5%\n\n"
-                "• Fartpilot Anvendelse: Hvor meget fartpiloten bruges ved hastigheder over 50 km/t. "
-                "En højere procent er bedre, da det giver mere jævn og økonomisk kørsel. Mål: Over 66,5%\n\n"
-                "• Brug af Motorbremse: Hvor meget motorbremsning bruges i forhold til normale bremser. "
-                "En højere procent er bedre, da det reducerer slid på bremserne og kan genindvinde energi. Mål: Over 56%\n\n"
-                "• Påløbsdrift: Hvor meget køretøjet ruller uden motorens trækkraft. "
-                "En højere procent er bedre, da det sparer brændstof. Mål: Over 7%\n\n"
-                "• Diesel Effektivitet: Antal kilometer kørt per liter diesel. "
-                "En højere værdi er bedre, da det betyder lavere brændstofforbrug.\n\n"
-                "• Vægtkorrigeret Forbrug: Brændstofforbrug justeret efter køretøjets vægt. "
-                "Giver mulighed for fair sammenligning mellem forskellige læs.\n\n"
-                "• Overspeed Andel: Hvor meget der køres over hastighedsgrænsen. "
-                "En lavere procent er bedre af hensyn til sikkerhed og brændstofforbrug.\n"
-            ).font.size = Pt(11)
+            )
+            forklaring_tekst.font.size = Pt(12)
+            forklaring_tekst.font.bold = True
+            
+            detaljer = forklaring.add_run(
+                "• Påløbsdrift: Kørsels distance uden at bruge bremser eller speeder. Dette er når køretøjet ruller frit, hvilket sparer brændstof. En højere procent er bedre, da det viser effektiv udnyttelse af køretøjets momentum. Mål: Over 7%. God påløbsdrift opnås ved at rulle og begrænse pedalbrug.\n\n"
+                "• Fartpilot Anvendelse: Hvor meget fartpiloten bruges ved hastigheder over 50 km/t. En højere procent er bedre, da det giver mere jævn og økonomisk kørsel. Mål: Over 66,5%.\n\n"
+                "• Brug af Motorbremse: Forholdet mellem brug af motorbremse og pedalbremse i forhold til total kørselsafstand. En højere procent er bedre, da det reducerer slid på bremserne og kan genindvinde energi. Mål: Under 5%.\n\n"
+                "• Diesel Effektivitet: Antal kilometer kørt per liter diesel. En højere værdi er bedre, da det betyder lavere brændstofforbrug. Dette påvirkes direkte af kørestil, brug af fartpilot og påløbsdrift.\n\n"
+                "• Vægtkorrigeret Forbrug: Brændstofforbrug justeret efter køretøjets vægt. Giver mulighed for fair sammenligning mellem forskellige læs og kørselstyper.\n\n"
+                "• Overspeed: Hvor meget der køres over hastighedsgrænsen på 85 km/t. En lavere procent er bedre af hensyn til sikkerhed og brændstofforbrug.\n"
+            )
+            detaljer.font.size = Pt(11)
+            detaljer.font.italic = True
 
     def opret_performance_rangering(self, kvalificerede_chauffoerer):
         """Opretter performancerangering for hver nøgletalskategori"""
@@ -470,8 +457,8 @@ class WordReportGenerator:
             "performancemålinger. Rangeringen tager højde for om højere eller lavere værdier "
             "er optimale for hvert parameter. Grøn markering indikerer at målet er opfyldt."
         )
-        intro_run.font.size = Pt(11)
-        
+        intro_run.font.size = Pt(12)
+
         # Hent data for alle kvalificerede chauffører
         chauffoer_data = {}
         noegletal_data = {}
@@ -504,7 +491,7 @@ class WordReportGenerator:
             self.doc.add_paragraph().add_run(f"\n{titel}").bold = True
             beskrivelse_para = self.doc.add_paragraph()
             beskrivelse_run = beskrivelse_para.add_run(beskrivelse)
-            beskrivelse_run.font.size = Pt(10)
+            beskrivelse_run.font.size = Pt(11)
             beskrivelse_run.font.italic = True
             
             # Sorter chauffører efter nøgletal
@@ -662,10 +649,6 @@ class WordReportGenerator:
             # Luk databaseforbindelsen
             conn.close()
             
-            # Tilføj forklaringssektion én gang efter alle data er tilføjet
-            self.tilfoej_sektion_overskrift("Forklaring af Data")
-            self.tilfoej_forklaringer()
-            
             # Generer filnavn og gem
             db_navn = os.path.basename(self.db_path)
             dele = db_navn.replace('.db', '').split('_')
@@ -817,7 +800,7 @@ class WordReportGenerator:
             conn = sqlite3.connect(self.db_path)
             cursor = conn.cursor()
             
-            cursor.execute(f'''
+            cursor.execute('''
                 SELECT DISTINCT Chauffør, "Kørestrækning [km]"
                 FROM chauffør_data_data 
                 WHERE "Kørestrækning [km]" >= ?
@@ -861,12 +844,10 @@ class WordReportGenerator:
             # Tilføj nøgletal
             self.opret_noegletal_tabel(chauffoer_data)
             
-            # Tilføj forklaringssektion til sidst
+            # Tilføj sideskift mellem chauffører
             self.doc.add_page_break()
-            self.tilfoej_sektion_overskrift("Forklaring af Data")
-            self.tilfoej_forklaringer()
             
-            # Generer filnavn
+            # Generer filnavn automatisk
             db_navn = os.path.basename(self.db_path)
             dele = db_navn.replace('.db', '').split('_')
             maaned = dele[2].capitalize()
@@ -886,10 +867,10 @@ class WordReportGenerator:
             self.doc.save(fuld_sti)
             
             conn.close()
-            return filnavn
-            
+            return filnavn  # Returnerer automatisk genereret filnavn
         except Exception as e:
-            raise Exception(f"Fejl ved generering af individuel rapport: {str(e)}")
+            logging.error(f"Fejl ved generering af individuel rapport: {str(e)}")
+            raise
 
     def generer_individuelle_rapporter(self):
         """Genererer individuelle rapporter for alle kvalificerede chauffører"""
@@ -945,10 +926,8 @@ class WordReportGenerator:
                 # Tilføj nøgletal
                 self.opret_noegletal_tabel(chauffoer_data)
                 
-                # Tilføj forklaringssektion til sidst
+                # Tilføj sideskift mellem chauffører
                 self.doc.add_page_break()
-                self.tilfoej_sektion_overskrift("Forklaring af Data")
-                self.tilfoej_forklaringer()
                 
                 # Generer filnavn
                 db_navn = os.path.basename(self.db_path)
@@ -979,21 +958,94 @@ class WordReportGenerator:
 
     def tilfoej_forklaringer(self):
         """Tilføjer forklaringer til rapporten"""
-        # Tilføj kun én forklaring under sektionen "Forklaring af Data"
-        self.tilfoej_sektion_overskrift("Forklaring af Data")
         forklaring = self.doc.add_paragraph()
-        forklaring.add_run(
-            "Nøgletallene giver et overblik over de vigtigste præstationsindikatorer:\n\n"
-            "• Tomgang: Andel af tiden hvor motoren kører uden at køretøjet bevæger sig. En lavere procent er bedre, da tomgang bruger unødvendigt brændstof.\n\n"
-            "• Fartpilot Anvendelse: Hvor meget fartpiloten bruges ved hastigheder over 50 km/t. En højere procent er bedre, da det giver mere jævn og økonomisk kørsel.\n\n"
-            "• Brug af Motorbremse: Hvor meget motorbremsning bruges i forhold til normale bremser. En højere procent er bedre, da det reducerer slid på bremserne og kan genindvinde energi.\n\n"
-            "• Påløbsdrift: Hvor meget køretøjet ruller uden motorens trækkraft. En højere procent er bedre, da det sparer brændstof.\n\n"
-            "• Diesel Effektivitet: Antal kilometer kørt per liter diesel. En højere værdi er bedre, da det betyder lavere brændstofforbrug.\n\n"
-            "• Vægtkorrigeret Forbrug: Brændstofforbrug justeret efter køretøjets vægt. Giver mulighed for fair sammenligning mellem forskellige læs.\n\n"
-            "• Overspeed Andel: Hvor meget der køres over hastighedsgrænsen. En lavere procent er bedre af hensyn til sikkerhed og brændstofforbrug.\n"
-        ).font.size = Pt(11)
         
-    if __name__ == "__main__":
-        # Test kode
-        generator = WordReportGenerator("databases/chauffør_data_marts_2024.db")
-        generator.generer_rapport()
+        # Tilføj overskrift først
+        overskrift = forklaring.add_run("Nøgletallene giver et overblik over de vigtigste præstationsindikatorer:\n\n")
+        overskrift.font.size = Pt(12)
+        overskrift.font.bold = True
+        
+        # Tilføj detaljerede forklaringer
+        detaljer = forklaring.add_run(
+            "• Påløbsdrift (Coasting): Kørsels distance uden at bruge bremser eller speeder..."  # resten af teksten
+        )
+        detaljer.font.size = Pt(11)
+
+    def get_driver_statistics(self, chauffoer_navn):
+        """Henter statistikker for en specifik chauffør"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            # Hent chaufførens data
+            cursor.execute('''
+                SELECT * FROM chauffør_data_data 
+                WHERE Chauffør = ?
+            ''', (chauffoer_navn,))
+            
+            row = cursor.fetchone()
+            if not row:
+                raise Exception(f"Ingen data fundet for {chauffoer_navn}")
+                
+            # Konverter til dictionary
+            data = dict(zip([col[0] for col in cursor.description], row))
+            
+            # Beregn nøgletal
+            noegletal = self.beregn_noegletal(data)
+            
+            # Hent periode fra database navn
+            db_navn = os.path.basename(self.db_path)
+            dele = db_navn.replace('.db', '').split('_')
+            maaned = dele[2].capitalize()
+            aar = dele[3]
+            
+            # Opret statistik dictionary
+            statistik = {
+                'name': chauffoer_navn,
+                'date': f"{maaned} {aar}",
+                'total_trips': int(data.get('Antal ture', 0)),
+                'total_distance': float(data.get('Kørestrækning [km]', 0)),
+                'total_time': data.get('Køretid [hh:mm:ss]', '00:00:00'),
+                'avg_trip_length': float(data.get('Kørestrækning [km]', 0)) / int(data.get('Antal ture', 1)) if int(data.get('Antal ture', 0)) > 0 else 0,
+                'avg_trip_time': self.konverter_tid_til_sekunder(data.get('Køretid [hh:mm:ss]', '00:00:00')) / int(data.get('Antal ture', 1)) / 3600 if int(data.get('Antal ture', 0)) > 0 else 0,
+                'tomgangsprocent': noegletal.get('Tomgangsprocent', 0),
+                'fartpilot_andel': noegletal.get('Fartpilot Andel', 0),
+                'motorbremse_andel': noegletal.get('Motorbremse Andel', 0),
+                'paalobsdrift_andel': noegletal.get('Påløbsdrift Andel', 0)
+            }
+            
+            conn.close()
+            return statistik
+            
+        except Exception as e:
+            logging.error(f"Fejl ved hentning af statistik for {chauffoer_navn}: {str(e)}")
+            return None
+
+    def get_report_data(self, chauffoer_navn):
+        """Henter rapport data og statistik for en specifik chauffør"""
+        try:
+            # Hent statistik først
+            statistik = self.get_driver_statistics(chauffoer_navn)
+            if not statistik:
+                raise Exception(f"Kunne ikke hente statistik for {chauffoer_navn}")
+            
+            # Generer rapporten med standard filnavn via den eksisterende metode
+            generated_filename = self.generer_individuel_rapport(chauffoer_navn)
+            fuld_sti = os.path.join('rapporter', generated_filename)
+            # Debug print for filsti
+            logging.info(f"Rapport genereret for {chauffoer_navn}: {fuld_sti}")
+            
+            if os.path.exists(fuld_sti):
+                with open(fuld_sti, 'rb') as f:
+                    data = f.read()
+                return {'statistik': statistik, 'rapport': data}  # Returnerer både statistik og binære data
+            else:
+                raise Exception(f"Kunne ikke finde rapport fil: {fuld_sti}")
+        except Exception as e:
+            logging.error(f"Fejl ved generering af rapportdata for {chauffoer_navn}: {str(e)}")
+            return None
+
+if __name__ == "__main__":
+    # Test kode
+    generator = WordReportGenerator("databases/chauffør_data_marts_2024.db")
+    generator.generer_rapport()

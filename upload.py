@@ -278,6 +278,9 @@ class UploadWindow:
                 text_color="green"
             )
             
+            # Luk vinduet efter 1 sekund
+            self.root.after(1000, self.destroy)
+            
         except pd.errors.EmptyDataError:
             self.status_label.configure(
                 text="Fejl: Excel filen er tom",

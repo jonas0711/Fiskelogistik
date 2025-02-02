@@ -11,19 +11,7 @@ import calendar
 from functools import lru_cache
 import logging
 import tkinter.messagebox as messagebox
-
-class DatabaseConnection:
-    def __init__(self, db_path):
-        self.db_path = db_path
-        self.conn = None
-        
-    def __enter__(self):
-        self.conn = sqlite3.connect(self.db_path)
-        return self.conn
-        
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        if self.conn:
-            self.conn.close()
+from database_connection import DatabaseConnection
 
 class KPIWindow:
     def __init__(self):
@@ -251,12 +239,12 @@ class KPIWindow:
         
         for db_info in databases:
             try:
-                with DatabaseConnection(db_info['path']) as conn:
+                with DatabaseConnection(db_info['path']) as db:
                     query = f'''
                         SELECT * FROM chauffør_data_data 
                         WHERE "Kørestrækning [km]" >= {self.min_km}
                     '''
-                    df = pd.read_sql_query(query, conn)
+                    df = pd.read_sql_query(query, db.connection)
                     
                     if not df.empty:
                         # Beregn gennemsnit af KPIer for kvalificerede chauffører
@@ -765,12 +753,12 @@ class KPIWindow:
     def _process_database(self, db_info):
         """Processerer en database og returnerer dens KPI data"""
         try:
-            with DatabaseConnection(db_info['path']) as conn:
+            with DatabaseConnection(db_info['path']) as db:
                 query = f'''
                     SELECT * FROM chauffør_data_data 
                     WHERE "Kørestrækning [km]" >= {self.min_km}
                 '''
-                df = pd.read_sql_query(query, conn)
+                df = pd.read_sql_query(query, db.connection)
                 
                 if not df.empty:
                     kpis = {}

@@ -3,6 +3,8 @@ import sqlite3
 import os
 import pandas as pd
 from tkinter import messagebox, Canvas, Scrollbar
+from driver_mail_list import DriverMailList
+import logging
 
 class DriverWindow:
     def __init__(self):
@@ -13,6 +15,9 @@ class DriverWindow:
         self.root = ctk.CTk()
         self.root.title("RIO Chauffør Oversigt")
         self.root.after(100, self._finalize_driver_window)  # Ændret til dedikeret metode
+        
+        # Database sti
+        self.db_path = os.path.join('databases', 'settings.db')
         
         # Farver - samme som hovedapplikationen
         self.colors = {
@@ -76,25 +81,45 @@ class DriverWindow:
         title_frame = ctk.CTkFrame(parent, fg_color="transparent")
         title_frame.pack(fill="x", pady=(20, 10), padx=20)
         
+        # Venstre side med titel og undertitel
+        title_left = ctk.CTkFrame(title_frame, fg_color="transparent")
+        title_left.pack(side="left", fill="x", expand=True)
+        
         title = ctk.CTkLabel(
-            title_frame,
+            title_left,
             text="Chauffør Oversigt",
             font=("Segoe UI", 24, "bold"),
             text_color=self.colors["primary"]
         )
-        title.pack()
+        title.pack(anchor="w")
         
         subtitle = ctk.CTkLabel(
-            title_frame,
+            title_left,
             text=f"Vælg en chauffør for at se detaljeret information (Minimum {self.min_km} km kørt)",
             font=("Segoe UI", 14),
             text_color=self.colors["text_secondary"]
         )
-        subtitle.pack(pady=(5, 0))
+        subtitle.pack(pady=(5, 0), anchor="w")
         
-        # Tilføj gruppe knap
+        # Højre side med knapper
+        button_frame = ctk.CTkFrame(title_frame, fg_color="transparent")
+        button_frame.pack(side="right")
+        
+        # Mail Liste knap
+        mail_list_button = ctk.CTkButton(
+            button_frame,
+            text="Mail Liste",
+            font=("Segoe UI", 12),
+            fg_color=self.colors["primary"],
+            hover_color="#1874CD",
+            command=self.show_mail_list,
+            width=150
+        )
+        mail_list_button.pack(side="left", padx=10)
+        
+        # Administrer Grupper knap
         group_button = ctk.CTkButton(
-            title_frame,
+            button_frame,
             text="Administrer Grupper",
             font=("Segoe UI", 12),
             fg_color=self.colors["primary"],
@@ -102,7 +127,7 @@ class DriverWindow:
             command=self.open_group_window,
             width=150
         )
-        group_button.pack(side="right", padx=10)
+        group_button.pack(side="left", padx=10)
 
     def create_filter_section(self, parent):
         filter_frame = ctk.CTkFrame(parent, fg_color=self.colors["card"])
@@ -401,6 +426,56 @@ class DriverWindow:
         if self.root.state() != "zoomed":
             self.root.state("zoomed")
         self.root.minsize(1280, 720)  # Tving minimumsstørrelse for tabelvisning
+
+    def show_mail_list(self):
+        """Viser mail liste vinduet"""
+        try:
+            # Hent alle chauffører
+            drivers = self.get_all_drivers()
+            
+            # Opret og vis mail liste vindue
+            mail_list = DriverMailList(self.root, drivers)
+            mail_list.run()
+            
+        except Exception as e:
+            logging.error(f"Fejl ved åbning af mail liste: {str(e)}")
+            messagebox.showerror("Fejl", f"Kunne ikke åbne mail liste: {str(e)}")
+            
+    def get_all_drivers(self):
+        """Henter alle chauffører fra databasen"""
+        try:
+            # Hent alle unikke chauffører fra kørselsdata
+            drivers = []
+            for file in os.listdir('databases'):
+                if file.startswith('chauffør_data_') and file.endswith('.db'):
+                    try:
+                        conn = sqlite3.connect(os.path.join('databases', file))
+                        query = f"""
+                            SELECT DISTINCT Chauffør 
+                            FROM chauffør_data_data 
+                            WHERE "Kørestrækning [km]" >= {self.min_km}
+                            AND Chauffør NOT LIKE '%{self.EXCLUDE_TEXT}%'
+                        """
+                        df = pd.read_sql_query(query, conn)
+                        conn.close()
+                        
+                        for driver in df['Chauffør'].unique():
+                            if isinstance(driver, str):
+                                driver_dict = {
+                                    'id': driver,  # Brug chaufførens navn som ID
+                                    'name': driver
+                                }
+                                if driver_dict not in drivers:  # Undgå dubletter
+                                    drivers.append(driver_dict)
+                                    
+                    except Exception as e:
+                        logging.error(f"Fejl ved læsning af database {file}: {str(e)}")
+            
+            return sorted(drivers, key=lambda x: x['name'])  # Sorter efter navn
+                
+        except Exception as e:
+            logging.error(f"Fejl ved hentning af chauffører: {str(e)}")
+            raise
 
 
 if __name__ == "__main__":

@@ -11,19 +11,8 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import logging
 from word_report import WordReportGenerator
-
-class DatabaseConnection:
-    def __init__(self, db_path):
-        self.db_path = db_path
-        self.conn = None
-        
-    def __enter__(self):
-        self.conn = sqlite3.connect(self.db_path)
-        return self.conn
-        
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        if self.conn:
-            self.conn.close()
+from report_mail_window import ReportMailWindow
+from database_connection import DatabaseConnection
 
 class ReportWindow:
     def __init__(self):
@@ -44,7 +33,8 @@ class ReportWindow:
             "secondary": "#6C757D",
             "text_primary": "#343A40",
             "text_secondary": "#6C757D",
-            "card": "#FFFFFF"
+            "card": "#FFFFFF",
+            "success": "#28A745"
         }
         
         # Variables
@@ -193,6 +183,12 @@ class ReportWindow:
 
     def create_database_section(self):
         """Opretter database vælger sektion"""
+        # Fjern eksisterende frame hvis den findes
+        if hasattr(self, 'db_frame'):
+            self.db_frame.pack_forget()
+            
+        # Opret ny frame
+        self.db_frame = ctk.CTkFrame(self.main_container, fg_color=self.colors["card"])
         self.db_frame.pack(fill="x", padx=40, pady=10)
         
         # Overskrift
@@ -250,61 +246,49 @@ class ReportWindow:
         # Overskrift
         header = ctk.CTkLabel(
             self.format_frame,
-            text="Vælg Format",
+            text="Vælg Format og Handling",
             font=("Segoe UI", 16, "bold"),
             text_color=self.colors["primary"]
         )
         header.pack(pady=10)
         
-        # Format container
-        formats_frame = ctk.CTkFrame(self.format_frame, fg_color="transparent")
-        formats_frame.pack(pady=10)
+        # Format vælger container
+        format_select_frame = ctk.CTkFrame(self.format_frame, fg_color="transparent")
+        format_select_frame.pack(pady=10, fill="x", padx=20)
         
         # Format knapper
-        formats = [
-            ("Word", "docx", "Detaljeret rapport med tekst og tabeller"),
-            ("PDF", "pdf", "Professionelt layout, velegnet til print"),
-            ("Excel", "xlsx", "Rådata til videre analyse")
-        ]
+        button_frame = ctk.CTkFrame(format_select_frame, fg_color="transparent")
+        button_frame.pack(fill="x", pady=10)
         
-        for format_name, format_ext, format_desc in formats:
-            # Format boks
-            format_box = ctk.CTkFrame(
-                formats_frame,
-                fg_color=self.colors["card"],
-                corner_radius=10
-            )
-            format_box.pack(side="left", padx=10, pady=10)
-            
-            # Format titel
-            title = ctk.CTkLabel(
-                format_box,
-                text=format_name,
-                font=("Segoe UI", 16, "bold"),
-                text_color=self.colors["primary"]
-            )
-            title.pack(pady=(15, 5))
-            
-            # Format beskrivelse
-            desc = ctk.CTkLabel(
-                format_box,
-                text=format_desc,
-                font=("Segoe UI", 12),
-                text_color=self.colors["text_secondary"],
-                wraplength=200
-            )
-            desc.pack(pady=(0, 15), padx=20)
-            
-            # Vælg knap
-            select_button = ctk.CTkButton(
-                format_box,
-                text=f"Vælg {format_name}",
-                font=("Segoe UI", 12),
-                fg_color=self.colors["primary"],
-                hover_color="#1874CD",
-                command=lambda ext=format_ext: self.format_selected(ext)
-            )
-            select_button.pack(pady=(0, 15))
+        # Word knap
+        word_button = ctk.CTkButton(
+            button_frame,
+            text="Generer Word",
+            command=lambda: self.format_selected("word"),
+            fg_color=self.colors["primary"],
+            hover_color="#1874CD"
+        )
+        word_button.pack(side="left", padx=5)
+        
+        # PDF knap
+        pdf_button = ctk.CTkButton(
+            button_frame,
+            text="Generer PDF",
+            command=lambda: self.format_selected("pdf"),
+            fg_color=self.colors["primary"],
+            hover_color="#1874CD"
+        )
+        pdf_button.pack(side="left", padx=5)
+        
+        # Send Mail knap
+        mail_button = ctk.CTkButton(
+            button_frame,
+            text="Send Rapporter",
+            command=self.show_mail_window,
+            fg_color=self.colors["success"],
+            hover_color="#1e7e34"
+        )
+        mail_button.pack(side="right", padx=5)
 
     def format_db_name(self, db_name):
         # Fjern .db extension og split på underscore
@@ -317,6 +301,7 @@ class ReportWindow:
         return db_name
 
     def database_selected(self, formatted_name):
+        """Håndterer valg af database"""
         # Find den oprindelige database fil ud fra det formaterede navn
         for db in self.available_databases:
             if self.format_db_name(db) == formatted_name:
@@ -324,8 +309,12 @@ class ReportWindow:
                     # Gem den valgte database sti
                     self.selected_database = os.path.join('databases', db)
                     
-                    # Vis format vælger
-                    self.create_format_section()
+                    # Fjern tidligere action frame hvis den findes
+                    if hasattr(self, 'action_frame'):
+                        self.action_frame.pack_forget()
+                    
+                    # Vis handling sektion
+                    self.create_action_section()
                     
                     self.status_label.configure(
                         text=f"Database valgt: {formatted_name}",
@@ -340,15 +329,22 @@ class ReportWindow:
                 break
 
     def type_selected(self, type_name):
+        """Håndterer valg af rapport type"""
         self.selected_type = type_name.lower().split()[0]  # "samlet", "gruppe" eller "individuel"
         
         # Fjern tidligere frames hvis de eksisterer
-        self.db_frame.pack_forget()
-        self.format_frame.pack_forget()
+        if hasattr(self, 'db_frame'):
+            self.db_frame.pack_forget()
+        if hasattr(self, 'action_frame'):
+            self.action_frame.pack_forget()
+        if hasattr(self, 'format_frame'):
+            self.format_frame.pack_forget()
+        if hasattr(self, 'group_frame'):
+            self.group_frame.pack_forget()
         
-        # Vis relevant vælger baseret på type
+        # Vis gruppe vælger KUN hvis gruppe rapport er valgt
         if self.selected_type == "gruppe":
-            self.create_group_selector(self.main_container)
+            self.create_group_selector()
         
         # Opret database vælger
         self.create_database_section()
@@ -549,40 +545,46 @@ class ReportWindow:
         # Gem og luk
         writer.close()
 
-    def create_group_selector(self, parent):
+    def create_group_selector(self):
         """Opretter gruppe vælger sektion"""
-        group_frame = ctk.CTkFrame(parent, fg_color=self.colors["card"])
-        group_frame.pack(fill="x", padx=20, pady=10)
+        # Opret gruppe frame
+        self.group_frame = ctk.CTkFrame(self.main_container, fg_color=self.colors["card"])
+        self.group_frame.pack(fill="x", padx=40, pady=10)
         
+        # Overskrift
+        header = ctk.CTkLabel(
+            self.group_frame,
+            text="Vælg Gruppe",
+            font=("Segoe UI", 16, "bold"),
+            text_color=self.colors["primary"]
+        )
+        header.pack(pady=10)
+        
+        # Gruppe vælger container
+        group_select_frame = ctk.CTkFrame(self.group_frame, fg_color="transparent")
+        group_select_frame.pack(pady=10, fill="x", padx=20)
+        
+        # Gruppe dropdown
         group_label = ctk.CTkLabel(
-            group_frame,
+            group_select_frame,
             text="Vælg Gruppe:",
             font=("Segoe UI", 14),
             text_color=self.colors["text_primary"]
         )
-        group_label.pack(pady=10)
+        group_label.pack(pady=(0, 5))
         
-        # Hent grupper fra databasen
+        # Hent tilgængelige grupper
         groups = self.get_available_groups()
-        if not groups:
-            no_groups_label = ctk.CTkLabel(
-                group_frame,
-                text="Ingen grupper fundet",
-                font=("Segoe UI", 12),
-                text_color=self.colors["text_secondary"]
-            )
-            no_groups_label.pack(pady=10)
-            return
+        group_names = [group[1] for group in groups] if groups else ["Ingen grupper fundet"]
         
-        # Gruppe dropdown
-        self.selected_group = ctk.StringVar()
+        self.group_var = ctk.StringVar(value="Vælg gruppe")
         group_dropdown = ctk.CTkOptionMenu(
-            group_frame,
-            values=[group[1] for group in groups],
-            variable=self.selected_group,
+            group_select_frame,
+            values=group_names,
+            variable=self.group_var,
             width=300
         )
-        group_dropdown.pack(pady=10)
+        group_dropdown.pack(pady=5)
 
     def get_available_groups(self):
         """Henter tilgængelige grupper fra databasen"""
@@ -594,6 +596,93 @@ class ReportWindow:
         except Exception as e:
             logging.error(f"Fejl ved hentning af grupper: {str(e)}")
             return []
+
+    def create_action_section(self):
+        """Opretter handling sektion med rapport muligheder"""
+        # Fjern eksisterende frame hvis den findes
+        if hasattr(self, 'action_frame'):
+            self.action_frame.pack_forget()
+            
+        # Opret ny frame
+        self.action_frame = ctk.CTkFrame(self.main_container, fg_color=self.colors["card"])
+        self.action_frame.pack(fill="x", padx=40, pady=10)
+        
+        # Indre container med padding
+        inner_frame = ctk.CTkFrame(self.action_frame, fg_color=self.colors["card"])
+        inner_frame.pack(fill="x", padx=20, pady=20)
+        
+        # Overskrift
+        header = ctk.CTkLabel(
+            inner_frame,
+            text="Vælg Handling",
+            font=("Segoe UI", 18, "bold"),
+            text_color=self.colors["primary"]
+        )
+        header.pack(pady=(0,15))
+        
+        # Beskrivelse
+        description_text = "Vælg hvordan du vil håndtere rapporten."
+        if self.selected_type == "individuel":
+            description_text += " Du kan generere en Word/PDF fil eller sende direkte via mail."
+        else:
+            description_text += " Du kan generere rapporten som Word eller PDF fil."
+        
+        description = ctk.CTkLabel(
+            inner_frame,
+            text=description_text,
+            font=("Segoe UI", 12),
+            text_color=self.colors["text_secondary"],
+            wraplength=600
+        )
+        description.pack(pady=(0,20))
+        
+        # Knap container med centrering
+        button_container = ctk.CTkFrame(inner_frame, fg_color="transparent")
+        button_container.pack(expand=True, fill="x")
+        
+        # Center frame til knapper
+        button_frame = ctk.CTkFrame(button_container, fg_color="transparent")
+        button_frame.pack(expand=True)
+        
+        # Word rapport knap
+        word_button = ctk.CTkButton(
+            button_frame,
+            text="Generer Word Rapport",
+            command=lambda: self.format_selected("word"),
+            fg_color=self.colors["primary"],
+            hover_color="#1874CD",
+            width=200,
+            height=40,
+            corner_radius=8
+        )
+        word_button.pack(side="left", padx=10)
+        
+        # PDF rapport knap
+        pdf_button = ctk.CTkButton(
+            button_frame,
+            text="Generer PDF Rapport",
+            command=lambda: self.format_selected("pdf"),
+            fg_color=self.colors["primary"],
+            hover_color="#1874CD",
+            width=200,
+            height=40,
+            corner_radius=8
+        )
+        pdf_button.pack(side="left", padx=10)
+        
+        # Send rapport knap - kun ved individuel rapport
+        if self.selected_type == "individuel":
+            send_button = ctk.CTkButton(
+                button_frame,
+                text="Send Rapport",
+                command=self.show_mail_window,
+                fg_color=self.colors["success"],
+                hover_color="#1e7e34",
+                width=200,
+                height=40,
+                corner_radius=8
+            )
+            send_button.pack(side="left", padx=10)
 
     def run(self):
         """Starter applikationen"""
@@ -619,6 +708,61 @@ class ReportWindow:
             
         except Exception as e:
             print(f"Fejl ved lukning af rapport vindue: {str(e)}")
+
+    def show_mail_window(self):
+        """Viser mail sending vinduet"""
+        try:
+            if not self.selected_database:
+                messagebox.showwarning(
+                    "Advarsel",
+                    "Vælg venligst en database først"
+                )
+                return
+                
+            # Tjek om mail er konfigureret
+            db = DatabaseConnection('settings.db')
+            mail_config = db.get_mail_config()
+            
+            if not mail_config:
+                response = messagebox.askyesno(
+                    "Mail Ikke Konfigureret",
+                    "Mail indstillinger er ikke konfigureret.\n\n" +
+                    "Du skal konfigurere følgende:\n" +
+                    "- SMTP server og port\n" +
+                    "- Email og adgangskode\n" +
+                    "- Test email adresse\n\n" +
+                    "Vil du konfigurere mail indstillingerne nu?"
+                )
+                
+                if response:
+                    # Importer og åbn settings vinduet
+                    from settings_view import SettingsWindow
+                    settings = SettingsWindow()
+                    settings.tabview.set("Mail")  # Skift til mail fanen
+                    return
+                return
+                
+            # Opret og vis mail vinduet
+            from report_mail_window import ReportMailWindow
+            mail_window = ReportMailWindow(
+                self.root,
+                self.selected_database,
+                self.selected_type,
+                self.selected_group if hasattr(self, 'selected_group') else None,
+                self.selected_driver if hasattr(self, 'selected_driver') else None
+            )
+            mail_window.run()
+            
+        except Exception as e:
+            error_msg = str(e)
+            if "no such column: smtp_server" in error_msg:
+                error_msg = "Mail systemet er ikke korrekt konfigureret. Gå til Indstillinger -> Mail for at konfigurere det."
+            
+            logging.error(f"Fejl ved åbning af mail vindue: {error_msg}")
+            messagebox.showerror(
+                "Fejl",
+                f"Kunne ikke åbne mail vindue: {str(e)}"
+            )
 
 if __name__ == "__main__":
     app = ReportWindow()
