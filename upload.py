@@ -1,5 +1,5 @@
 import customtkinter as ctk
-from tkinter import filedialog
+from tkinter import filedialog, messagebox
 import pandas as pd
 import sqlite3
 from datetime import datetime
@@ -248,7 +248,7 @@ class UploadWindow:
             # Generer database navn med år
             db_name = f"{self.selected_type.lower().replace(' ', '_')}_{self.selected_month.lower()}_{self.selected_year}.db"
             
-            # Opret database mappe hvis den ikke eksisterer
+            # Opret databases mappe hvis den ikke eksisterer
             db_path = 'databases'
             if not os.path.exists(db_path):
                 os.makedirs(db_path)
@@ -256,14 +256,37 @@ class UploadWindow:
             # Sikr at databasefilen ikke allerede eksisterer
             full_db_path = os.path.join(db_path, db_name)
             if os.path.exists(full_db_path):
-                if not ctk.messagebox.askyesno("Bekræft overskrivning", 
-                    "En database for denne måned og år eksisterer allerede. Vil du overskrive den?"):
+                # Opdater status label
+                self.status_label.configure(
+                    text=f"En database for {self.selected_month} {self.selected_year} eksisterer allerede",
+                    text_color="orange"
+                )
+                self.root.update()
+                
+                # Spørg bruger om overskrivning med detaljeret besked
+                if not messagebox.askyesno(
+                    "Bekræft overskrivning", 
+                    f"En database for {self.selected_month} {self.selected_year} eksisterer allerede.\n\n"
+                    f"Vil du overskrive den eksisterende database?\n"
+                    f"• Eksisterende fil: {db_name}\n"
+                    f"• Ny data fra: {os.path.basename(self.file_path)}\n\n"
+                    "ADVARSEL: Dette vil permanent slette den eksisterende data!"
+                ):
                     self.status_label.configure(
-                        text="Upload annulleret",
+                        text="Upload annulleret - Eksisterende database blev bevaret",
                         text_color="orange"
                     )
                     return
-                    
+                
+                # Backup eksisterende database før overskrivning
+                backup_name = f"{db_name}.backup"
+                backup_path = os.path.join(db_path, backup_name)
+                try:
+                    import shutil
+                    shutil.copy2(full_db_path, backup_path)
+                except Exception as e:
+                    print(f"Kunne ikke oprette backup: {str(e)}")
+            
             # Opret forbindelse til SQLite database
             conn = sqlite3.connect(full_db_path)
             
@@ -273,13 +296,18 @@ class UploadWindow:
             
             conn.close()
             
+            # Hvis vi nåede hertil, var upload succesfuld
+            success_message = "Data er blevet gemt i databasen"
+            if os.path.exists(backup_path) if 'backup_path' in locals() else False:
+                success_message += "\nEn backup af den gamle database blev gemt"
+            
             self.status_label.configure(
-                text=f"Data er blevet gemt i databasen: {db_name}",
+                text=success_message,
                 text_color="green"
             )
             
-            # Luk vinduet efter 1 sekund
-            self.root.after(1000, self.destroy)
+            # Luk vinduet efter 2 sekunder (øget fra 1 sekund for at give tid til at læse beskeden)
+            self.root.after(2000, self.destroy)
             
         except pd.errors.EmptyDataError:
             self.status_label.configure(
