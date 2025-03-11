@@ -210,63 +210,121 @@ class MailHandler:
     def send_report(self, driver_id, report_data, recipient=None):
         """Sender rapport via email"""
         try:
+            # # DEBUG: Starter send_report proces
+            logging.info(f"Starter send_report proces for chauffør: {driver_id}, custom-recipient: {recipient is not None}")
+            
             # Hent email-adresse
             if recipient is None:
                 recipient = self.db.get_driver_email(driver_id)
+                logging.info(f"Henter chaufførens email: {recipient}")
                 if not recipient:
-                    raise ValueError(f"Ingen email fundet for chauffør {driver_id}")
+                    error_msg = f"Ingen email fundet for chauffør {driver_id}"
+                    logging.error(error_msg)
+                    raise ValueError(error_msg)
 
             # Hent chauffør information
             driver = self.db.get_driver(driver_id)
             if not driver:
-                raise ValueError(f"Kunne ikke finde chauffør med ID {driver_id}")
+                error_msg = f"Kunne ikke finde chauffør med ID {driver_id}"
+                logging.error(error_msg)
+                raise ValueError(error_msg)
+            logging.info(f"Chauffør fundet: {driver['name']}")
 
             # Hent mail template
-            template = self.db.get_mail_template('chauffør_report')
+            try:
+                # # DEBUG: Forsøger at hente mail-skabelon
+                logging.info("Forsøger at hente mail-skabelon 'chauffør_report'")
+                template = self.db.get_mail_template('chauffør_report')
+                if template:
+                    logging.info("Mail-skabelon 'chauffør_report' fundet")
+                else:
+                    logging.warning("Ingen mail-skabelon fundet, bruger fallback")
+            except Exception as template_error:
+                # # DEBUG: Fejl ved hentning af mail-skabelon
+                logging.error(f"Fejl ved hentning af mail-skabelon: {str(template_error)}")
+                template = None
+                
+            # Brug fallback skabelon hvis ingen fundet
             if not template:
-                logging.error("Ingen mail template fundet")
+                logging.warning("Bruger fallback mail-skabelon")
                 template = {
                     'subject': 'Din Månedlige Chauffør Rapport',
                     'body': '<html><body><p>Se vedhæftede rapport.</p></body></html>'
                 }
 
             # Opret multipart message
+            subject = template['subject'].replace('{{CHAUFFØR_NAVN}}', driver['name'])
+            logging.info(f"Opretter email med emne: {subject}")
+            
             msg = MIMEMultipart('mixed')
-            msg['Subject'] = template['subject'].replace('{{CHAUFFØR_NAVN}}', driver['name'])
+            msg['Subject'] = subject
             msg['From'] = self.db.get_mail_config()['email']
             msg['To'] = recipient
             
             # Opret HTML rapport
+            logging.info("Genererer HTML rapport indhold")
             html_report = self.create_html_report(report_data, driver['name'])
             
             # Opret HTML del
             html_part = MIMEText(html_report, 'html', 'utf-8')
             msg.attach(html_part)
+            logging.info("HTML indhold tilføjet til email")
 
             # Tilføj rapport som vedhæftning
-            if isinstance(report_data, dict) and 'rapport' in report_data:
-                filename = f"Rapport_{driver['name']}_{datetime.now().strftime('%Y%m%d')}.docx"
-                attachment = MIMEBase('application', 'vnd.openxmlformats-officedocument.wordprocessingml.document')
-                attachment.set_payload(report_data['rapport'])
-                encoders.encode_base64(attachment)
-                attachment.add_header('Content-Disposition', 'attachment', filename=filename)
-                msg.attach(attachment)
+            try:
+                if isinstance(report_data, dict) and 'rapport' in report_data:
+                    # Generer filnavn
+                    filename = f"Rapport_{driver['name']}_{datetime.now().strftime('%Y%m%d')}.docx"
+                    logging.info(f"Tilføjer rapport som vedhæftning: {filename}")
+                    
+                    # Opret attachment
+                    attachment = MIMEBase('application', 'vnd.openxmlformats-officedocument.wordprocessingml.document')
+                    attachment.set_payload(report_data['rapport'])
+                    encoders.encode_base64(attachment)
+                    attachment.add_header('Content-Disposition', 'attachment', filename=filename)
+                    msg.attach(attachment)
+                    logging.info("Rapport vedhæftet succesfuldt")
+                else:
+                    logging.warning("Ingen rapport data tilgængelig til vedhæftning")
+            except Exception as attach_error:
+                # # DEBUG: Fejl ved vedhæftning af rapport
+                logging.error(f"Fejl ved vedhæftning af rapport: {str(attach_error)}")
+                logging.error(f"Fejltype: {type(attach_error).__name__}")
+                # Fortsæt selv uden vedhæftning, så email stadig sendes
 
             # Send mail med den korrekte MIME struktur
-            self.mail_system.send_mail(
-                to=recipient,
-                subject=msg['Subject'],
-                body=html_report,  # Send HTML indhold
-                attachments={filename: report_data['rapport']} if isinstance(report_data, dict) and 'rapport' in report_data else None,
-                driver_id=driver_id,
-                is_html=True
-            )
+            try:
+                logging.info(f"Sender email til {recipient}")
+                self.mail_system.send_mail(
+                    to=recipient,
+                    subject=msg['Subject'],
+                    body=html_report,  # Send HTML indhold
+                    attachments={filename: report_data['rapport']} if isinstance(report_data, dict) and 'rapport' in report_data else None,
+                    driver_id=driver_id,
+                    is_html=True
+                )
+                logging.info(f"Email tilføjet til sendekø for {recipient}")
+            except Exception as send_error:
+                # # DEBUG: Fejl ved afsendelse af email
+                logging.error(f"Fejl ved afsendelse af email: {str(send_error)}")
+                logging.error(f"Fejltype: {type(send_error).__name__}")
+                if hasattr(send_error, '__traceback__'):
+                    import traceback
+                    trace = ''.join(traceback.format_tb(send_error.__traceback__))
+                    logging.error(f"Stacktrace: {trace}")
+                raise
 
-            logging.info(f"Rapport sendt succesfuldt til {driver['name']} ({recipient})")
+            logging.info(f"Rapport send-proces fuldført succesfuldt til {driver['name']} ({recipient})")
             return True
 
         except Exception as e:
+            # # DEBUG: Generel fejl i send_report
             logging.error(f"Fejl ved afsendelse af rapport: {str(e)}")
+            logging.error(f"Fejltype: {type(e).__name__}")
+            if hasattr(e, '__traceback__'):
+                import traceback
+                trace = ''.join(traceback.format_tb(e.__traceback__))
+                logging.error(f"Stacktrace: {trace}")
             raise
             
     def test_connection(self):

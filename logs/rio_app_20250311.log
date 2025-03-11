@@ -3585,3 +3585,1743 @@
 2025-03-11 11:50:32,349 [INFO] Starter nedlukning af applikation
 2025-03-11 11:50:32,403 [INFO] Applikation lukket succesfuldt
 2025-03-11 11:50:32,403 [INFO] === Applikation lukker normalt ===
+2025-03-11 12:17:50,276 [INFO] Logging system initialiseret
+2025-03-11 12:17:50,277 [INFO] === Applikation starter ===
+2025-03-11 12:17:50,277 [INFO] Initialiserer ModernRIOMenu
+2025-03-11 12:17:50,447 [INFO] ModernRIOMenu initialiseret succesfuldt
+2025-03-11 12:17:50,556 [INFO] Hovedvindue UI fuldt initialiseret
+2025-03-11 12:18:13,201 [INFO] Bruger klikkede på knap: Indstillinger
+2025-03-11 12:18:13,365 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-11 12:18:13,367 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:18:13,367 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:18:13,367 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:18:13,368 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:18:13,368 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:18:13,448 [INFO] Forsøger at indlæse mail-skabelon
+2025-03-11 12:18:13,450 [INFO] Mail-skabelon fundet: dict_keys(['subject', 'body'])
+2025-03-11 12:18:13,455 [INFO] Mail-skabelon indlæst succesfuldt
+2025-03-11 12:18:13,670 [INFO] Indstillingsvindue fuldt initialiseret
+2025-03-11 12:20:37,532 [INFO] Bruger klikkede på knap: Rapporter
+2025-03-11 12:20:38,198 [INFO] Rapportvindue fuldt initialiseret
+2025-03-11 12:21:17,144 [INFO] Initialiserer database forbindelse til settings.db
+2025-03-11 12:21:17,149 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:21:17,150 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:21:17,150 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:21:17,150 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:21:17,150 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:21:17,151 [INFO] Initialiserer database forbindelse til settings.db
+2025-03-11 12:21:17,153 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:21:17,154 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:21:17,154 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:21:17,155 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:21:17,155 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:21:17,155 [INFO] Initialiserer database forbindelse til databases\settings.db
+2025-03-11 12:21:17,160 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:21:17,160 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:21:17,160 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:21:17,161 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:21:17,161 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:21:17,161 [INFO] Initialiserer database forbindelse til databases\settings.db
+2025-03-11 12:21:17,163 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:21:17,164 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:21:17,164 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:21:17,164 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:21:17,164 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:21:17,165 [INFO] Initialiserer WordReportGenerator med database: databases\chauffør_data_februar_2025.db
+2025-03-11 12:21:17,166 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-11 12:21:17,167 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:21:17,167 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:21:17,167 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:21:17,167 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:21:17,167 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:21:17,167 [INFO] Minimum kilometer sat til: 100.0
+2025-03-11 12:22:53,724 [INFO] Initialiserer database forbindelse til databases\chauffør_data_februar_2025.db
+2025-03-11 12:22:53,725 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:53,726 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:53,726 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:53,728 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:53,728 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:53,728 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:53,728 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:53,737 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,737 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,737 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,738 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,738 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,738 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,738 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,738 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,739 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,739 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,739 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,739 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,739 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,740 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,740 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,740 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,740 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,741 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,741 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,741 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,741 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,741 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,741 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,741 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,743 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,743 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,743 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,743 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,744 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,744 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,744 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,745 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,745 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,745 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,745 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,745 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,746 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,746 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,746 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,746 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,746 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,746 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,747 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,747 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,747 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,747 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,748 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,748 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,748 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,748 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,748 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,749 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,749 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,749 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,749 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,749 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,750 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,750 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,750 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,750 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,750 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,750 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,750 [INFO] Initialiserer database forbindelse til databases\chauffør_data_januar_2025.db
+2025-03-11 12:22:53,751 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:53,753 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:53,754 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:53,754 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:53,754 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:53,755 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:53,755 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:53,761 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,761 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,763 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,763 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,763 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,764 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,764 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,764 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,764 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,765 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,765 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,765 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,765 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,765 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,766 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,767 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,767 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,767 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,767 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,767 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,767 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,767 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,768 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,768 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,768 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,768 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,769 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,769 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,769 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,769 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,769 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,769 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,770 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,770 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,770 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,770 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,770 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,771 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,771 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,771 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,771 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,771 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,771 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,771 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,771 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,773 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,773 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,773 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,773 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,773 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,773 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,774 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,774 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,774 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,775 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,775 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,775 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,776 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,776 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,776 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,776 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,777 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,777 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,777 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,777 [INFO] Initialiserer database forbindelse til databases\chauffør_data_december_2024.db
+2025-03-11 12:22:53,779 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:53,779 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:53,780 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:53,780 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:53,781 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:53,781 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:53,781 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:53,788 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,788 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,788 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,789 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,789 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,789 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,790 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,790 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,790 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,790 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,790 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,791 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,791 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,791 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,792 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,792 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,792 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,792 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,793 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,794 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,794 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,794 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,794 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,795 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,795 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,795 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,795 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,795 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,795 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,796 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,796 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,796 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,796 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,796 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,796 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,797 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,797 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,797 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,797 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,797 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,797 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,797 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,798 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,798 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,798 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,798 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,799 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,799 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,799 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,799 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,799 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,799 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,799 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,801 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,801 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,801 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,801 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,801 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,802 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,802 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,802 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,802 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,802 [INFO] Initialiserer database forbindelse til databases\chauffør_data_november_2024.db
+2025-03-11 12:22:53,804 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:53,805 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:53,806 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:53,806 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:53,806 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:53,806 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:53,807 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:53,815 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,815 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,816 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,816 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,816 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,816 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,816 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,816 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,817 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,817 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,817 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,817 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,817 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,817 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,818 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,818 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,818 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,818 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,818 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,818 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,820 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,820 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,820 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,820 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,820 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,821 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,821 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,821 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,821 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,821 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,821 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,822 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,822 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,822 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,822 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,822 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,822 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,822 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,822 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,823 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,823 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,823 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,823 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,824 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,824 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,826 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,826 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,826 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,827 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,827 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,827 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,828 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,828 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,829 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,829 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,829 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,829 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,829 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,829 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,830 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,830 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,830 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,830 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,830 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,831 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,831 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,831 [INFO] Initialiserer database forbindelse til databases\chauffør_data_oktober_2024.db
+2025-03-11 12:22:53,833 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:53,833 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:53,833 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:53,833 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:53,833 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:53,835 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:53,835 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:53,841 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,842 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,842 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,842 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,843 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,843 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,844 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,844 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,844 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,845 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,845 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,845 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,845 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,845 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,845 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,847 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,847 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,847 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,847 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,847 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,848 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,848 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,848 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,848 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,849 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,849 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,849 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,849 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,849 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,849 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,849 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,850 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,850 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,850 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,850 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,850 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,850 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,851 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,851 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,851 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,851 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,851 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,852 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,852 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,852 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,852 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,852 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,853 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,853 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,853 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,854 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,854 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,854 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,854 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,854 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,855 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,855 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,855 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,855 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,855 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,855 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,856 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,856 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,856 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,856 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,856 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,856 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,856 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,857 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,857 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,858 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,859 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,859 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,859 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,859 [INFO] Initialiserer database forbindelse til databases\chauffør_data_september_2024.db
+2025-03-11 12:22:53,861 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:53,861 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:53,863 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:53,863 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:53,864 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:53,864 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:53,864 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:53,871 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,871 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,871 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,871 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,871 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,871 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,873 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,873 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,873 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,873 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,873 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,873 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,873 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,874 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,874 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,875 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,875 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,875 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,875 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,875 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,877 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,877 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,877 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,878 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,878 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,878 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,878 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,879 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,879 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,879 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,879 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,880 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,880 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,880 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,880 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,880 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,881 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,881 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,881 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,881 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,881 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,882 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,882 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,882 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,882 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,882 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,883 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,883 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,883 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,883 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,883 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,883 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,883 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,884 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,884 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,884 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,884 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,884 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,884 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,884 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,886 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,886 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,886 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,886 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,886 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,887 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,887 [INFO] Initialiserer database forbindelse til databases\chauffør_data_august_2024.db
+2025-03-11 12:22:53,888 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:53,888 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:53,889 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:53,889 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:53,889 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:53,889 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:53,889 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:53,897 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,897 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,898 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,898 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,898 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,898 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,898 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,898 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,900 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,900 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,900 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,900 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,900 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,900 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,901 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,901 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,901 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,901 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,901 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,901 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,902 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,902 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,902 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,902 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,902 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,902 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,903 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,903 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,903 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,903 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,903 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,903 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,905 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,905 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,905 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,905 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,905 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,905 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,905 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,905 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,906 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,906 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,906 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,906 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,907 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,907 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,908 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,908 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,909 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,909 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,909 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,909 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,910 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,910 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,911 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,911 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,911 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,912 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,912 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,912 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,912 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,913 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,913 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,913 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,914 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,914 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,914 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,914 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,915 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,915 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,915 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,916 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,916 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,916 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,916 [INFO] Initialiserer database forbindelse til databases\chauffør_data_juli_2024.db
+2025-03-11 12:22:53,918 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:53,918 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:53,919 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:53,920 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:53,920 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:53,920 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:53,920 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:53,927 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,928 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,928 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,928 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,929 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,929 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,929 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,930 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,930 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,930 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,930 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,930 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,931 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,931 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,931 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,931 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,931 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,931 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,931 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,933 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,933 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,933 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,933 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,933 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,933 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,933 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,933 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,933 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,934 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,934 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,934 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,934 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,934 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,935 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,935 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,935 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,935 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,936 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,936 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,936 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,936 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,936 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,937 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,937 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,937 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,937 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,937 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,937 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,937 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,938 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,938 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,938 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,938 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,938 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,939 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,939 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,939 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,939 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,939 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,940 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,940 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,940 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,941 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,941 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,941 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,941 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,941 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,941 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,943 [INFO] Initialiserer database forbindelse til databases\chauffør_data_juni_2024.db
+2025-03-11 12:22:53,944 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:53,945 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:53,945 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:53,945 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:53,945 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:53,946 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:53,946 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:53,952 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,952 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,952 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,952 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,953 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,953 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,953 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,953 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,954 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,954 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,954 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,954 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,954 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,954 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,954 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,956 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,956 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,956 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,956 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,956 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,956 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,956 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,956 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,957 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,958 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,958 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,958 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,958 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,959 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,959 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,959 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,959 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,959 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,959 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,959 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,960 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,960 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,960 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,960 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,960 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,961 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,961 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,961 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,961 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,961 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,961 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,961 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,961 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,962 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,962 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,962 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,962 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,962 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,963 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,963 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,963 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,963 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,963 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,963 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,964 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,964 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,964 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,964 [INFO] Initialiserer database forbindelse til databases\chauffør_data_maj_2024.db
+2025-03-11 12:22:53,966 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:53,966 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:53,967 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:53,967 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:53,967 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:53,967 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:53,968 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:53,974 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,974 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,975 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,975 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,975 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,976 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,976 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,976 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,976 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,977 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,977 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,977 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,977 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,977 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,978 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,978 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,978 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,978 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,978 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,979 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,979 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,979 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,979 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,979 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,979 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,979 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,979 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,980 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,980 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,980 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,980 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,980 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,981 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,981 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,981 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,981 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,982 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,982 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,982 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,982 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,982 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,983 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,983 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,983 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,983 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,983 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,983 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,983 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,983 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,985 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,985 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,985 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,985 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,985 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,986 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,986 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,986 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,986 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,986 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,986 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,986 [INFO] Initialiserer database forbindelse til databases\chauffør_data_april_2024.db
+2025-03-11 12:22:53,988 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:53,988 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:53,989 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:53,989 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:53,989 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:53,990 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:53,990 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:53,997 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,997 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,997 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,997 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,998 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,998 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,998 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,998 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,999 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,999 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,999 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,999 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:53,999 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:53,999 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,000 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,000 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,000 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,000 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,000 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,000 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,001 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,001 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,001 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,001 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,001 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,001 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,002 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,002 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,002 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,002 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,002 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,002 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,002 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,002 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,003 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,003 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,003 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,003 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,004 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,004 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,004 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,004 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,004 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,004 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,006 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,006 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,006 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,006 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,006 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,006 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,006 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,006 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,007 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,007 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,007 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,007 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,007 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,007 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,008 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,008 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,008 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,008 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,009 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,009 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,009 [INFO] Initialiserer database forbindelse til databases\chauffør_data_marts_2024.db
+2025-03-11 12:22:54,011 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:54,011 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:54,012 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:54,012 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:54,012 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:54,013 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:54,013 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:54,018 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,019 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,019 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,019 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,019 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,020 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,020 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,020 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,020 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,020 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,020 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,022 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,022 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,022 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,022 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,022 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,022 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,022 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,022 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,022 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,023 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,023 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,023 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,023 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,023 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,023 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,024 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,024 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,024 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,024 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,024 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,026 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,026 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,026 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,026 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,026 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,026 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,027 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,027 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,027 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,027 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,027 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,028 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,028 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,028 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,028 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,028 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,029 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,029 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,029 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,029 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,029 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,029 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,030 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,030 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,030 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,030 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,030 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,031 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,031 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,031 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,031 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,031 [INFO] Initialiserer database forbindelse til databases\chauffør_data_februar_2024.db
+2025-03-11 12:22:54,033 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:54,033 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:54,034 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:54,035 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:54,035 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:54,035 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:54,035 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:54,042 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,042 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,042 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,042 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,043 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,043 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,043 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,043 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,044 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,044 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,044 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,044 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,045 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,045 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,045 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,045 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,045 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,045 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,047 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,047 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,047 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,047 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,047 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,047 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,047 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,047 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,048 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,048 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,048 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,048 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,048 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,048 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,048 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,049 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,049 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,049 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,049 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,049 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,049 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,049 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,050 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,050 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,050 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,050 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,052 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,052 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,052 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,052 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,052 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,052 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,052 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,052 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,053 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,053 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,053 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,053 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,053 [INFO] Initialiserer database forbindelse til databases\chauffør_data_januar_2024.db
+2025-03-11 12:22:54,055 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:54,055 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:54,055 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:54,057 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:54,057 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:54,057 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:54,057 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:54,063 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,063 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,064 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,064 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,064 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,064 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,064 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,064 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,066 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,066 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,066 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,066 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,066 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,066 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,066 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,066 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,067 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,067 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,067 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,067 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,067 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,067 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,068 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,068 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,068 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,068 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,068 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,068 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,068 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,070 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,070 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,070 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,070 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,070 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,070 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,071 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,071 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,071 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,071 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,071 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,071 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,071 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,072 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,072 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,072 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,072 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,072 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,073 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,073 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,073 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,073 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,073 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,073 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,074 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,075 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,075 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,075 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,075 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,076 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,076 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,076 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,076 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,076 [INFO] Initialiserer database forbindelse til databases\chauffør_data_december_2023.db
+2025-03-11 12:22:54,079 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:54,079 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:54,080 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:54,080 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:54,080 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:54,081 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:54,081 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:54,087 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,087 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,088 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,088 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,088 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,088 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,088 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,089 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,089 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,089 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,089 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,089 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,089 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,090 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,090 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,090 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,090 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,091 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,091 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,091 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,091 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,092 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,092 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,092 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,092 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,093 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,093 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,093 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,093 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,093 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,093 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,094 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,094 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,094 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,094 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,094 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,094 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,094 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,094 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,096 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,096 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,096 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,096 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,096 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,096 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,097 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,097 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,097 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,097 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,097 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,097 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,098 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,098 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,098 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,098 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,098 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,098 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,099 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,099 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,099 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,099 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,099 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,100 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,100 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,100 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,100 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,100 [INFO] Initialiserer database forbindelse til databases\chauffør_data_november_2023.db
+2025-03-11 12:22:54,102 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:54,102 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:54,103 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:54,103 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:54,103 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:54,103 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:54,103 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:54,110 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,110 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,111 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,111 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,111 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,111 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,111 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,111 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,112 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,112 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,112 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,112 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,112 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,113 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,113 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,113 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,113 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,113 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,113 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,113 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,115 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,115 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,115 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,115 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,115 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,115 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,115 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,116 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,116 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,116 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,116 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,116 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,116 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,116 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,116 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,117 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,117 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,117 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,117 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,117 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,117 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,118 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,118 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,118 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,118 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,118 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,118 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,118 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,120 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,120 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,120 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,120 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,120 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,120 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,121 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,121 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,121 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,121 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,121 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,121 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,122 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,122 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,122 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,122 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,122 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,122 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,122 [INFO] Initialiserer database forbindelse til databases\chauffør_data_oktober_2023.db
+2025-03-11 12:22:54,124 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:54,124 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:54,126 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:54,126 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:54,126 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:54,126 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:54,127 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:54,133 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,133 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,134 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,134 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,134 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,134 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,135 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,135 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,135 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,135 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,135 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,136 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,136 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,136 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,136 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,136 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,137 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,137 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,137 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,137 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,137 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,137 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,137 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,138 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,138 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,138 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,138 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,139 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,139 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,139 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,139 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,139 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,139 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,140 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,140 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,140 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,140 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,141 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,141 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,141 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,142 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,142 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,142 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,142 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,142 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,143 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,143 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,143 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,143 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,143 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,143 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,143 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,143 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,145 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,145 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,145 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,145 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,145 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,146 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,146 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,146 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,146 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,146 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,147 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,147 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,147 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,147 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,147 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,148 [INFO] Initialiserer database forbindelse til databases\chauffør_data_september_2023.db
+2025-03-11 12:22:54,149 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:54,149 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:54,150 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:54,150 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:54,150 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:54,150 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:54,151 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:54,156 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,156 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,157 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,157 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,157 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,158 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,158 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,158 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,158 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,159 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,159 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,159 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,159 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,159 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,159 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,160 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,160 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,160 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,160 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,160 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,162 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,162 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,162 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,162 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,162 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,162 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,162 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,162 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,163 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,163 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,163 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,163 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,163 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,163 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,164 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,164 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,164 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,164 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,164 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,164 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,165 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,165 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,165 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,165 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,165 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,165 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,165 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,165 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,167 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,167 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,167 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,167 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,167 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,167 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,168 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,168 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,168 [INFO] Initialiserer database forbindelse til databases\chauffør_data_august_2023.db
+2025-03-11 12:22:54,169 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:54,170 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:54,171 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:54,171 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:54,171 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:54,171 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:54,171 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:54,177 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,178 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,178 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,178 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,178 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,178 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,179 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,179 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,179 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,179 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,179 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,180 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,180 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,180 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,180 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,180 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,181 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,181 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,181 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,181 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,181 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,181 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,181 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,181 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,183 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,183 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,183 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,183 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,183 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,183 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,184 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,184 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,184 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,184 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,184 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,185 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,185 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,185 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,185 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,185 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,185 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,185 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,186 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,186 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,186 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,186 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,186 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,186 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,186 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,188 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,188 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,188 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,188 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,188 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,188 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,188 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,189 [INFO] Initialiserer database forbindelse til databases\chauffør_data_juli_2023.db
+2025-03-11 12:22:54,190 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:54,190 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:54,191 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:54,192 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:54,192 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:54,192 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:54,192 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:54,199 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,199 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,199 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,199 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,199 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,199 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,200 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,200 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,200 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,200 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,200 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,200 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,201 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,201 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,201 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,201 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,201 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,201 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,202 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,202 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,202 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,202 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,202 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,203 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,203 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,203 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,203 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,203 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,203 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,203 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,203 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,204 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,204 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,204 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,204 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,204 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,204 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,206 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,206 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,206 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,206 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,206 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,206 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,206 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,207 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,207 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,209 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,209 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,210 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,210 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,210 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,210 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,211 [INFO] Initialiserer database forbindelse til databases\chauffør_data_juni_2023.db
+2025-03-11 12:22:54,212 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:54,212 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:54,213 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:54,213 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:54,213 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:54,214 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:54,214 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:54,219 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,219 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,220 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,220 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,220 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,220 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,220 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,220 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,222 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,222 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,222 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,222 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,222 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,222 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,223 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,223 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,223 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,223 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,223 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,224 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,224 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,226 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,226 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,226 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,226 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,227 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,227 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,227 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,227 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,227 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,228 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,228 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,228 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,228 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,228 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,228 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,229 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,229 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,229 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,229 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,229 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,229 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,229 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,229 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,230 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,230 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,230 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,230 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,230 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,230 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,231 [INFO] Initialiserer database forbindelse til databases\chauffør_data_maj_2023.db
+2025-03-11 12:22:54,231 [WARNING] Migration fejlede: no such table: settings
+2025-03-11 12:22:54,233 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-11 12:22:54,233 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:22:54,233 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:22:54,234 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:22:54,234 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:22:54,234 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:22:54,239 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,240 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,240 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,240 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,241 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,241 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,241 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,241 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,242 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,242 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,242 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,242 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,242 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,243 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,243 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,243 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,243 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,243 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,243 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,243 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,243 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,245 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,245 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,245 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,245 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,245 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,245 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,245 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,245 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,246 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,246 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,246 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,246 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,246 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,246 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,246 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,248 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,248 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:22:54,248 [INFO] Nøgletal beregnet succesfuldt
+2025-03-11 12:22:54,248 [INFO] Nøgletal beregnet for chauffør
+2025-03-11 12:23:00,587 [INFO] Bruger klikkede på knap: Chauffører
+2025-03-11 12:23:02,283 [INFO] Initialiserer database forbindelse til settings.db
+2025-03-11 12:23:02,285 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:23:02,285 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:23:02,286 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:23:02,286 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:23:02,286 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:23:02,287 [INFO] Database initialiseret succesfuldt
+2025-03-11 12:23:02,287 [INFO] Initialiserer mail liste vindue
+2025-03-11 12:23:02,321 [INFO] Indlæser 57 chauffører
+2025-03-11 12:23:02,323 [INFO] Fandt 1 eksisterende email adresser
+2025-03-11 12:23:02,860 [INFO] Chauffør liste indlæst succesfuldt
+2025-03-11 12:23:09,320 [INFO] Starter nedlukning af applikation
+2025-03-11 12:23:09,403 [INFO] Applikation lukket succesfuldt
+2025-03-11 12:23:09,414 [INFO] === Applikation lukker normalt ===
+2025-03-11 12:29:19,296 [INFO] Logging system initialiseret
+2025-03-11 12:29:19,296 [INFO] === Applikation starter ===
+2025-03-11 12:29:19,296 [INFO] Initialiserer ModernRIOMenu
+2025-03-11 12:29:19,429 [INFO] ModernRIOMenu initialiseret succesfuldt
+2025-03-11 12:29:19,651 [INFO] Hovedvindue UI fuldt initialiseret
+2025-03-11 12:29:32,846 [INFO] Bruger klikkede på knap: Rapporter
+2025-03-11 12:29:33,506 [INFO] Rapportvindue fuldt initialiseret
+2025-03-11 12:29:39,794 [INFO] Initialiserer database forbindelse til settings.db
+2025-03-11 12:29:39,798 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:29:39,799 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:29:39,799 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:29:39,799 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:29:39,800 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:29:39,801 [INFO] Initialiserer database forbindelse til settings.db
+2025-03-11 12:29:39,802 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:29:39,803 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:29:39,803 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:29:39,803 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:29:39,803 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:29:39,803 [INFO] Initialiserer database forbindelse til databases\settings.db
+2025-03-11 12:29:39,806 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:29:39,806 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:29:39,806 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:29:39,806 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:29:39,806 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:29:39,806 [INFO] Initialiserer database forbindelse til databases\settings.db
+2025-03-11 12:29:39,807 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:29:39,809 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:29:39,809 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:29:39,809 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:29:39,809 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:29:39,810 [INFO] Initialiserer WordReportGenerator med database: databases\chauffør_data_februar_2025.db
+2025-03-11 12:29:39,810 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-11 12:29:39,812 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:29:39,812 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:29:39,812 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:29:39,812 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:29:39,812 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:29:39,812 [INFO] Minimum kilometer sat til: 100.0
+2025-03-11 12:29:48,504 [INFO] Starter direkte mail sending til chauffør: Dan, Robert-Alexandru
+2025-03-11 12:29:48,518 [INFO] Email gemt for chauffør Dan, Robert-Alexandru: jonas.ingvorsen@gmail.com
+2025-03-11 12:29:48,523 [INFO] Email gemt for chauffør Dan, Robert-Alexandru: jonas.ingvorsen@gmail.com
+2025-03-11 12:29:48,826 [INFO] Rapport genereret for Dan, Robert-Alexandru: rapporter\Fiskelogistik_Chauffør_Dan Robert-Alexandru_Februar_2025_20250311_122948.docx
+2025-03-11 12:29:48,841 [INFO] Sender rapport direkte til jonas.ingvorsen@gmail.com
+2025-03-11 12:29:48,841 [INFO] Starter send_report proces for chauffør: Dan, Robert-Alexandru, custom-recipient: True
+2025-03-11 12:29:48,842 [INFO] Chauffør fundet: Dan, Robert-Alexandru
+2025-03-11 12:29:48,842 [INFO] Forsøger at hente mail-skabelon 'chauffør_report'
+2025-03-11 12:29:48,842 [INFO] Mail-skabelon 'chauffør_report' fundet
+2025-03-11 12:29:48,842 [INFO] Opretter email med emne: Din Månedlige Chauffør Rapport
+2025-03-11 12:29:48,843 [INFO] Genererer HTML rapport indhold
+2025-03-11 12:29:48,844 [INFO] HTML indhold tilføjet til email
+2025-03-11 12:29:48,844 [INFO] Tilføjer rapport som vedhæftning: Rapport_Dan, Robert-Alexandru_20250311.docx
+2025-03-11 12:29:48,845 [INFO] Rapport vedhæftet succesfuldt
+2025-03-11 12:29:48,845 [INFO] Sender email til jonas.ingvorsen@gmail.com
+2025-03-11 12:29:48,847 [INFO] Mail tilføjet til kø for jonas.ingvorsen@gmail.com
+2025-03-11 12:29:48,847 [INFO] Email tilføjet til sendekø for jonas.ingvorsen@gmail.com
+2025-03-11 12:29:48,847 [INFO] Rapport send-proces fuldført succesfuldt til Dan, Robert-Alexandru (jonas.ingvorsen@gmail.com)
+2025-03-11 12:29:51,749 [INFO] Mail sendt succesfuldt til jonas.ingvorsen@gmail.com
+2025-03-11 12:29:51,761 [INFO] Seneste rapport tidspunkt opdateret for chauffør Dan, Robert-Alexandru
+2025-03-11 12:29:52,854 [INFO] Starter nedlukning af applikation
+2025-03-11 12:29:52,914 [INFO] Applikation lukket succesfuldt
+2025-03-11 12:29:55,266 [INFO] === Applikation lukker normalt ===
+2025-03-11 12:33:31,182 [INFO] Logging system initialiseret
+2025-03-11 12:33:31,183 [INFO] === Applikation starter ===
+2025-03-11 12:33:31,183 [INFO] Initialiserer ModernRIOMenu
+2025-03-11 12:33:31,517 [INFO] ModernRIOMenu initialiseret succesfuldt
+2025-03-11 12:33:31,720 [INFO] Hovedvindue UI fuldt initialiseret
+2025-03-11 12:33:55,361 [INFO] Bruger klikkede på knap: Chauffører
+2025-03-11 12:33:56,931 [INFO] Initialiserer database forbindelse til settings.db
+2025-03-11 12:33:56,933 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:33:56,933 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:33:56,934 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:33:56,934 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:33:56,934 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:33:56,936 [INFO] Database initialiseret succesfuldt
+2025-03-11 12:33:56,936 [INFO] Initialiserer mail liste vindue
+2025-03-11 12:33:56,971 [INFO] Indlæser 57 chauffører
+2025-03-11 12:33:56,973 [INFO] Fandt 1 eksisterende email adresser
+2025-03-11 12:33:57,660 [INFO] Chauffør liste indlæst succesfuldt
+2025-03-11 12:34:01,347 [INFO] Email ændret for chauffør Dan, Robert-Alexandru. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-11 12:34:01,351 [INFO] Aktiverer gem og fortryd knapper
+2025-03-11 12:34:08,809 [INFO] Initialiserer GroupWindow
+2025-03-11 12:34:08,857 [INFO] GroupWindow initialiseret succesfuldt
+2025-03-11 12:34:10,135 [INFO] Starter oprettelse af ny gruppe
+2025-03-11 12:34:14,844 [INFO] Bruger indtastede gruppe navn: Sverige
+2025-03-11 12:34:14,846 [INFO] Åbner chauffør vælger dialog
+2025-03-11 12:34:14,847 [INFO] Initialiserer DriverSelectionDialog
+2025-03-11 12:34:14,876 [INFO] Starter indlæsning af chauffører
+2025-03-11 12:34:14,877 [INFO] Læser fra database: databases\chauffør_data_april_2024.db
+2025-03-11 12:34:14,879 [INFO] Læser fra database: databases\chauffør_data_august_2023.db
+2025-03-11 12:34:14,881 [INFO] Læser fra database: databases\chauffør_data_august_2024.db
+2025-03-11 12:34:14,882 [INFO] Læser fra database: databases\chauffør_data_december_2023.db
+2025-03-11 12:34:14,883 [INFO] Læser fra database: databases\chauffør_data_december_2024.db
+2025-03-11 12:34:14,884 [INFO] Læser fra database: databases\chauffør_data_februar_2024.db
+2025-03-11 12:34:14,884 [INFO] Læser fra database: databases\chauffør_data_februar_2025.db
+2025-03-11 12:34:14,886 [INFO] Læser fra database: databases\chauffør_data_januar_2024.db
+2025-03-11 12:34:14,887 [INFO] Læser fra database: databases\chauffør_data_januar_2025.db
+2025-03-11 12:34:14,889 [INFO] Læser fra database: databases\chauffør_data_juli_2023.db
+2025-03-11 12:34:14,890 [INFO] Læser fra database: databases\chauffør_data_juli_2024.db
+2025-03-11 12:34:14,890 [INFO] Læser fra database: databases\chauffør_data_juni_2023.db
+2025-03-11 12:34:14,891 [INFO] Læser fra database: databases\chauffør_data_juni_2024.db
+2025-03-11 12:34:14,892 [INFO] Læser fra database: databases\chauffør_data_maj_2023.db
+2025-03-11 12:34:14,893 [INFO] Læser fra database: databases\chauffør_data_maj_2024.db
+2025-03-11 12:34:14,894 [INFO] Læser fra database: databases\chauffør_data_marts_2024.db
+2025-03-11 12:34:14,895 [INFO] Læser fra database: databases\chauffør_data_november_2023.db
+2025-03-11 12:34:14,896 [INFO] Læser fra database: databases\chauffør_data_november_2024.db
+2025-03-11 12:34:14,897 [INFO] Læser fra database: databases\chauffør_data_oktober_2023.db
+2025-03-11 12:34:14,898 [INFO] Læser fra database: databases\chauffør_data_oktober_2024.db
+2025-03-11 12:34:14,899 [INFO] Læser fra database: databases\chauffør_data_september_2023.db
+2025-03-11 12:34:14,900 [INFO] Læser fra database: databases\chauffør_data_september_2024.db
+2025-03-11 12:34:14,900 [INFO] Fandt 57 tilgængelige chauffører
+2025-03-11 12:34:15,159 [INFO] DriverSelectionDialog initialiseret succesfuldt
+2025-03-11 12:34:25,373 [INFO] Valgte chauffører: ['Hyldahl, Brian', 'Jensen, Flemming Terpet', 'Jensen, Lars Henrik']
+2025-03-11 12:34:25,380 [INFO] Oprettet gruppe med ID: 1
+2025-03-11 12:34:25,386 [INFO] Gruppe og medlemmer gemt i database
+2025-03-11 12:34:25,534 [INFO] UI opdateret med ny gruppe
+2025-03-11 12:35:10,231 [INFO] Initialiserer GroupWindow
+2025-03-11 12:35:10,289 [INFO] GroupWindow initialiseret succesfuldt
+2025-03-11 12:35:24,163 [INFO] Bruger klikkede på knap: Indstillinger
+2025-03-11 12:35:24,379 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-11 12:35:24,382 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:35:24,382 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:35:24,382 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:35:24,383 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:35:24,383 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:35:24,505 [INFO] Forsøger at indlæse mail-skabelon
+2025-03-11 12:35:24,505 [INFO] Mail-skabelon fundet: dict_keys(['subject', 'body'])
+2025-03-11 12:35:24,514 [INFO] Mail-skabelon indlæst succesfuldt
+2025-03-11 12:35:24,683 [INFO] Indstillingsvindue fuldt initialiseret
+2025-03-11 12:35:35,197 [INFO] Bruger klikkede på knap: Indstillinger
+2025-03-11 12:35:35,403 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-11 12:35:35,405 [INFO] Database migrationer kørt succesfuldt
+2025-03-11 12:35:35,405 [INFO] Kører standarddata initialiseringer
+2025-03-11 12:35:35,405 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-11 12:35:35,406 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-11 12:35:35,406 [INFO] Standarddata initialiseringer fuldført
+2025-03-11 12:35:35,510 [INFO] Forsøger at indlæse mail-skabelon
+2025-03-11 12:35:35,512 [INFO] Mail-skabelon fundet: dict_keys(['subject', 'body'])
+2025-03-11 12:35:35,515 [INFO] Mail-skabelon indlæst succesfuldt
+2025-03-11 12:35:35,715 [INFO] Indstillingsvindue fuldt initialiseret
+2025-03-11 12:35:53,943 [INFO] Starter nedlukning af applikation
+2025-03-11 12:35:54,040 [INFO] Applikation lukket succesfuldt
+2025-03-11 12:35:54,043 [INFO] === Applikation lukker normalt ===

@@ -9,19 +9,39 @@ class DatabaseConnection:
         # Flyt metodebindingen til toppen af __init__
         self.get_mail_config = self._get_mail_config_implementation
         
+        # # DEBUG: Initialiserer database forbindelse
+        logging.info(f"Initialiserer database forbindelse til {db_path}")
+        
+        # Standardiser db_path formatet
         if 'databases' in db_path:
             self.db_path = db_path
         else:
             self.db_path = os.path.join('databases', db_path)
             
+        # Sikrer at databases mappe eksisterer
         os.makedirs('databases', exist_ok=True)
         
+        # Initialiserer database og tabeller først
+        self._initialize_database()
+        
+        # Opret forbindelsen
         self.connection = sqlite3.connect(self.db_path)
         self.connection.row_factory = sqlite3.Row  # Så vi kan referere til kolonnenavne
         
-        self._initialize_database()
-        self._initialize_default_template()
+        # Udfør migrationer og initialiseringer
         self.migrate()
+        
+        # Sikrer at standardtemplate og andre standarddata findes
+        try:
+            # # DEBUG: Kører datainitialiseringer
+            logging.info("Kører standarddata initialiseringer")
+            self.ensure_default_mail_template()
+            # # DEBUG: Standarddata initialiseringer fuldført
+            logging.info("Standarddata initialiseringer fuldført")
+        except Exception as e:
+            # # DEBUG: Fejl ved standarddata initialisering
+            logging.error(f"Fejl ved standarddata initialisering: {str(e)}")
+            # Vi fortsætter selv ved fejl, da dette ikke er kritisk
 
     @property
     def cursor(self):
@@ -172,78 +192,10 @@ class DatabaseConnection:
             conn.commit()
 
     def _initialize_default_template(self):
-        """Initialiserer standard mail template hvis der ikke findes en"""
-        try:
-            cursor = self.connection.cursor()
-            
-            # Tjek om der findes en standard template
-            cursor.execute('SELECT COUNT(*) FROM mail_templates WHERE is_default = 1')
-            if cursor.fetchone()[0] == 0:
-                # Opret standard template
-                default_template = {
-                    'name': 'Standard Chauffør Rapport',
-                    'template_name': 'chauffør_report',
-                    'language': 'da',
-                    'subject': 'Din Månedlige Chauffør Rapport',
-                    'body': '''<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .header { color: #1E90FF; }
-        .content { margin: 20px 0; }
-        .footer { color: #7F8C8D; font-size: 12px; }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h2>Rapport for {{CHAUFFØR_NAVN}}</h2>
-        <p>Genereret: {{DATO}}</p>
-    </div>
-    
-    <div class="content">
-        <p>Kære {{CHAUFFØR_NAVN}},</p>
-        <p>Her er din rapport for perioden {{RAPPORT_PERIODE}}.</p>
-        
-        <h3>Rapport Oversigt</h3>
-        <ul>
-            <li>Antal ture: {{TOTAL_TURE}}</li>
-            <li>Total distance: {{TOTAL_DISTANCE}} km</li>
-            <li>Total tid: {{TOTAL_TID}} timer</li>
-        </ul>
-        
-        <h3>Gennemsnit</h3>
-        <ul>
-            <li>Gennemsnitlig tur længde: {{GNS_TUR_LÆNGDE}} km</li>
-            <li>Gennemsnitlig tur tid: {{GNS_TUR_TID}} timer</li>
-        </ul>
-    </div>
-    
-    <div class="footer">
-        <p>Med venlig hilsen<br>{{FIRMA_NAVN}}</p>
-    </div>
-</body>
-</html>''',
-                    'is_default': True
-                }
-                
-                cursor.execute('''
-                    INSERT INTO mail_templates (name, template_name, language, subject, body, is_default)
-                    VALUES (?, ?, ?, ?, ?, ?)
-                ''', (
-                    default_template['name'],
-                    default_template['template_name'],
-                    default_template['language'],
-                    default_template['subject'],
-                    default_template['body'],
-                    default_template['is_default']
-                ))
-                
-                self.connection.commit()
-                logging.info("Standard mail template oprettet")
-                
-        except sqlite3.Error as e:
-            logging.error(f"Fejl ved initialisering af standard mail template: {str(e)}")
+        """UDGÅET: Denne metode er erstattet af ensure_default_mail_template"""
+        # # DEBUG: Denne metode er udgået og bruges ikke længere
+        logging.info("_initialize_default_template er udgået og erstattet af ensure_default_mail_template")
+        # Gør intet, da funktionaliteten er flyttet til ensure_default_mail_template
 
     # Mail config metoder
     def save_mail_config(self, config):
@@ -672,4 +624,122 @@ class DatabaseConnection:
                 
         except sqlite3.Error as e:
             logging.error(f"Fejl ved migrering af mail templates: {str(e)}")
-            raise 
+            raise
+
+    def ensure_default_mail_template(self):
+        """Sikrer at der findes en standard mail-skabelon i databasen"""
+        try:
+            # # DEBUG: Kontrollerer om der findes en standard mail-skabelon
+            logging.info("Kontrollerer om der findes en standard mail-skabelon")
+            
+            cursor = self.connection.cursor()
+            cursor.execute('SELECT COUNT(*) FROM mail_templates WHERE is_default = 1')
+            count = cursor.fetchone()[0]
+            
+            if count == 0:
+                # Ingen standard template fundet, opret en
+                logging.info("Ingen standard mail-skabelon fundet, opretter en ny")
+                
+                # Opret standard template
+                default_template = {
+                    'name': 'Standard Chauffør Rapport',
+                    'template_name': 'chauffør_report',
+                    'language': 'da',
+                    'subject': 'Din Månedlige Chauffør Rapport',
+                    'body': '''<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; line-height: 1.6; color: #333; }
+        .header { margin-bottom: 30px; border-bottom: 2px solid #1E90FF; padding-bottom: 20px; }
+        .greeting { font-size: 18px; margin-bottom: 20px; }
+        .goals-container { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .goal-item { margin: 15px 0; padding: 10px; border-radius: 5px; }
+        .goal-value { font-weight: bold; font-size: 18px; }
+        .goal-target { color: #666; font-size: 14px; margin-top: 5px; }
+        .success { color: #28a745; }
+        .warning { color: #ffc107; }
+        .danger { color: #dc3545; }
+        .info { color: #17a2b8; }
+        .footer { margin-top: 30px; font-size: 14px; color: #666; border-top: 1px solid #ddd; padding-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Rapport for {{CHAUFFØR_NAVN}}</h2>
+        <p>Periode: {{RAPPORT_PERIODE}}</p>
+    </div>
+    
+    <div class="greeting">
+        <p>Kære {{CHAUFFØR_NAVN}},</p>
+        <p>Her er din månedlige rapport for {{RAPPORT_PERIODE}}.</p>
+    </div>
+    
+    <div class="goals-container">
+        <h3>Din performance på de 4 målsætningerne:</h3>
+        
+        <div class="goal-item">
+            <div>Tomgang:</div>
+            <div class="goal-value {{TOMGANG_CLASS}}">{{TOMGANG_VÆRDI}}%</div>
+            <div class="goal-target">Mål: Under 5%</div>
+        </div>
+        
+        <div class="goal-item">
+            <div>Forudgående anvendelse:</div>
+            <div class="goal-value {{FORUDGÅENDE_CLASS}}">{{FORUDGÅENDE_VÆRDI}}%</div>
+            <div class="goal-target">Mål: Over 85.5%</div>
+        </div>
+        
+        <div class="goal-item">
+            <div>Brug af motorbremse:</div>
+            <div class="goal-value {{MOTORBREMSE_CLASS}}">{{MOTORBREMSE_VÆRDI}}%</div>
+            <div class="goal-target">Mål: Over 55%</div>
+        </div>
+        
+        <div class="goal-item">
+            <div>Påløbsdrift:</div>
+            <div class="goal-value {{PÅLØBSDRIFT_CLASS}}">{{PÅLØBSDRIFT_VÆRDI}}%</div>
+            <div class="goal-target">Mål: Over 7%</div>
+        </div>
+    </div>
+    
+    <p>Din komplette rapport er vedhæftet som fil, hvor du kan finde flere detaljer om din kørsel.</p>
+    
+    <div class="footer">
+        <p>Har du spørgsmål til rapporten?</p>
+        <p>Kontakt venligst:<br>
+        - Susan<br>
+        - Rasmus</p>
+        <p>Med venlig hilsen<br>Fiskelogistik</p>
+    </div>
+</body>
+</html>'''
+                }
+                
+                # Gem standard template i databasen
+                cursor.execute('''
+                    INSERT INTO mail_templates (name, template_name, language, subject, body, is_default)
+                    VALUES (?, ?, ?, ?, ?, ?)
+                ''', (
+                    default_template['name'],
+                    default_template['template_name'],
+                    default_template['language'],
+                    default_template['subject'],
+                    default_template['body'],
+                    1  # is_default = true
+                ))
+                
+                self.connection.commit()
+                logging.info("Standard mail template oprettet succesfuldt")
+            else:
+                # # DEBUG: Standard mail-skabelon findes allerede
+                logging.info("Standard mail-skabelon findes allerede i databasen")
+                
+        except sqlite3.Error as e:
+            # # DEBUG: Detaljeret fejlinfo ved problemer med at sikre standard mail-skabelon
+            logging.error(f"Fejl ved sikring af standard mail template: {str(e)}")
+            logging.error(f"Fejltype: {type(e).__name__}")
+            if hasattr(e, '__traceback__'):
+                import traceback
+                trace = ''.join(traceback.format_tb(e.__traceback__))
+                logging.error(f"Stacktrace: {trace}") 

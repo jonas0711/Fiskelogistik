@@ -658,20 +658,38 @@ Tilgængelige variabler:
     def load_template(self):
         """Indlæser eksisterende standard template"""
         try:
+            # # DEBUG: Forsøger at indlæse mail-skabelon
+            logging.info("Forsøger at indlæse mail-skabelon")
             template = self.db.get_mail_template()
             
             if template:
+                # # DEBUG: Skabelon fundet, indhold: {subject, body}
+                logging.info(f"Mail-skabelon fundet: {template.keys()}")
+                
+                # Opdateret kode til at håndtere dictionary-format i stedet for tuple
                 self.template_name.delete(0, "end")
-                self.template_name.insert(0, template[1])  # name
+                self.template_name.insert(0, "chauffør_report")  # Standardnavn
                 
                 self.template_subject.delete(0, "end")
-                self.template_subject.insert(0, template[2])  # subject
+                self.template_subject.insert(0, template['subject'])
                 
                 self.template_body.delete("1.0", "end")
-                self.template_body.insert("1.0", template[3])  # body
+                self.template_body.insert("1.0", template['body'])
+                
+                # # DEBUG: Skabelon indlæst succesfuldt
+                logging.info("Mail-skabelon indlæst succesfuldt")
+            else:
+                # # DEBUG: Ingen skabelon fundet
+                logging.warning("Ingen mail-skabelon fundet i databasen")
                 
         except Exception as e:
+            # # DEBUG: Detaljeret fejlmeddelelse
             logging.error(f"Fejl ved indlæsning af mail skabelon: {str(e)}")
+            logging.error(f"Fejltype: {type(e).__name__}")
+            if hasattr(e, '__traceback__'):
+                import traceback
+                trace = ''.join(traceback.format_tb(e.__traceback__))
+                logging.error(f"Stacktrace: {trace}")
 
     def _safe_window_init(self):
         """Sikrer korrekt vinduesstørrelse efter UI-load"""

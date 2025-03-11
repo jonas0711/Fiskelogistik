@@ -434,10 +434,82 @@ class ReportMailWindow:
             button_center,
             text="Send Test Mail",
             command=send_test_mail_handler,
-            width=100,
+            width=110,
             height=32
         )
         test_mail_button.pack(side="left", padx=5)
+        
+        # Send Mail Direkte knap
+        def send_direct_mail_handler():
+            try:
+                # # DEBUG: Starter send_direct_mail_handler for chauffør
+                logging.info(f"Starter direkte mail sending til chauffør: {driver['id']}")
+                
+                # Hent email fra entry feltet
+                email = email_entry.get().strip()
+                
+                # Valider email
+                if not email or '@' not in email or '.' not in email:
+                    messagebox.showwarning(
+                        "Ugyldig Email",
+                        "Indtast venligst en gyldig email adresse",
+                        parent=email_window
+                    )
+                    return
+                    
+                # Gem email i databasen
+                self.db.save_driver_email(driver['id'], email)
+                logging.info(f"Email gemt for chauffør {driver['id']}: {email}")
+                
+                # Hent rapport data
+                report_data = self.word_report.get_report_data(driver['id'])
+                if not report_data:
+                    messagebox.showwarning(
+                        "Advarsel",
+                        f"Ingen rapport data fundet for {driver['name']}",
+                        parent=email_window
+                    )
+                    return
+                
+                # Send mail direkte til chaufførens email
+                logging.info(f"Sender rapport direkte til {email}")
+                self.mail_handler.send_report(driver['id'], report_data, recipient=email)
+                
+                # Opdater UI
+                if driver['id'] in self.driver_rows:
+                    row = self.driver_rows[driver['id']]
+                    row['edit_button'].configure(state="disabled", text="Rapport Sendt")
+                
+                # Luk vinduet og vis bekræftelse
+                email_window.destroy()
+                messagebox.showinfo("Success", f"Rapport sendt direkte til {driver['name']} ({email})")
+                
+            except Exception as e:
+                # # DEBUG: Fejl ved direkte mail sending
+                logging.error(f"Fejl ved direkte mail sending til {driver['name']}: {str(e)}")
+                logging.error(f"Fejltype: {type(e).__name__}")
+                if hasattr(e, '__traceback__'):
+                    import traceback
+                    trace = ''.join(traceback.format_tb(e.__traceback__))
+                    logging.error(f"Stacktrace: {trace}")
+                    
+                messagebox.showerror(
+                    "Fejl",
+                    f"Kunne ikke sende mail: {str(e)}",
+                    parent=email_window
+                )
+        
+        # Tilføj Send Mail Direkte knap
+        send_mail_button = ctk.CTkButton(
+            button_center,
+            text="Send Mail Direkte",
+            command=send_direct_mail_handler,
+            width=130,
+            height=32,
+            fg_color="#28a745",  # Grøn farve som success
+            hover_color="#218838"  # Mørkere grøn ved hover
+        )
+        send_mail_button.pack(side="left", padx=5)
         
         # Fokuser på email feltet
         email_entry.focus_force()
