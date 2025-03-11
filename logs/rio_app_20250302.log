@@ -1,0 +1,1589 @@
+2025-03-02 17:00:52,598 [INFO] Logging system initialiseret
+2025-03-02 17:00:52,599 [INFO] === Applikation starter ===
+2025-03-02 17:00:52,600 [INFO] Initialiserer ModernRIOMenu
+2025-03-02 17:00:52,995 [INFO] ModernRIOMenu initialiseret succesfuldt
+2025-03-02 17:00:53,164 [INFO] Hovedvindue UI fuldt initialiseret
+2025-03-02 17:01:49,350 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,351 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,368 [INFO] Standard mail template oprettet
+2025-03-02 17:01:49,371 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,382 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,382 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,382 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,383 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,383 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,383 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,383 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,383 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,384 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,384 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,384 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,384 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,384 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,386 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,386 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,387 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,387 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,387 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,387 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,388 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,388 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,388 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,389 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,389 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,389 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,389 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,389 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,389 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,389 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,389 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,391 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,391 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,391 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,391 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,391 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,391 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,391 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,391 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,392 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,392 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,392 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,392 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,392 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,393 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,393 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,393 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,394 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,394 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,394 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,394 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,394 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,395 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,395 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,395 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,395 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,395 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,396 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,396 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,396 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,396 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,396 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,396 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,399 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,401 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,402 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,409 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,409 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,409 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,410 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,410 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,410 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,410 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,410 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,411 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,411 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,411 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,411 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,411 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,411 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,413 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,413 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,413 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,413 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,413 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,413 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,414 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,414 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,414 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,414 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,414 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,414 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,414 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,415 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,415 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,415 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,415 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,415 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,416 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,416 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,416 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,416 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,416 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,417 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,417 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,417 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,417 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,418 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,419 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,419 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,420 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,420 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,420 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,420 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,421 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,421 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,421 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,421 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,422 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,422 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,422 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,422 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,423 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,423 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,423 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,423 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,424 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,424 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,424 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,424 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,428 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,428 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,429 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,436 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,437 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,437 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,438 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,438 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,438 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,439 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,439 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,439 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,439 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,439 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,439 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,441 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,441 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,441 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,441 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,441 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,441 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,442 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,442 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,442 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,442 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,442 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,444 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,444 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,444 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,444 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,444 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,444 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,445 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,445 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,445 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,445 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,445 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,446 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,446 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,446 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,446 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,446 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,446 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,447 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,447 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,447 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,447 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,447 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,447 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,448 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,448 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,448 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,448 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,448 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,448 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,450 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,450 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,450 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,450 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,450 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,450 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,450 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,451 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,451 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,451 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,456 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,456 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,457 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,463 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,463 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,464 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,464 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,464 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,464 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,464 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,464 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,466 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,466 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,466 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,466 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,466 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,466 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,466 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,466 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,467 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,467 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,467 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,467 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,467 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,468 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,469 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,469 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,470 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,470 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,470 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,472 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,472 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,472 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,473 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,473 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,473 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,473 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,473 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,473 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,473 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,474 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,474 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,474 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,474 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,474 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,475 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,475 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,475 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,475 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,476 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,476 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,476 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,476 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,476 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,477 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,477 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,477 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,477 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,477 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,477 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,477 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,478 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,478 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,478 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,478 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,479 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,479 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,479 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,479 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,483 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,483 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,484 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,491 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,491 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,491 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,491 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,491 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,491 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,493 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,493 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,493 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,493 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,493 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,493 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,494 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,494 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,494 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,494 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,494 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,495 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,495 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,495 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,495 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,495 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,496 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,496 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,496 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,496 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,496 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,496 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,496 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,497 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,497 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,497 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,497 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,498 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,498 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,498 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,498 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,498 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,499 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,499 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,499 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,499 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,499 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,500 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,500 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,500 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,500 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,500 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,501 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,502 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,502 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,502 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,503 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,503 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,503 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,503 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,504 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,504 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,504 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,504 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,505 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,505 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,505 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,505 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,506 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,506 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,506 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,506 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,507 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,507 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,507 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,507 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,507 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,507 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,511 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,511 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,513 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,519 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,519 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,520 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,520 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,520 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,520 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,521 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,521 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,521 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,522 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,522 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,522 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,522 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,522 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,524 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,524 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,524 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,524 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,524 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,524 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,525 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,525 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,525 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,525 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,525 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,525 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,526 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,526 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,526 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,526 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,526 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,526 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,526 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,527 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,527 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,527 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,527 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,527 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,527 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,527 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,529 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,529 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,529 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,529 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,529 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,529 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,529 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,530 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,530 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,530 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,530 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,530 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,530 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,530 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,531 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,531 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,531 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,531 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,531 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,531 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,532 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,532 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,532 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,532 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,532 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,532 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,537 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,537 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,538 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,546 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,546 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,546 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,546 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,547 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,547 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,547 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,547 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,547 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,547 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,548 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,548 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,548 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,548 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,548 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,548 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,548 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,549 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,549 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,549 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,549 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,549 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,549 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,549 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,549 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,549 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,551 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,551 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,551 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,552 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,553 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,553 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,554 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,554 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,554 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,555 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,555 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,555 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,555 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,556 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,556 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,556 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,556 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,556 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,557 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,557 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,557 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,557 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,557 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,558 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,558 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,558 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,558 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,558 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,559 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,559 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,559 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,559 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,559 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,559 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,560 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,560 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,560 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,560 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,560 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,560 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,561 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,561 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,561 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,561 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,562 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,562 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,562 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,562 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,565 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,565 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,566 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,573 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,574 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,574 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,574 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,575 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,575 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,575 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,575 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,575 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,576 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,576 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,576 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,576 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,576 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,576 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,577 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,577 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,577 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,577 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,577 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,577 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,578 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,578 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,578 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,578 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,578 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,578 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,578 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,578 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,580 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,580 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,580 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,580 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,580 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,580 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,580 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,581 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,581 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,581 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,581 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,581 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,581 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,581 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,581 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,582 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,582 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,582 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,582 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,582 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,582 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,584 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,584 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,584 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,584 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,584 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,585 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,586 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,586 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,587 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,587 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,587 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,588 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,588 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,588 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,589 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,589 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,589 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,589 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,592 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,593 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,593 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,599 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,599 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,600 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,600 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,600 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,600 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,600 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,601 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,602 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,602 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,602 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,603 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,603 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,603 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,604 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,604 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,605 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,605 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,605 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,605 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,606 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,606 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,606 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,606 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,606 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,606 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,606 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,608 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,608 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,608 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,608 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,608 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,609 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,609 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,609 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,609 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,609 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,609 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,609 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,610 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,610 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,610 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,610 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,610 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,611 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,611 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,611 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,611 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,611 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,611 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,612 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,612 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,612 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,612 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,612 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,612 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,613 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,613 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,613 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,613 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,613 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,613 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,617 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,617 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,617 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,624 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,625 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,625 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,625 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,626 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,626 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,626 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,626 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,627 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,627 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,627 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,627 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,627 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,628 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,628 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,628 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,628 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,628 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,628 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,630 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,630 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,630 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,630 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,630 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,630 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,630 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,630 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,630 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,631 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,631 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,631 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,631 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,631 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,632 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,632 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,632 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,632 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,632 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,633 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,633 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,633 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,633 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,633 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,633 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,634 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,634 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,634 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,634 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,635 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,635 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,636 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,637 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,637 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,637 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,637 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,638 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,638 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,638 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,638 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,639 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,642 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,642 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,644 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,649 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,649 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,650 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,650 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,650 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,650 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,650 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,650 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,651 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,652 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,653 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,653 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,653 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,653 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,654 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,654 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,654 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,654 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,655 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,655 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,655 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,656 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,656 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,656 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,656 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,656 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,657 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,657 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,657 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,657 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,657 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,658 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,658 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,658 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,658 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,658 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,658 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,658 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,658 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,660 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,660 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,660 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,660 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,660 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,660 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,661 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,661 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,661 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,661 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,661 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,661 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,662 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,662 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,662 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,662 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,662 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,662 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,662 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,663 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,663 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,663 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,663 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,663 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,663 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,667 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,667 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,667 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,674 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,674 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,674 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,674 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,675 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,675 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,675 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,675 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,676 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,676 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,676 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,676 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,677 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,677 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,677 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,677 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,677 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,677 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,678 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,678 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,678 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,678 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,678 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,678 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,678 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,678 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,680 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,680 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,680 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,680 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,680 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,681 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,681 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,681 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,681 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,681 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,681 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,681 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,681 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,681 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,682 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,682 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,682 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,682 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,682 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,682 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,683 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,683 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,683 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,683 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,683 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,683 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,684 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,684 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,684 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,684 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,685 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,685 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,686 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,686 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,686 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,687 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,690 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,691 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,691 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,697 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,697 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,698 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,698 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,698 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,698 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,698 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,698 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,699 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,699 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,699 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,699 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,699 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,699 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,699 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,700 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,700 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,700 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,700 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,700 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,702 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,702 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,703 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,703 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,704 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,704 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,704 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,705 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,705 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,705 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,706 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,706 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,706 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,706 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,706 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,706 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,707 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,707 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,707 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,707 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,707 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,707 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,708 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,708 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,708 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,708 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,708 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,709 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,709 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,709 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,709 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,709 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,710 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,710 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,710 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,710 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,713 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,713 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,714 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,721 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,721 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,722 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,722 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,722 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,722 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,723 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,723 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,723 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,723 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,723 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,723 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,725 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,725 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,725 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,725 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,725 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,725 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,726 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,726 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,726 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,726 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,726 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,727 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,727 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,727 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,727 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,727 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,727 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,727 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,728 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,728 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,728 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,728 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,728 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,728 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,728 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,729 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,729 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,729 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,729 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,729 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,729 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,729 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,730 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,730 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,730 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,730 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,730 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,730 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,730 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,730 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,732 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,732 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,732 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,732 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,732 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,733 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,733 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,733 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,733 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,733 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,737 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,737 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,739 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,744 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,745 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,745 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,745 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,745 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,746 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,746 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,746 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,746 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,746 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,746 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,746 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,747 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,747 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,747 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,747 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,747 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,747 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,747 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,748 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,748 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,748 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,748 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,748 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,748 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,749 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,749 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,749 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,749 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,749 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,749 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,751 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,751 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,751 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,751 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,752 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,752 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,753 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,753 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,753 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,754 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,754 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,754 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,754 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,754 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,755 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,755 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,755 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,755 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,755 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,756 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,756 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,756 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,756 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,756 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,757 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,757 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,757 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,757 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,757 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,758 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,758 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,758 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,758 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,758 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,758 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,761 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,761 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,762 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,768 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,768 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,769 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,770 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,770 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,770 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,770 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,771 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,771 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,771 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,771 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,772 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,772 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,772 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,772 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,772 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,773 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,773 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,773 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,773 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,773 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,773 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,774 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,774 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,774 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,774 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,774 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,775 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,775 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,775 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,775 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,775 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,775 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,775 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,775 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,777 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,777 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,777 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,777 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,777 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,777 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,778 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,778 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,778 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,778 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,778 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,778 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,778 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,779 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,779 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,779 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,779 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,780 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,780 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,780 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,780 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,780 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,780 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,780 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,781 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,781 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,781 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,781 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,781 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,781 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,781 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,785 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,785 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,787 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,794 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,794 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,794 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,794 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,794 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,795 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,795 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,795 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,795 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,795 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,795 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,796 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,796 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,796 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,796 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,796 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,796 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,797 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,797 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,797 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,797 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,797 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,797 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,797 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,799 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,799 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,799 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,799 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,799 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,799 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,800 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,800 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,800 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,800 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,801 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,801 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,801 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,801 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,801 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,802 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,802 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,803 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,803 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,803 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,803 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,803 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,803 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,804 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,804 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,804 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,804 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,804 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,805 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,805 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,805 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,805 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,805 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,805 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,806 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,806 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,806 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,806 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,806 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,806 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,808 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,808 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,808 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,808 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,811 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,811 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,812 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,817 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,817 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,819 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,820 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,820 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,820 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,821 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,821 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,821 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,821 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,822 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,822 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,822 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,822 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,822 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,822 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,822 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,823 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,823 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,823 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,823 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,823 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,823 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,823 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,824 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,824 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,824 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,824 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,824 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,824 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,824 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,824 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,825 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,825 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,825 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,825 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,825 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,825 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,825 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,827 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,827 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,827 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,827 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,827 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,827 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,827 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,827 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,828 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,828 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,828 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,828 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,828 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,828 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,828 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,829 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,829 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,832 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,832 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,833 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,839 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,839 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,839 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,839 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,839 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,841 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,841 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,841 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,841 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,841 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,842 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,842 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,842 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,842 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,842 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,842 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,843 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,843 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,843 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,843 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,843 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,843 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,844 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,844 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,844 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,844 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,844 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,844 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,845 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,845 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,845 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,845 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,845 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,845 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,846 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,846 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,846 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,846 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,846 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,846 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,847 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,847 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,847 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,847 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,847 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,847 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,848 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,848 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,848 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,848 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,848 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,848 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,849 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,849 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,849 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,849 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,852 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,852 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,854 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,860 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,860 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,860 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,860 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,860 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,860 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,861 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,861 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,861 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,861 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,861 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,863 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,863 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,863 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,863 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,863 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,863 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,863 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,863 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,864 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,864 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,864 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,864 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,864 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,864 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,864 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,864 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,865 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,865 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,865 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,865 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,865 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,865 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,865 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,866 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,866 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,866 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,866 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,866 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,866 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,867 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,867 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,867 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,867 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,868 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,869 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,869 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,869 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,869 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,869 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,870 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,870 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,874 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,874 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,875 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,880 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,880 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,881 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,881 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,881 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,881 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,881 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,881 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,882 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,882 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,882 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,882 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,882 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,882 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,883 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,883 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,883 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,883 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,883 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,883 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,885 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,886 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,886 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,886 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,887 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,887 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,888 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,888 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,888 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,888 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,888 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,889 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,889 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,889 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,889 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,889 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,889 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,890 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,890 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,890 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,890 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,890 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,890 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,890 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,890 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,892 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,892 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,892 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,892 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,892 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,896 [WARNING] Migration fejlede: no such table: settings
+2025-03-02 17:01:49,896 [WARNING] Kunne ikke rydde op i settings: no such table: settings
+2025-03-02 17:01:49,897 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:01:49,901 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,903 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,903 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,903 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,903 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,904 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,904 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,904 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,904 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,905 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,905 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,905 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,905 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,905 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,906 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,906 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,906 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,906 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,907 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,907 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,907 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,907 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,907 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,907 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,907 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,908 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,908 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,908 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,908 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,908 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,908 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,908 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,910 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,910 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,910 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,910 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,910 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,910 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:01:49,910 [INFO] Nøgletal beregnet succesfuldt
+2025-03-02 17:01:49,910 [INFO] Nøgletal beregnet for chauffør
+2025-03-02 17:04:17,150 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:04:17,152 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:04:17,155 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:10,426 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:10,427 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:10,429 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:10,497 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:10,498 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:10,498 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:10,585 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:10,585 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:10,586 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:10,861 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:10,862 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:10,862 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:21,260 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:21,261 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:21,262 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:21,336 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:21,338 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:21,339 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:21,975 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:21,976 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:21,976 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,510 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,511 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,512 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,593 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,593 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,594 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,673 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,674 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,674 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,757 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,758 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,758 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,835 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,836 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,837 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,913 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,914 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,916 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,997 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,998 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:28,998 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:29,078 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:29,079 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:29,079 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:29,163 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:29,164 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:29,165 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:37,830 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:37,831 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:37,832 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:37,905 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:37,906 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:37,907 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:37,977 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:37,978 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:37,978 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,467 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,469 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,471 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,544 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,544 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,545 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,617 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,618 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,619 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,690 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,691 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,692 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,764 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,765 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,765 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,923 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,924 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:39,924 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:40,752 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:40,753 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:40,755 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:40,826 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:40,827 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:40,828 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:40,944 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:40,945 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:40,945 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,278 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,279 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,280 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,353 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,353 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,354 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,427 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,428 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,429 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,502 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,503 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,505 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,577 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,578 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,579 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,652 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,653 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,654 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,726 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,727 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,727 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,799 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,799 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:41,800 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:44,085 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:44,086 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:44,088 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:44,163 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:44,164 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:44,165 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:44,732 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:44,733 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:44,734 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,665 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,667 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,668 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,744 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,744 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,746 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,824 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,825 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,825 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,906 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,907 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,907 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,982 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,983 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:48,983 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,057 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,057 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,058 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,256 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,257 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,258 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,337 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,338 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,339 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,419 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,420 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,421 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,870 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,871 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,871 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,950 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,951 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:06:49,951 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-02 17:07:05,401 [INFO] Bruger klikkede på knap: Rapporter
+2025-03-02 17:07:06,090 [INFO] Rapportvindue fuldt initialiseret
+2025-03-02 17:07:15,423 [INFO] Initialiserer WordReportGenerator med database: databases\chauffør_data_februar_2025.db
+2025-03-02 17:07:15,430 [INFO] Database migrationer kørt succesfuldt
+2025-03-02 17:07:15,431 [INFO] Minimum kilometer sat til: 100.0
+2025-03-02 17:08:01,856 [INFO] Starter nedlukning af applikation
+2025-03-02 17:08:01,912 [INFO] Applikation lukket succesfuldt
+2025-03-02 17:08:01,915 [INFO] === Applikation lukker normalt ===
