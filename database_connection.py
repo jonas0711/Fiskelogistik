@@ -518,6 +518,7 @@ class DatabaseConnection:
         """Kører alle nødvendige database migrationer"""
         try:
             self.migrate_mail_templates()
+            self.migrate_mail_log()
             logging.info("Database migrationer kørt succesfuldt")
         except Exception as e:
             logging.error(f"Fejl ved kørsel af database migrationer: {str(e)}")
@@ -579,7 +580,44 @@ class DatabaseConnection:
             logging.error(f"Kritisk fejl under email-opdatering: {str(e)}")
             print(f"# DEBUG: Encoding fejl detaljer - Exception Type: {type(e).__name__}, Args: {e.args}")
             raise
-
+            
+    def get_driver_info(self, driver_id):
+        """
+        Henter chauffør information i det format, som MailSystem forventer.
+        Wrapper omkring get_driver metoden for at sikre kompatibilitet.
+        
+        Args:
+            driver_id: Chauffør ID
+            
+        Returns:
+            dict: Chauffør information i formatet {'id': driver_id, 'name': driver_name}
+        """
+        try:
+            # Hent chauffør data via den eksisterende get_driver metode
+            driver_data = self.get_driver(driver_id)
+            
+            # Log debug information
+            logging.debug(f"Hentede chauffør data for {driver_id}: {driver_data}")
+            
+            # Hvis get_driver returnerer data, konverterer vi det til det format, MailSystem forventer
+            if driver_data:
+                # Vi ved at get_driver returnerer et dict med 'id' og 'name' eller alle kolonner fra chauffør_data_data
+                result = {
+                    'id': driver_data.get('id', driver_id),
+                    'name': driver_data.get('name', driver_data.get('Chauffør', driver_id))
+                }
+                
+                logging.debug(f"Konverteret chauffør data til MailSystem format: {result}")
+                return result
+                
+            # Hvis ingen data findes, returnerer vi None, så MailSystem kan håndtere det
+            logging.warning(f"Ingen chauffør information fundet for {driver_id}")
+            return None
+            
+        except Exception as e:
+            logging.error(f"Fejl ved hentning af chauffør info for {driver_id}: {str(e)}")
+            return None
+            
     def migrate_mail_templates(self):
         """Migrerer mail_templates tabellen til den nye struktur"""
         try:
@@ -743,3 +781,36 @@ class DatabaseConnection:
                 import traceback
                 trace = ''.join(traceback.format_tb(e.__traceback__))
                 logging.error(f"Stacktrace: {trace}") 
+
+    def migrate_mail_log(self):
+        """
+        Opretter mail_log tabellen hvis den ikke findes
+        Denne tabel bruges til at logge mail-afsendelser og fejl
+        """
+        try:
+            cursor = self.connection.cursor()
+            
+            # Tjek om tabellen allerede findes
+            cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='mail_log'")
+            if cursor.fetchone() is None:
+                logging.info("Opretter mail_log tabel")
+                
+                # Opret tabellen
+                cursor.execute('''
+                CREATE TABLE mail_log (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    driver_id TEXT NOT NULL,
+                    timestamp TEXT NOT NULL,
+                    status TEXT NOT NULL,
+                    message TEXT
+                )
+                ''')
+                
+                self.connection.commit()
+                logging.info("mail_log tabel oprettet succesfuldt")
+            else:
+                logging.debug("mail_log tabel findes allerede")
+                
+        except Exception as e:
+            logging.error(f"Fejl ved oprettelse af mail_log tabel: {str(e)}")
+            raise 

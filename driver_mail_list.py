@@ -12,7 +12,7 @@ class DriverMailList:
         """Initialiserer mail liste vinduet"""
         try:
             self.parent = parent
-            self.db = DatabaseConnection('settings.db')
+            self.db = DatabaseConnection('databases/settings.db')
             
             # Sikr at databasen er initialiseret
             self._initialize_database()

@@ -720,7 +720,7 @@ class ReportWindow:
                 return
                 
             # Tjek om mail er konfigureret
-            db = DatabaseConnection('settings.db')
+            db = DatabaseConnection('databases/settings.db')
             mail_config = db.get_mail_config()
             
             if not mail_config:

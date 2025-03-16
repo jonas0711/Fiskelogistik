@@ -19,334 +19,152 @@ from email import encoders
 import hashlib
 
 class MailHandler:
-    def __init__(self):
-        """Initialiserer MailHandler med database forbindelse og mail system"""
+    def __init__(self, db_path='databases/settings.db'):
+        """
+        Initialiserer MailHandler med database forbindelse og mail system
+        
+        Args:
+            db_path: Sti til settings databasen
+        """
         # Opret database forbindelse
-        self.db_path = os.path.join('databases', 'settings.db')
-        self.db = DatabaseConnection(self.db_path)
+        self.db = DatabaseConnection(db_path)
         
         # Initialiser mail system
-        self.mail_system = MailSystem()
+        self.mail_system = MailSystem(self.db)
         
-    def _get_first_name(self, full_name):
-        """Udtrækker fornavnet fra det fulde navn i formatet 'Efternavn, Fornavn'"""
-        try:
-            # Split på komma og tag anden del (fornavn delen)
-            parts = full_name.split(',')
-            if len(parts) >= 2:
-                # Tag første ord fra fornavn delen (i tilfælde af mellemnavn)
-                first_name = parts[1].strip().split()[0]
-                return first_name
-            return full_name  # Returner hele navnet hvis formatet ikke passer
-        except Exception:
-            return full_name  # Returner hele navnet ved fejl
-
+        # Opsæt logging
+        logging.basicConfig(
+            level=logging.INFO,
+            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        )
+        self.logger = logging.getLogger('MailHandler')
+    
+    def get_first_name(self, full_name):
+        """
+        Udtrækker fornavnet fra et fuldt navn
+        
+        Args:
+            full_name: Fuldt navn
+            
+        Returns:
+            str: Fornavn
+        """
+        if not full_name:
+            return ""
+        return full_name.split()[0]
+    
     def create_html_report(self, report_data, driver_name):
-        """Opretter HTML formateret rapport baseret på report_data for en given chauffør.
+        """
+        Delegerer til MailSystem for at skabe HTML rapport
         
-        Denne metode forventer at report_data er et dictionary med statistik og rapport data.
+        Args:
+            report_data: Rapport data
+            driver_name: Chaufførens navn
+            
+        Returns:
+            str: HTML indhold
+        """
+        return self.mail_system._create_html_report(report_data, driver_name)
+    
+    def send_report(self, driver_id, report_data, recipient=None):
+        """
+        Sender en rapport til en chauffør
+        
+        Args:
+            driver_id: Chauffør ID
+            report_data: Rapport data (dict med rapport:binære data)
+            recipient: Specifik modtager (hvis None bruges chaufførens email)
+            
+        Returns:
+            bool: True hvis rapporten blev sendt
         """
         try:
-            # Hent statistik fra report_data
-            if isinstance(report_data, dict) and 'statistik' in report_data:
-                statistik = report_data['statistik']
+            self.logger.info(f"Sender rapport til chauffør {driver_id}")
+            # Delegér til MailSystem for at sende rapporten
+            success = self.mail_system.send_report(driver_id, report_data, recipient)
+            
+            if success:
+                self.logger.info(f"Rapport sendt succesfuldt til chauffør {driver_id}")
             else:
-                raise ValueError("Ugyldig report_data format - mangler statistik")
-
-            # Udtræk fornavn fra det fulde navn
-            fornavn = self._get_first_name(statistik['name'])
-
-            # Opret HTML header og styling
-            html_header = f"""<html>
-    <head>
-        <style>
-            body {{ 
-                font-family: Arial, sans-serif; 
-                margin: 0; 
-                padding: 20px;
-                line-height: 1.6;
-                color: #333;
-            }}
-            .header {{ 
-                margin-bottom: 30px;
-                border-bottom: 2px solid #1E90FF;
-                padding-bottom: 20px;
-            }}
-            .greeting {{
-                font-size: 18px;
-                margin-bottom: 20px;
-            }}
-            .goals-container {{
-                background: #f8f9fa;
-                padding: 20px;
-                border-radius: 8px;
-                margin: 20px 0;
-            }}
-            .goal-item {{
-                margin: 15px 0;
-                padding: 10px;
-                border-radius: 5px;
-            }}
-            .goal-value {{
-                font-weight: bold;
-                font-size: 18px;
-            }}
-            .goal-target {{
-                color: #666;
-                font-size: 14px;
-                margin-top: 5px;
-            }}
-            .success {{
-                color: #28a745;
-            }}
-            .warning {{
-                color: #dc3545;
-            }}
-            .footer {{
-                margin-top: 30px;
-                padding-top: 20px;
-                border-top: 1px solid #dee2e6;
-                color: #666;
-                font-size: 14px;
-            }}
-            .contact-info {{
-                margin-top: 20px;
-                background: #e9ecef;
-                padding: 15px;
-                border-radius: 5px;
-            }}
-        </style>
-    </head>
-    <body>
-        <div class="header">
-            <h2 style="color: #1E90FF; margin: 0;">Fiskelogistik Rapport</h2>
-        </div>
-    """
-
-            # Opret personlig hilsen med fornavn
-            html_body = f"""
-        <div class="greeting">
-            Hej {fornavn},
-        </div>
-        <p>Her er din månedlige kørselsrapport for {statistik['date']}.</p>
-        
-        <div class="goals-container">
-            <h3 style="margin-top: 0;">Din performance på de 4 målsætningerne:</h3>
-"""
-            
-            # Definer målsætninger og tjek om de er opfyldt
-            goals = {
-                'Tomgang': {
-                    'value': statistik['tomgangsprocent'],
-                    'target': 5.0,
-                    'text': 'Mål: Under 5%',
-                    'success': statistik['tomgangsprocent'] <= 5.0,
-                    'reverse': True  # Lavere er bedre
-                },
-                'Fartpilot anvendelse': {
-                    'value': statistik['fartpilot_andel'],
-                    'target': 66.5,
-                    'text': 'Mål: Over 66,5%',
-                    'success': statistik['fartpilot_andel'] >= 66.5,
-                    'reverse': False
-                },
-                'Brug af motorbremse': {
-                    'value': statistik['motorbremse_andel'],
-                    'target': 56.0,
-                    'text': 'Mål: Over 56%',
-                    'success': statistik['motorbremse_andel'] >= 56.0,
-                    'reverse': False
-                },
-                'Påløbsdrift': {
-                    'value': statistik['paalobsdrift_andel'],
-                    'target': 7.0,
-                    'text': 'Mål: Over 7%',
-                    'success': statistik['paalobsdrift_andel'] >= 7.0,
-                    'reverse': False
-                }
-            }
-
-            # Tilføj hver målsætning til HTML
-            for name, goal in goals.items():
-                status_class = 'success' if goal['success'] else 'warning'
-                html_body += f"""
-            <div class="goal-item">
-                <div>{name}:</div>
-                <div class="goal-value {status_class}">{goal['value']:.1f}%</div>
-                <div class="goal-target">{goal['text']}</div>
-            </div>"""
-
-            # Tilføj afsluttende tekst og kontaktinformation
-            html_body += f"""
-        </div>
-        
-        <p>Den komplette rapport er vedhæftet som fil, hvor du kan finde flere detaljer om din kørsel.</p>
-        
-        <div class="contact-info">
-            <strong>Har du spørgsmål til rapporten?</strong><br>
-            Kontakt venligst:<br>
-            • Susan<br>
-            • Rasmus
-        </div>
-        
-        <div class="footer">
-            <p>Med venlig hilsen<br>Fiskelogistik</p>
-        </div>
-    """
-
-            html_footer = "</body></html>"
-
-            return html_header + html_body + html_footer
-            
-        except Exception as e:
-            logging.error(f"Fejl ved oprettelse af HTML rapport: {str(e)}")
-            # Returner en simpel fejlbesked som HTML
-            return f"""<html><body>
-                <h2>Fejl ved generering af rapport</h2>
-                <p>Der opstod en fejl ved generering af rapporten. Kontakt venligst support.</p>
-                <p>Se vedhæftede fil for den komplette rapport.</p>
-                </body></html>"""
-        
-    def send_report(self, driver_id, report_data, recipient=None):
-        """Sender rapport via email"""
-        try:
-            # # DEBUG: Starter send_report proces
-            logging.info(f"Starter send_report proces for chauffør: {driver_id}, custom-recipient: {recipient is not None}")
-            
-            # Hent email-adresse
-            if recipient is None:
-                recipient = self.db.get_driver_email(driver_id)
-                logging.info(f"Henter chaufførens email: {recipient}")
-                if not recipient:
-                    error_msg = f"Ingen email fundet for chauffør {driver_id}"
-                    logging.error(error_msg)
-                    raise ValueError(error_msg)
-
-            # Hent chauffør information
-            driver = self.db.get_driver(driver_id)
-            if not driver:
-                error_msg = f"Kunne ikke finde chauffør med ID {driver_id}"
-                logging.error(error_msg)
-                raise ValueError(error_msg)
-            logging.info(f"Chauffør fundet: {driver['name']}")
-
-            # Hent mail template
-            try:
-                # # DEBUG: Forsøger at hente mail-skabelon
-                logging.info("Forsøger at hente mail-skabelon 'chauffør_report'")
-                template = self.db.get_mail_template('chauffør_report')
-                if template:
-                    logging.info("Mail-skabelon 'chauffør_report' fundet")
-                else:
-                    logging.warning("Ingen mail-skabelon fundet, bruger fallback")
-            except Exception as template_error:
-                # # DEBUG: Fejl ved hentning af mail-skabelon
-                logging.error(f"Fejl ved hentning af mail-skabelon: {str(template_error)}")
-                template = None
+                self.logger.error(f"Kunne ikke sende rapport til chauffør {driver_id}")
                 
-            # Brug fallback skabelon hvis ingen fundet
-            if not template:
-                logging.warning("Bruger fallback mail-skabelon")
-                template = {
-                    'subject': 'Din Månedlige Chauffør Rapport',
-                    'body': '<html><body><p>Se vedhæftede rapport.</p></body></html>'
-                }
-
-            # Opret multipart message
-            subject = template['subject'].replace('{{CHAUFFØR_NAVN}}', driver['name'])
-            logging.info(f"Opretter email med emne: {subject}")
+            return success
             
-            msg = MIMEMultipart('mixed')
-            msg['Subject'] = subject
-            msg['From'] = self.db.get_mail_config()['email']
-            msg['To'] = recipient
-            
-            # Opret HTML rapport
-            logging.info("Genererer HTML rapport indhold")
-            html_report = self.create_html_report(report_data, driver['name'])
-            
-            # Opret HTML del
-            html_part = MIMEText(html_report, 'html', 'utf-8')
-            msg.attach(html_part)
-            logging.info("HTML indhold tilføjet til email")
-
-            # Tilføj rapport som vedhæftning
-            try:
-                if isinstance(report_data, dict) and 'rapport' in report_data:
-                    # Generer filnavn
-                    filename = f"Rapport_{driver['name']}_{datetime.now().strftime('%Y%m%d')}.docx"
-                    logging.info(f"Tilføjer rapport som vedhæftning: {filename}")
-                    
-                    # Opret attachment
-                    attachment = MIMEBase('application', 'vnd.openxmlformats-officedocument.wordprocessingml.document')
-                    attachment.set_payload(report_data['rapport'])
-                    encoders.encode_base64(attachment)
-                    attachment.add_header('Content-Disposition', 'attachment', filename=filename)
-                    msg.attach(attachment)
-                    logging.info("Rapport vedhæftet succesfuldt")
-                else:
-                    logging.warning("Ingen rapport data tilgængelig til vedhæftning")
-            except Exception as attach_error:
-                # # DEBUG: Fejl ved vedhæftning af rapport
-                logging.error(f"Fejl ved vedhæftning af rapport: {str(attach_error)}")
-                logging.error(f"Fejltype: {type(attach_error).__name__}")
-                # Fortsæt selv uden vedhæftning, så email stadig sendes
-
-            # Send mail med den korrekte MIME struktur
-            try:
-                logging.info(f"Sender email til {recipient}")
-                self.mail_system.send_mail(
-                    to=recipient,
-                    subject=msg['Subject'],
-                    body=html_report,  # Send HTML indhold
-                    attachments={filename: report_data['rapport']} if isinstance(report_data, dict) and 'rapport' in report_data else None,
-                    driver_id=driver_id,
-                    is_html=True
-                )
-                logging.info(f"Email tilføjet til sendekø for {recipient}")
-            except Exception as send_error:
-                # # DEBUG: Fejl ved afsendelse af email
-                logging.error(f"Fejl ved afsendelse af email: {str(send_error)}")
-                logging.error(f"Fejltype: {type(send_error).__name__}")
-                if hasattr(send_error, '__traceback__'):
-                    import traceback
-                    trace = ''.join(traceback.format_tb(send_error.__traceback__))
-                    logging.error(f"Stacktrace: {trace}")
-                raise
-
-            logging.info(f"Rapport send-proces fuldført succesfuldt til {driver['name']} ({recipient})")
-            return True
-
         except Exception as e:
-            # # DEBUG: Generel fejl i send_report
-            logging.error(f"Fejl ved afsendelse af rapport: {str(e)}")
-            logging.error(f"Fejltype: {type(e).__name__}")
+            self.logger.error(f"Fejl ved afsendelse af rapport til chauffør {driver_id}: {str(e)}")
             if hasattr(e, '__traceback__'):
                 import traceback
                 trace = ''.join(traceback.format_tb(e.__traceback__))
-                logging.error(f"Stacktrace: {trace}")
+                self.logger.error(f"Stacktrace: {trace}")
             raise
-            
+    
     def test_connection(self):
-        """Tester mail forbindelse"""
+        """
+        Tester mail forbindelse via MailSystem
+        
+        Returns:
+            tuple: (success, message)
+        """
+        self.logger.info("Tester mail forbindelse")
         return self.mail_system.test_connection()
-
-    # Ændret funktion for at rense tekst, men springe binære data over
-    def sanitize_text(self, text, is_attachment=False):
-        # # DEBUG: Hvis data er en vedhæftet fil (binær), returneres den uændret
-        if is_attachment:
-            logging.debug("Vedhæftet fil hentes som binære data - rensing springes over.")
-            return text
-        # Hvis ikke tekst, forsøg at dekode (kan ske, at vi modtager bytes)
-        if not isinstance(text, str):
-            try:
-                # # DEBUG: Forsøg at dekode bytes til UTF-8 tekst
-                text = text.decode('utf-8')
-            except (AttributeError, UnicodeDecodeError) as e:
-                logging.error(f"Kunne ikke dekode tekst: {e}")
-                return text
-        # Rens teksten for kontroltegn (undtagen newline, carriage return og tab)
-        return ''.join(ch for ch in text if unicodedata.category(ch)[0] != 'C' or ch in '\n\r\t')
+    
+    def send_mail(self, to, subject, body, attachments=None, driver_id=None, is_html=False):
+        """
+        Sender en mail via MailSystem
+        
+        Args:
+            to: Modtagerens email
+            subject: Emne
+            body: Brødtekst
+            attachments: Dict med filnavn:fil_data for vedhæftninger
+            driver_id: Chauffør ID, hvis relevant
+            is_html: True hvis body er HTML
+            
+        Returns:
+            bool: True hvis mail blev sendt
+        """
+        try:
+            self.logger.info(f"Sender mail til {to}")
+            success = self.mail_system.send_mail(
+                to=to,
+                subject=subject,
+                body=body,
+                attachments=attachments,
+                driver_id=driver_id,
+                is_html=is_html
+            )
+            
+            if success:
+                self.logger.info(f"Mail sendt succesfuldt til {to}")
+            else:
+                self.logger.error(f"Kunne ikke sende mail til {to}")
+                
+            return success
+            
+        except Exception as e:
+            self.logger.error(f"Fejl ved afsendelse af mail til {to}: {str(e)}")
+            if hasattr(e, '__traceback__'):
+                import traceback
+                trace = ''.join(traceback.format_tb(e.__traceback__))
+                self.logger.error(f"Stacktrace: {trace}")
+            return False
+    
+    def send_batch_mail(self, recipients, subject, body, attachments=None, is_html=False):
+        """
+        Sender samme mail til flere modtagere via MailSystem
+        
+        Args:
+            recipients: Liste af email adresser
+            subject: Emne
+            body: Brødtekst
+            attachments: Dict med filnavn:fil_data for vedhæftninger
+            is_html: True hvis body er HTML
+            
+        Returns:
+            tuple: (antal_success, antal_fejl)
+        """
+        self.logger.info(f"Sender batch mail til {len(recipients)} modtagere")
+        return self.mail_system.send_batch_mail(recipients, subject, body, attachments, is_html)
 
     def attach_file(self, msg, file_path):
         """Vedhæft fil med korrekt MIME-type og ekstra validering"""

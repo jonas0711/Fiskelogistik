@@ -86,7 +86,7 @@ class SettingsWindow:
             if min_km < 0:
                 raise ValueError("Minimum KM skal være et positivt tal")
         except ValueError as e:
-            self.status_label.configure(
+            self.general_status_label.configure(
                 text=f"Fejl: {str(e)}",
                 text_color="red"
             )
@@ -98,7 +98,7 @@ class SettingsWindow:
             if diesel_price <= 0:
                 raise ValueError("Diesel pris skal være større end 0")
         except ValueError as e:
-            self.status_label.configure(
+            self.general_status_label.configure(
                 text="Fejl: Diesel pris skal være et gyldigt tal større end 0",
                 text_color="red"
             )
@@ -116,7 +116,7 @@ class SettingsWindow:
         conn.commit()
         conn.close()
         
-        self.status_label.configure(
+        self.general_status_label.configure(
             text="Indstillinger gemt succesfuldt!",
             text_color="green"
         )
@@ -239,6 +239,14 @@ class SettingsWindow:
             command=self.save_settings
         )
         save_button.pack(pady=20)
+        
+        # Status label for generelle indstillinger
+        self.general_status_label = ctk.CTkLabel(
+            container,
+            text="",
+            font=("Segoe UI", 12)
+        )
+        self.general_status_label.pack(pady=10)
 
     def setup_mail_tab(self):
         """Opsætter mail indstillinger tab"""

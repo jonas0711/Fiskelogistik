@@ -20,7 +20,7 @@ class ReportMailWindow:
         self.driver_name = driver_name
         
         # Opret database forbindelse og mail handler
-        self.db = DatabaseConnection('settings.db')
+        self.db = DatabaseConnection('databases/settings.db')
         self.mail_handler = MailHandler()
         
         # Opret word report generator
