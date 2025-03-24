@@ -1,0 +1,1079 @@
+2025-03-16 21:43:17,857 [INFO] Logging system initialiseret
+2025-03-16 21:43:17,857 [INFO] === Applikation starter ===
+2025-03-16 21:43:17,857 [INFO] Initialiserer ModernRIOMenu
+2025-03-16 21:43:18,648 [INFO] ModernRIOMenu initialiseret succesfuldt
+2025-03-16 21:43:18,804 [INFO] Hovedvindue UI fuldt initialiseret
+2025-03-16 21:43:30,495 [INFO] Bruger klikkede på knap: Rapporter
+2025-03-16 21:43:31,350 [INFO] Rapportvindue fuldt initialiseret
+2025-03-16 21:43:40,540 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 21:43:40,624 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 21:43:40,624 [INFO] Kører standarddata initialiseringer
+2025-03-16 21:43:40,624 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 21:43:40,628 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 21:43:40,628 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 21:43:40,630 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 21:43:40,632 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 21:43:40,632 [INFO] Kører standarddata initialiseringer
+2025-03-16 21:43:40,632 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 21:43:40,632 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 21:43:40,632 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 21:43:40,632 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 21:43:40,640 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 21:43:40,640 [INFO] Kører standarddata initialiseringer
+2025-03-16 21:43:40,640 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 21:43:40,640 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 21:43:40,640 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 21:43:40,640 [INFO] Initialiserer WordReportGenerator med database: databases\chauffør_data_februar_2025.db
+2025-03-16 21:43:40,640 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 21:43:40,640 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 21:43:40,644 [INFO] Kører standarddata initialiseringer
+2025-03-16 21:43:40,644 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 21:43:40,644 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 21:43:40,644 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 21:43:40,644 [INFO] Minimum kilometer sat til: 100.0
+2025-03-16 21:43:55,652 [INFO] Starter direkte mail sending til chauffør: Brohus, Kent
+2025-03-16 21:43:55,709 [INFO] Email gemt for chauffør Brohus, Kent: jonas.ingvorsen@gmail.com
+2025-03-16 21:43:55,709 [INFO] Email gemt for chauffør Brohus, Kent: jonas.ingvorsen@gmail.com
+2025-03-16 21:43:56,326 [INFO] Rapport genereret for Brohus, Kent: rapporter\Fiskelogistik_Chauffør_Brohus Kent_Februar_2025_20250316_214356.docx
+2025-03-16 21:43:56,345 [INFO] Sender rapport direkte til jonas.ingvorsen@gmail.com
+2025-03-16 21:43:56,349 [INFO] Sender rapport til chauffør Brohus, Kent
+2025-03-16 21:43:56,350 [INFO] Mail til jonas.ingvorsen@gmail.com tilføjet til sendekøen
+2025-03-16 21:43:56,352 [INFO] Mail kø processor startet
+2025-03-16 21:43:56,352 [INFO] Mail kø håndteringstråd startet
+2025-03-16 21:43:56,352 [INFO] Behandler mail kø (1 mails)
+2025-03-16 21:43:56,352 [INFO] Rapport sendt til Brohus, Kent (jonas.ingvorsen@gmail.com)
+2025-03-16 21:43:56,352 [INFO] Rapport sendt succesfuldt til chauffør Brohus, Kent
+2025-03-16 21:43:56,356 [INFO] Opretter forbindelse til smtp.gmail.com:587
+2025-03-16 21:43:56,358 [INFO] Anvender standard SMTP forbindelse
+2025-03-16 21:43:56,514 [INFO] Starter TLS
+2025-03-16 21:43:56,788 [INFO] Logger ind med fiskelogistik.rapport@gmail.com
+2025-03-16 21:43:57,152 [INFO] SMTP forbindelse oprettet succesfuldt
+2025-03-16 21:43:57,154 [INFO] Sender mail til jonas.ingvorsen@gmail.com
+2025-03-16 21:43:57,166 [INFO] Fil vedhæftet: Rapport_Brohus, Kent_20250316.docx (42909 bytes)
+2025-03-16 21:43:59,797 [INFO] Mail sendt til jonas.ingvorsen@gmail.com
+2025-03-16 21:43:59,847 [INFO] Mail succes logget for chauffør Brohus, Kent
+2025-03-16 21:44:05,013 [INFO] Starter nedlukning af applikation
+2025-03-16 21:44:05,195 [INFO] Applikation lukket succesfuldt
+2025-03-16 21:44:05,197 [INFO] === Applikation lukker normalt ===
+2025-03-16 21:47:41,350 [INFO] Logging system initialiseret
+2025-03-16 21:47:41,350 [INFO] === Applikation starter ===
+2025-03-16 21:47:41,350 [INFO] Initialiserer ModernRIOMenu
+2025-03-16 21:47:41,549 [INFO] ModernRIOMenu initialiseret succesfuldt
+2025-03-16 21:47:41,677 [INFO] Hovedvindue UI fuldt initialiseret
+2025-03-16 21:47:48,069 [INFO] Bruger klikkede på knap: Chauffører
+2025-03-16 21:47:50,278 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 21:47:50,285 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 21:47:50,285 [INFO] Kører standarddata initialiseringer
+2025-03-16 21:47:50,286 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 21:47:50,287 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 21:47:50,287 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 21:47:50,289 [INFO] Database initialiseret succesfuldt
+2025-03-16 21:47:50,291 [INFO] Initialiserer mail liste vindue
+2025-03-16 21:47:50,355 [INFO] Indlæser 57 chauffører
+2025-03-16 21:47:50,358 [INFO] Fandt 4 eksisterende email adresser
+2025-03-16 21:47:51,193 [INFO] Chauffør liste indlæst succesfuldt
+2025-03-16 21:47:57,177 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 21:47:57,181 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 21:47:57,181 [INFO] Kører standarddata initialiseringer
+2025-03-16 21:47:57,181 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 21:47:57,181 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 21:47:57,181 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 21:47:57,183 [INFO] Database initialiseret succesfuldt
+2025-03-16 21:47:57,183 [INFO] Initialiserer mail liste vindue
+2025-03-16 21:47:57,209 [INFO] Indlæser 57 chauffører
+2025-03-16 21:47:57,211 [INFO] Fandt 4 eksisterende email adresser
+2025-03-16 21:47:58,455 [INFO] Chauffør liste indlæst succesfuldt
+2025-03-16 21:49:13,756 [INFO] Email ændret for chauffør Dimachi, Aurelian-Catalin. Ny værdi: aurelianaimachiktl@gmail.com, Original: 
+2025-03-16 21:49:13,768 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:49:13,815 [INFO] Email ændret for chauffør Dimachi, Aurelian-Catalin. Ny værdi: aurelianaimachiktl@gmail.com, Original: 
+2025-03-16 21:49:13,825 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:49:15,385 [INFO] Email ændret for chauffør Dan, Robert-Alexandru. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:49:15,397 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:49:17,286 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:49:17,296 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:49:19,159 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:49:19,170 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:49:25,230 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:49:25,239 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:49:32,007 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:49:32,013 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:49:46,126 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:49:46,137 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:49:46,236 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:49:46,247 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:49:57,528 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:49:57,539 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:49:57,562 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:49:57,570 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:50:02,024 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:50:02,030 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:50:08,910 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:50:08,922 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:50:08,968 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:50:08,976 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:50:11,622 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:50:11,624 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:50:18,104 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:50:18,112 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:50:18,155 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:50:18,162 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:50:22,184 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:50:22,193 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:50:31,397 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:50:31,407 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:50:31,907 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:50:31,919 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:50:38,684 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:50:38,689 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:50:43,672 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:50:43,680 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:50:43,826 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:50:43,836 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:50:51,476 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:50:51,488 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:51:07,542 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:51:07,554 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:51:07,655 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:51:07,662 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:51:15,078 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:51:15,090 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:51:15,192 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:51:15,204 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:51:36,992 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:51:37,008 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:51:37,126 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:51:37,139 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:51:42,945 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:51:42,955 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:51:43,004 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:51:43,027 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:51:47,190 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:51:47,204 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:51:55,081 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:51:55,083 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:52:03,601 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:52:03,613 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:52:03,676 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:52:03,680 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:52:35,735 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:52:35,750 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:52:35,837 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:52:35,848 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:52:41,058 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:52:41,067 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:52:53,168 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:52:53,178 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:52:53,282 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:52:53,290 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:52:56,532 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:52:56,542 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:53:00,532 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:53:00,544 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:53:00,572 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:53:00,581 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:53:03,579 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:53:03,587 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:53:09,435 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:53:09,445 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:53:16,340 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:53:16,350 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:53:16,450 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:53:16,461 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:53:30,706 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:53:30,720 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:53:30,841 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:53:30,856 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:53:53,326 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:53:53,336 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:53:53,434 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:53:53,444 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:54:34,680 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:54:34,690 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:55:07,155 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:55:07,164 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:55:07,262 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:55:07,272 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:55:30,360 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:55:30,370 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:55:30,425 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:55:30,437 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:56:23,751 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:56:23,757 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:56:23,838 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: , Original: jonas.ingvorsen@gmail.com
+2025-03-16 21:56:23,848 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:56:28,974 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 21:56:28,983 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 21:56:28,983 [INFO] Kører standarddata initialiseringer
+2025-03-16 21:56:28,984 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 21:56:28,984 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 21:56:28,984 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 21:56:28,985 [INFO] Database initialiseret succesfuldt
+2025-03-16 21:56:28,985 [INFO] Initialiserer mail liste vindue
+2025-03-16 21:56:29,025 [INFO] Indlæser 57 chauffører
+2025-03-16 21:56:29,027 [INFO] Fandt 21 eksisterende email adresser
+2025-03-16 21:56:30,346 [INFO] Chauffør liste indlæst succesfuldt
+2025-03-16 21:56:44,525 [INFO] Email ændret for chauffør Clausen, Jesper. Ny værdi: jclausen148@gmail.com, Original: 
+2025-03-16 21:56:44,537 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:56:44,599 [INFO] Email ændret for chauffør Clausen, Jesper. Ny værdi: jclausen148@gmail.com, Original: 
+2025-03-16 21:56:44,611 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:56:55,301 [INFO] Email ændret for chauffør Clausen, Jesper. Ny værdi: jclausen148@gmail.com, Original: 
+2025-03-16 21:56:55,311 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:56:55,324 [INFO] Email ændret for chauffør Clausen, Jesper. Ny værdi: jclausen148@gmail.com, Original: 
+2025-03-16 21:56:55,331 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:57:12,719 [INFO] Email ændret for chauffør Clausen, Jesper. Ny værdi: jclausen148@gmail.com, Original: 
+2025-03-16 21:57:12,722 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:57:21,472 [INFO] Email ændret for chauffør Clausen, Jesper. Ny værdi: jclausen148@gmail.com, Original: 
+2025-03-16 21:57:21,485 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:57:21,591 [INFO] Email ændret for chauffør Clausen, Jesper. Ny værdi: jclausen148@gmail.com, Original: 
+2025-03-16 21:57:21,603 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:57:24,301 [INFO] Email ændret for chauffør Clausen, Jesper. Ny værdi: jclausen148@gmail.com, Original: 
+2025-03-16 21:57:24,302 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:57:29,750 [INFO] Email ændret for chauffør Brohus, Kent. Ny værdi: brohus74@gmail.com, Original: 
+2025-03-16 21:57:29,764 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:57:29,815 [INFO] Email ændret for chauffør Brohus, Kent. Ny værdi: brohus74@gmail.com, Original: 
+2025-03-16 21:57:29,826 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:57:38,332 [INFO] Email ændret for chauffør Brohus, Kent. Ny værdi: brohus74@gmail.com, Original: 
+2025-03-16 21:57:38,346 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:57:38,375 [INFO] Email ændret for chauffør Brohus, Kent. Ny værdi: brohus74@gmail.com, Original: 
+2025-03-16 21:57:38,387 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:57:41,308 [INFO] Email ændret for chauffør Brohus, Kent. Ny værdi: brohus74@gmail.com, Original: 
+2025-03-16 21:57:41,318 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:57:43,794 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:57:43,803 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:57:43,815 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:57:43,825 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:57:46,989 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:57:46,994 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:58:00,016 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:58:00,028 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:58:00,090 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:58:00,092 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:58:28,848 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:58:28,852 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:58:36,301 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:58:36,305 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:58:37,559 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:58:37,570 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:58:37,605 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:58:37,617 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:59:31,967 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:59:31,979 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:59:32,091 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:59:32,096 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:59:36,331 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:59:36,336 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:59:41,552 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:59:41,560 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:59:41,716 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:59:41,728 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:59:47,166 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:59:47,178 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:59:47,240 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:59:47,243 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:59:50,396 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:59:50,405 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:59:54,535 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:59:54,545 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 21:59:54,718 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 21:59:54,728 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:00:01,179 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:00:01,185 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:00:01,238 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:00:01,249 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:00:09,645 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:00:09,657 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:00:09,703 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:00:09,711 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:00:12,452 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:00:12,459 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:00:19,238 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:00:19,250 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:00:19,286 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:00:19,296 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:00:22,017 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:00:22,028 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:00:36,645 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:00:36,657 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:00:36,768 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:00:36,778 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:00:47,691 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:00:47,705 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:00:47,770 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:00:47,781 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:01:25,544 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:01:25,556 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:01:25,681 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:01:25,690 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:01:28,344 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:01:28,351 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:01:30,141 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:01:30,148 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:01:30,171 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:01:30,181 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:01:37,330 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:01:37,340 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:01:37,385 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:01:37,396 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:02:17,542 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:02:17,555 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:02:17,617 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:02:17,625 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:02:21,000 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:02:21,006 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:02:26,924 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:02:26,936 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:02:27,029 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:02:27,041 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:02:39,825 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:02:39,838 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:02:39,993 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:02:40,001 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:02:52,390 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:02:52,403 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:02:52,440 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:02:52,450 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:02:55,682 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:02:55,690 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:03:07,716 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:03:07,726 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:03:07,900 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:03:07,938 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:03:10,286 [INFO] Email ændret for chauffør Andersen, Kent René. Ny værdi: kentrene@msn.com, Original: 
+2025-03-16 22:03:10,292 [INFO] Aktiverer gem og fortryd knapper
+2025-03-16 22:03:23,695 [INFO] Starter nedlukning af applikation
+2025-03-16 22:03:23,820 [INFO] Applikation lukket succesfuldt
+2025-03-16 22:03:23,822 [INFO] === Applikation lukker normalt ===
+2025-03-16 22:03:41,673 [INFO] Logging system initialiseret
+2025-03-16 22:03:41,675 [INFO] === Applikation starter ===
+2025-03-16 22:03:41,676 [INFO] Initialiserer ModernRIOMenu
+2025-03-16 22:03:42,044 [INFO] ModernRIOMenu initialiseret succesfuldt
+2025-03-16 22:03:42,259 [INFO] Hovedvindue UI fuldt initialiseret
+2025-03-16 22:03:43,493 [INFO] Bruger klikkede på knap: Rapporter
+2025-03-16 22:03:44,626 [INFO] Rapportvindue fuldt initialiseret
+2025-03-16 22:03:54,115 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 22:03:54,125 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 22:03:54,125 [INFO] Kører standarddata initialiseringer
+2025-03-16 22:03:54,125 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 22:03:54,130 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 22:03:54,132 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 22:03:54,133 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 22:03:54,140 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 22:03:54,146 [INFO] Kører standarddata initialiseringer
+2025-03-16 22:03:54,146 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 22:03:54,148 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 22:03:54,148 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 22:03:54,148 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 22:03:54,156 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 22:03:54,158 [INFO] Kører standarddata initialiseringer
+2025-03-16 22:03:54,158 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 22:03:54,160 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 22:03:54,160 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 22:03:54,162 [INFO] Initialiserer WordReportGenerator med database: databases\chauffør_data_februar_2025.db
+2025-03-16 22:03:54,162 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 22:03:54,170 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 22:03:54,170 [INFO] Kører standarddata initialiseringer
+2025-03-16 22:03:54,170 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 22:03:54,172 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 22:03:54,172 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 22:03:54,174 [INFO] Minimum kilometer sat til: 100.0
+2025-03-16 22:04:27,596 [INFO] Email gemt for chauffør Nielsen, Henrik Kloster: henrik.kl@hotmail.com
+2025-03-16 22:09:40,957 [INFO] Starter nedlukning af applikation
+2025-03-16 22:09:41,027 [INFO] Applikation lukket succesfuldt
+2025-03-16 22:09:42,497 [INFO] === Applikation lukker normalt ===
+2025-03-16 22:10:53,844 [INFO] Logging system initialiseret
+2025-03-16 22:10:53,846 [INFO] === Applikation starter ===
+2025-03-16 22:10:53,848 [INFO] Initialiserer ModernRIOMenu
+2025-03-16 22:10:54,158 [INFO] ModernRIOMenu initialiseret succesfuldt
+2025-03-16 22:10:54,340 [INFO] Hovedvindue UI fuldt initialiseret
+2025-03-16 22:10:55,427 [INFO] Bruger klikkede på knap: Rapporter
+2025-03-16 22:10:56,542 [INFO] Rapportvindue fuldt initialiseret
+2025-03-16 22:11:01,662 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 22:11:01,678 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 22:11:01,678 [INFO] Kører standarddata initialiseringer
+2025-03-16 22:11:01,678 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 22:11:01,681 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 22:11:01,682 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 22:11:01,685 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 22:11:01,693 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 22:11:01,694 [INFO] Kører standarddata initialiseringer
+2025-03-16 22:11:01,694 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 22:11:01,694 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 22:11:01,697 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 22:11:01,699 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 22:11:01,706 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 22:11:01,706 [INFO] Kører standarddata initialiseringer
+2025-03-16 22:11:01,708 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 22:11:01,709 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 22:11:01,709 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 22:11:01,710 [INFO] Initialiserer WordReportGenerator med database: databases\chauffør_data_februar_2025.db
+2025-03-16 22:11:01,711 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 22:11:01,716 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 22:11:01,717 [INFO] Kører standarddata initialiseringer
+2025-03-16 22:11:01,718 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 22:11:01,718 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 22:11:01,718 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 22:11:01,719 [INFO] Minimum kilometer sat til: 100.0
+2025-03-16 22:11:13,073 [INFO] Rapport genereret for Andersen, Kent René: rapporter\Fiskelogistik_Chauffør_Andersen Kent René_Februar_2025_20250316_221113.docx
+2025-03-16 22:11:13,096 [INFO] Sender rapport til chauffør Andersen, Kent René
+2025-03-16 22:11:13,097 [ERROR] Fejl ved hentning af chauffør med id Andersen, Kent René: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:13,098 [ERROR] Fejl ved hentning af chaufførs email for Andersen, Kent René: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:13,098 [ERROR] Ingen email fundet for chauffør Andersen, Kent René
+2025-03-16 22:11:13,098 [ERROR] Kunne ikke sende rapport til chauffør Andersen, Kent René
+2025-03-16 22:11:13,123 [INFO] Venter 2 sekunder før afsendelse af næste mail (1/31)
+2025-03-16 22:11:15,853 [INFO] Rapport genereret for Bering, Claus Holtet: rapporter\Fiskelogistik_Chauffør_Bering Claus Holtet_Februar_2025_20250316_221115.docx
+2025-03-16 22:11:15,878 [INFO] Sender rapport til chauffør Bering, Claus Holtet
+2025-03-16 22:11:15,878 [ERROR] Fejl ved hentning af chauffør med id Bering, Claus Holtet: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:15,882 [ERROR] Fejl ved hentning af chaufførs email for Bering, Claus Holtet: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:15,882 [ERROR] Ingen email fundet for chauffør Bering, Claus Holtet
+2025-03-16 22:11:15,882 [ERROR] Kunne ikke sende rapport til chauffør Bering, Claus Holtet
+2025-03-16 22:11:15,908 [INFO] Venter 2 sekunder før afsendelse af næste mail (2/31)
+2025-03-16 22:11:19,478 [INFO] Rapport genereret for Brohus, Kent: rapporter\Fiskelogistik_Chauffør_Brohus Kent_Februar_2025_20250316_221119.docx
+2025-03-16 22:11:19,524 [INFO] Sender rapport til chauffør Brohus, Kent
+2025-03-16 22:11:19,526 [ERROR] Fejl ved hentning af chauffør med id Brohus, Kent: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:19,526 [ERROR] Fejl ved hentning af chaufførs email for Brohus, Kent: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:19,526 [ERROR] Ingen email fundet for chauffør Brohus, Kent
+2025-03-16 22:11:19,526 [ERROR] Kunne ikke sende rapport til chauffør Brohus, Kent
+2025-03-16 22:11:19,555 [INFO] Venter 2 sekunder før afsendelse af næste mail (3/31)
+2025-03-16 22:11:22,984 [INFO] Rapport genereret for Dan, Robert-Alexandru: rapporter\Fiskelogistik_Chauffør_Dan Robert-Alexandru_Februar_2025_20250316_221122.docx
+2025-03-16 22:11:23,024 [INFO] Sender rapport til chauffør Dan, Robert-Alexandru
+2025-03-16 22:11:23,024 [ERROR] Fejl ved hentning af chauffør med id Dan, Robert-Alexandru: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:23,024 [ERROR] Fejl ved hentning af chaufførs email for Dan, Robert-Alexandru: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:23,028 [ERROR] Ingen email fundet for chauffør Dan, Robert-Alexandru
+2025-03-16 22:11:23,028 [ERROR] Kunne ikke sende rapport til chauffør Dan, Robert-Alexandru
+2025-03-16 22:11:23,085 [INFO] Venter 2 sekunder før afsendelse af næste mail (4/31)
+2025-03-16 22:11:26,326 [INFO] Rapport genereret for Flyvbjerg, Gunnar: rapporter\Fiskelogistik_Chauffør_Flyvbjerg Gunnar_Februar_2025_20250316_221126.docx
+2025-03-16 22:11:26,365 [INFO] Sender rapport til chauffør Flyvbjerg, Gunnar
+2025-03-16 22:11:26,365 [ERROR] Fejl ved hentning af chauffør med id Flyvbjerg, Gunnar: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:26,365 [ERROR] Fejl ved hentning af chaufførs email for Flyvbjerg, Gunnar: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:26,365 [ERROR] Ingen email fundet for chauffør Flyvbjerg, Gunnar
+2025-03-16 22:11:26,372 [ERROR] Kunne ikke sende rapport til chauffør Flyvbjerg, Gunnar
+2025-03-16 22:11:26,423 [INFO] Venter 2 sekunder før afsendelse af næste mail (5/31)
+2025-03-16 22:11:29,964 [INFO] Rapport genereret for Gherasim, Marius-Daniel: rapporter\Fiskelogistik_Chauffør_Gherasim Marius-Daniel_Februar_2025_20250316_221129.docx
+2025-03-16 22:11:30,017 [INFO] Sender rapport til chauffør Gherasim, Marius-Daniel
+2025-03-16 22:11:30,018 [ERROR] Fejl ved hentning af chauffør med id Gherasim, Marius-Daniel: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:30,020 [ERROR] Fejl ved hentning af chaufførs email for Gherasim, Marius-Daniel: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:30,021 [ERROR] Ingen email fundet for chauffør Gherasim, Marius-Daniel
+2025-03-16 22:11:30,021 [ERROR] Kunne ikke sende rapport til chauffør Gherasim, Marius-Daniel
+2025-03-16 22:11:30,091 [INFO] Venter 2 sekunder før afsendelse af næste mail (6/31)
+2025-03-16 22:11:33,373 [INFO] Rapport genereret for Jensen, Christian Peter: rapporter\Fiskelogistik_Chauffør_Jensen Christian Peter_Februar_2025_20250316_221133.docx
+2025-03-16 22:11:33,423 [INFO] Sender rapport til chauffør Jensen, Christian Peter
+2025-03-16 22:11:33,426 [ERROR] Fejl ved hentning af chauffør med id Jensen, Christian Peter: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:33,426 [ERROR] Fejl ved hentning af chaufførs email for Jensen, Christian Peter: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:33,426 [ERROR] Ingen email fundet for chauffør Jensen, Christian Peter
+2025-03-16 22:11:33,428 [ERROR] Kunne ikke sende rapport til chauffør Jensen, Christian Peter
+2025-03-16 22:11:33,508 [INFO] Venter 2 sekunder før afsendelse af næste mail (7/31)
+2025-03-16 22:11:36,669 [INFO] Rapport genereret for Jensen, Kent: rapporter\Fiskelogistik_Chauffør_Jensen Kent_Februar_2025_20250316_221136.docx
+2025-03-16 22:11:36,706 [INFO] Sender rapport til chauffør Jensen, Kent
+2025-03-16 22:11:36,706 [ERROR] Fejl ved hentning af chauffør med id Jensen, Kent: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:36,706 [ERROR] Fejl ved hentning af chaufførs email for Jensen, Kent: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:36,706 [ERROR] Ingen email fundet for chauffør Jensen, Kent
+2025-03-16 22:11:36,709 [ERROR] Kunne ikke sende rapport til chauffør Jensen, Kent
+2025-03-16 22:11:36,742 [INFO] Venter 2 sekunder før afsendelse af næste mail (8/31)
+2025-03-16 22:11:40,048 [INFO] Rapport genereret for Jensen, Lars Henrik: rapporter\Fiskelogistik_Chauffør_Jensen Lars Henrik_Februar_2025_20250316_221139.docx
+2025-03-16 22:11:40,088 [INFO] Sender rapport til chauffør Jensen, Lars Henrik
+2025-03-16 22:11:40,088 [ERROR] Fejl ved hentning af chauffør med id Jensen, Lars Henrik: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:40,089 [ERROR] Fejl ved hentning af chaufførs email for Jensen, Lars Henrik: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:40,089 [ERROR] Ingen email fundet for chauffør Jensen, Lars Henrik
+2025-03-16 22:11:40,089 [ERROR] Kunne ikke sende rapport til chauffør Jensen, Lars Henrik
+2025-03-16 22:11:40,123 [INFO] Venter 2 sekunder før afsendelse af næste mail (9/31)
+2025-03-16 22:11:43,372 [INFO] Rapport genereret for Jørgensen, Hans Martin: rapporter\Fiskelogistik_Chauffør_Jørgensen Hans Martin_Februar_2025_20250316_221143.docx
+2025-03-16 22:11:43,432 [INFO] Sender rapport til chauffør Jørgensen, Hans Martin
+2025-03-16 22:11:43,436 [ERROR] Fejl ved hentning af chauffør med id Jørgensen, Hans Martin: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:43,436 [ERROR] Fejl ved hentning af chaufførs email for Jørgensen, Hans Martin: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:43,436 [ERROR] Ingen email fundet for chauffør Jørgensen, Hans Martin
+2025-03-16 22:11:43,436 [ERROR] Kunne ikke sende rapport til chauffør Jørgensen, Hans Martin
+2025-03-16 22:11:43,510 [INFO] Venter 2 sekunder før afsendelse af næste mail (10/31)
+2025-03-16 22:11:46,597 [INFO] Rapport genereret for Karlsson, Mike Pete Patrick: rapporter\Fiskelogistik_Chauffør_Karlsson Mike Pete Patrick_Februar_2025_20250316_221146.docx
+2025-03-16 22:11:46,646 [INFO] Sender rapport til chauffør Karlsson, Mike Pete Patrick
+2025-03-16 22:11:46,648 [ERROR] Fejl ved hentning af chauffør med id Karlsson, Mike Pete Patrick: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:46,649 [ERROR] Fejl ved hentning af chaufførs email for Karlsson, Mike Pete Patrick: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:46,649 [ERROR] Ingen email fundet for chauffør Karlsson, Mike Pete Patrick
+2025-03-16 22:11:46,649 [ERROR] Kunne ikke sende rapport til chauffør Karlsson, Mike Pete Patrick
+2025-03-16 22:11:46,700 [INFO] Venter 2 sekunder før afsendelse af næste mail (11/31)
+2025-03-16 22:11:49,465 [INFO] Rapport genereret for Klausen, René: rapporter\Fiskelogistik_Chauffør_Klausen René_Februar_2025_20250316_221149.docx
+2025-03-16 22:11:49,496 [INFO] Sender rapport til chauffør Klausen, René
+2025-03-16 22:11:49,498 [ERROR] Fejl ved hentning af chauffør med id Klausen, René: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:49,498 [ERROR] Fejl ved hentning af chaufførs email for Klausen, René: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:49,501 [ERROR] Ingen email fundet for chauffør Klausen, René
+2025-03-16 22:11:49,501 [ERROR] Kunne ikke sende rapport til chauffør Klausen, René
+2025-03-16 22:11:49,542 [INFO] Venter 2 sekunder før afsendelse af næste mail (12/31)
+2025-03-16 22:11:52,639 [INFO] Rapport genereret for Konnerup, Mads Grønbæk: rapporter\Fiskelogistik_Chauffør_Konnerup Mads Grønbæk_Februar_2025_20250316_221152.docx
+2025-03-16 22:11:52,688 [INFO] Sender rapport til chauffør Konnerup, Mads Grønbæk
+2025-03-16 22:11:52,688 [ERROR] Fejl ved hentning af chauffør med id Konnerup, Mads Grønbæk: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:52,688 [ERROR] Fejl ved hentning af chaufførs email for Konnerup, Mads Grønbæk: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:52,695 [ERROR] Ingen email fundet for chauffør Konnerup, Mads Grønbæk
+2025-03-16 22:11:52,696 [ERROR] Kunne ikke sende rapport til chauffør Konnerup, Mads Grønbæk
+2025-03-16 22:11:52,754 [INFO] Venter 2 sekunder før afsendelse af næste mail (13/31)
+2025-03-16 22:11:55,546 [INFO] Rapport genereret for Kristensen, Tom: rapporter\Fiskelogistik_Chauffør_Kristensen Tom_Februar_2025_20250316_221155.docx
+2025-03-16 22:11:55,592 [INFO] Sender rapport til chauffør Kristensen, Tom
+2025-03-16 22:11:55,594 [ERROR] Fejl ved hentning af chauffør med id Kristensen, Tom: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:55,594 [ERROR] Fejl ved hentning af chaufførs email for Kristensen, Tom: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:55,594 [ERROR] Ingen email fundet for chauffør Kristensen, Tom
+2025-03-16 22:11:55,596 [ERROR] Kunne ikke sende rapport til chauffør Kristensen, Tom
+2025-03-16 22:11:55,650 [INFO] Venter 2 sekunder før afsendelse af næste mail (14/31)
+2025-03-16 22:11:58,654 [INFO] Rapport genereret for Lind, Lars Broberg: rapporter\Fiskelogistik_Chauffør_Lind Lars Broberg_Februar_2025_20250316_221158.docx
+2025-03-16 22:11:58,677 [INFO] Sender rapport til chauffør Lind, Lars Broberg
+2025-03-16 22:11:58,677 [ERROR] Fejl ved hentning af chauffør med id Lind, Lars Broberg: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:58,680 [ERROR] Fejl ved hentning af chaufførs email for Lind, Lars Broberg: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:11:58,680 [ERROR] Ingen email fundet for chauffør Lind, Lars Broberg
+2025-03-16 22:11:58,680 [ERROR] Kunne ikke sende rapport til chauffør Lind, Lars Broberg
+2025-03-16 22:11:58,714 [INFO] Venter 2 sekunder før afsendelse af næste mail (15/31)
+2025-03-16 22:12:01,624 [INFO] Rapport genereret for Luther, Michael: rapporter\Fiskelogistik_Chauffør_Luther Michael_Februar_2025_20250316_221201.docx
+2025-03-16 22:12:01,664 [INFO] Sender rapport til chauffør Luther, Michael
+2025-03-16 22:12:01,671 [ERROR] Fejl ved hentning af chauffør med id Luther, Michael: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:01,671 [ERROR] Fejl ved hentning af chaufførs email for Luther, Michael: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:01,671 [ERROR] Ingen email fundet for chauffør Luther, Michael
+2025-03-16 22:12:01,671 [ERROR] Kunne ikke sende rapport til chauffør Luther, Michael
+2025-03-16 22:12:01,714 [INFO] Venter 2 sekunder før afsendelse af næste mail (16/31)
+2025-03-16 22:12:05,028 [INFO] Rapport genereret for Mortensen, Taus: rapporter\Fiskelogistik_Chauffør_Mortensen Taus_Februar_2025_20250316_221204.docx
+2025-03-16 22:12:05,066 [INFO] Sender rapport til chauffør Mortensen, Taus
+2025-03-16 22:12:05,070 [ERROR] Fejl ved hentning af chauffør med id Mortensen, Taus: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:05,071 [ERROR] Fejl ved hentning af chaufførs email for Mortensen, Taus: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:05,072 [ERROR] Ingen email fundet for chauffør Mortensen, Taus
+2025-03-16 22:12:05,072 [ERROR] Kunne ikke sende rapport til chauffør Mortensen, Taus
+2025-03-16 22:12:05,116 [INFO] Venter 2 sekunder før afsendelse af næste mail (17/31)
+2025-03-16 22:12:08,372 [INFO] Rapport genereret for Munkbøl, Daniel Maegaard: rapporter\Fiskelogistik_Chauffør_Munkbøl Daniel Maegaard_Februar_2025_20250316_221208.docx
+2025-03-16 22:12:08,425 [INFO] Sender rapport til chauffør Munkbøl, Daniel Maegaard
+2025-03-16 22:12:08,427 [ERROR] Fejl ved hentning af chauffør med id Munkbøl, Daniel Maegaard: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:08,428 [ERROR] Fejl ved hentning af chaufførs email for Munkbøl, Daniel Maegaard: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:08,428 [ERROR] Ingen email fundet for chauffør Munkbøl, Daniel Maegaard
+2025-03-16 22:12:08,428 [ERROR] Kunne ikke sende rapport til chauffør Munkbøl, Daniel Maegaard
+2025-03-16 22:12:08,484 [INFO] Venter 2 sekunder før afsendelse af næste mail (18/31)
+2025-03-16 22:12:11,778 [INFO] Rapport genereret for Murariu, Daniel: rapporter\Fiskelogistik_Chauffør_Murariu Daniel_Februar_2025_20250316_221211.docx
+2025-03-16 22:12:11,822 [INFO] Sender rapport til chauffør Murariu, Daniel
+2025-03-16 22:12:11,822 [ERROR] Fejl ved hentning af chauffør med id Murariu, Daniel: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:11,822 [ERROR] Fejl ved hentning af chaufførs email for Murariu, Daniel: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:11,824 [ERROR] Ingen email fundet for chauffør Murariu, Daniel
+2025-03-16 22:12:11,824 [ERROR] Kunne ikke sende rapport til chauffør Murariu, Daniel
+2025-03-16 22:12:11,864 [INFO] Venter 2 sekunder før afsendelse af næste mail (19/31)
+2025-03-16 22:12:15,148 [INFO] Rapport genereret for Nepper, Joachim: rapporter\Fiskelogistik_Chauffør_Nepper Joachim_Februar_2025_20250316_221215.docx
+2025-03-16 22:12:15,196 [INFO] Sender rapport til chauffør Nepper, Joachim
+2025-03-16 22:12:15,196 [ERROR] Fejl ved hentning af chauffør med id Nepper, Joachim: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:15,196 [ERROR] Fejl ved hentning af chaufførs email for Nepper, Joachim: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:15,196 [ERROR] Ingen email fundet for chauffør Nepper, Joachim
+2025-03-16 22:12:15,196 [ERROR] Kunne ikke sende rapport til chauffør Nepper, Joachim
+2025-03-16 22:12:15,256 [INFO] Venter 2 sekunder før afsendelse af næste mail (20/31)
+2025-03-16 22:12:18,909 [INFO] Rapport genereret for Nielsen, Hannibal Carl Leen: rapporter\Fiskelogistik_Chauffør_Nielsen Hannibal Carl Leen_Februar_2025_20250316_221218.docx
+2025-03-16 22:12:18,977 [INFO] Sender rapport til chauffør Nielsen, Hannibal Carl Leen
+2025-03-16 22:12:18,982 [ERROR] Fejl ved hentning af chauffør med id Nielsen, Hannibal Carl Leen: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:18,983 [ERROR] Fejl ved hentning af chaufførs email for Nielsen, Hannibal Carl Leen: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:18,983 [ERROR] Ingen email fundet for chauffør Nielsen, Hannibal Carl Leen
+2025-03-16 22:12:18,983 [ERROR] Kunne ikke sende rapport til chauffør Nielsen, Hannibal Carl Leen
+2025-03-16 22:12:19,081 [INFO] Venter 2 sekunder før afsendelse af næste mail (21/31)
+2025-03-16 22:12:22,633 [INFO] Rapport genereret for Nielsen, Henrik Kloster: rapporter\Fiskelogistik_Chauffør_Nielsen Henrik Kloster_Februar_2025_20250316_221222.docx
+2025-03-16 22:12:22,699 [INFO] Sender rapport til chauffør Nielsen, Henrik Kloster
+2025-03-16 22:12:22,701 [ERROR] Fejl ved hentning af chauffør med id Nielsen, Henrik Kloster: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:22,701 [ERROR] Fejl ved hentning af chaufførs email for Nielsen, Henrik Kloster: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:22,708 [ERROR] Ingen email fundet for chauffør Nielsen, Henrik Kloster
+2025-03-16 22:12:22,710 [ERROR] Kunne ikke sende rapport til chauffør Nielsen, Henrik Kloster
+2025-03-16 22:12:22,767 [INFO] Venter 2 sekunder før afsendelse af næste mail (22/31)
+2025-03-16 22:12:25,928 [INFO] Rapport genereret for Nielsen, Henrik Nilaus: rapporter\Fiskelogistik_Chauffør_Nielsen Henrik Nilaus_Februar_2025_20250316_221225.docx
+2025-03-16 22:12:26,006 [INFO] Sender rapport til chauffør Nielsen, Henrik Nilaus
+2025-03-16 22:12:26,008 [ERROR] Fejl ved hentning af chauffør med id Nielsen, Henrik Nilaus: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:26,008 [ERROR] Fejl ved hentning af chaufførs email for Nielsen, Henrik Nilaus: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:26,010 [ERROR] Ingen email fundet for chauffør Nielsen, Henrik Nilaus
+2025-03-16 22:12:26,010 [ERROR] Kunne ikke sende rapport til chauffør Nielsen, Henrik Nilaus
+2025-03-16 22:12:26,060 [INFO] Venter 2 sekunder før afsendelse af næste mail (23/31)
+2025-03-16 22:12:29,510 [INFO] Rapport genereret for Nielsen, Torben Brian: rapporter\Fiskelogistik_Chauffør_Nielsen Torben Brian_Februar_2025_20250316_221229.docx
+2025-03-16 22:12:29,547 [INFO] Sender rapport til chauffør Nielsen, Torben Brian
+2025-03-16 22:12:29,549 [ERROR] Fejl ved hentning af chauffør med id Nielsen, Torben Brian: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:29,549 [ERROR] Fejl ved hentning af chaufførs email for Nielsen, Torben Brian: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:29,549 [ERROR] Ingen email fundet for chauffør Nielsen, Torben Brian
+2025-03-16 22:12:29,549 [ERROR] Kunne ikke sende rapport til chauffør Nielsen, Torben Brian
+2025-03-16 22:12:29,597 [INFO] Venter 2 sekunder før afsendelse af næste mail (24/31)
+2025-03-16 22:12:33,092 [INFO] Rapport genereret for Pedersen, Henning: rapporter\Fiskelogistik_Chauffør_Pedersen Henning_Februar_2025_20250316_221232.docx
+2025-03-16 22:12:33,142 [INFO] Sender rapport til chauffør Pedersen, Henning
+2025-03-16 22:12:33,142 [ERROR] Fejl ved hentning af chauffør med id Pedersen, Henning: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:33,142 [ERROR] Fejl ved hentning af chaufførs email for Pedersen, Henning: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:33,142 [ERROR] Ingen email fundet for chauffør Pedersen, Henning
+2025-03-16 22:12:33,149 [ERROR] Kunne ikke sende rapport til chauffør Pedersen, Henning
+2025-03-16 22:12:33,222 [INFO] Venter 2 sekunder før afsendelse af næste mail (25/31)
+2025-03-16 22:12:36,386 [INFO] Rapport genereret for Petersen, Jan Søndergaard: rapporter\Fiskelogistik_Chauffør_Petersen Jan Søndergaard_Februar_2025_20250316_221236.docx
+2025-03-16 22:12:36,413 [INFO] Sender rapport til chauffør Petersen, Jan Søndergaard
+2025-03-16 22:12:36,413 [ERROR] Fejl ved hentning af chauffør med id Petersen, Jan Søndergaard: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:36,419 [ERROR] Fejl ved hentning af chaufførs email for Petersen, Jan Søndergaard: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:36,420 [ERROR] Ingen email fundet for chauffør Petersen, Jan Søndergaard
+2025-03-16 22:12:36,420 [ERROR] Kunne ikke sende rapport til chauffør Petersen, Jan Søndergaard
+2025-03-16 22:12:36,452 [INFO] Venter 2 sekunder før afsendelse af næste mail (26/31)
+2025-03-16 22:12:39,735 [INFO] Rapport genereret for Rasmussen, Christian Bæk: rapporter\Fiskelogistik_Chauffør_Rasmussen Christian Bæk_Februar_2025_20250316_221239.docx
+2025-03-16 22:12:39,779 [INFO] Sender rapport til chauffør Rasmussen, Christian Bæk
+2025-03-16 22:12:39,781 [ERROR] Fejl ved hentning af chauffør med id Rasmussen, Christian Bæk: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:39,782 [ERROR] Fejl ved hentning af chaufførs email for Rasmussen, Christian Bæk: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:39,783 [ERROR] Ingen email fundet for chauffør Rasmussen, Christian Bæk
+2025-03-16 22:12:39,783 [ERROR] Kunne ikke sende rapport til chauffør Rasmussen, Christian Bæk
+2025-03-16 22:12:39,818 [INFO] Venter 2 sekunder før afsendelse af næste mail (27/31)
+2025-03-16 22:12:43,389 [INFO] Rapport genereret for Skovborg, Kurt: rapporter\Fiskelogistik_Chauffør_Skovborg Kurt_Februar_2025_20250316_221243.docx
+2025-03-16 22:12:43,440 [INFO] Sender rapport til chauffør Skovborg, Kurt
+2025-03-16 22:12:43,442 [ERROR] Fejl ved hentning af chauffør med id Skovborg, Kurt: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:43,442 [ERROR] Fejl ved hentning af chaufførs email for Skovborg, Kurt: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:43,442 [ERROR] Ingen email fundet for chauffør Skovborg, Kurt
+2025-03-16 22:12:43,445 [ERROR] Kunne ikke sende rapport til chauffør Skovborg, Kurt
+2025-03-16 22:12:43,514 [INFO] Venter 2 sekunder før afsendelse af næste mail (28/31)
+2025-03-16 22:12:46,577 [INFO] Rapport genereret for Søgaard, Christian Andreas: rapporter\Fiskelogistik_Chauffør_Søgaard Christian Andreas_Februar_2025_20250316_221246.docx
+2025-03-16 22:12:46,631 [INFO] Sender rapport til chauffør Søgaard, Christian Andreas
+2025-03-16 22:12:46,633 [ERROR] Fejl ved hentning af chauffør med id Søgaard, Christian Andreas: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:46,635 [ERROR] Fejl ved hentning af chaufførs email for Søgaard, Christian Andreas: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:46,636 [ERROR] Ingen email fundet for chauffør Søgaard, Christian Andreas
+2025-03-16 22:12:46,637 [ERROR] Kunne ikke sende rapport til chauffør Søgaard, Christian Andreas
+2025-03-16 22:12:46,700 [INFO] Venter 2 sekunder før afsendelse af næste mail (29/31)
+2025-03-16 22:12:49,904 [INFO] Rapport genereret for Sørensen, Jørgen: rapporter\Fiskelogistik_Chauffør_Sørensen Jørgen_Februar_2025_20250316_221249.docx
+2025-03-16 22:12:49,955 [INFO] Sender rapport til chauffør Sørensen, Jørgen
+2025-03-16 22:12:49,963 [ERROR] Fejl ved hentning af chauffør med id Sørensen, Jørgen: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:49,963 [ERROR] Fejl ved hentning af chaufførs email for Sørensen, Jørgen: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:49,963 [ERROR] Ingen email fundet for chauffør Sørensen, Jørgen
+2025-03-16 22:12:49,963 [ERROR] Kunne ikke sende rapport til chauffør Sørensen, Jørgen
+2025-03-16 22:12:50,025 [INFO] Venter 2 sekunder før afsendelse af næste mail (30/31)
+2025-03-16 22:12:53,421 [INFO] Rapport genereret for Vinther Lemuchi, Javid: rapporter\Fiskelogistik_Chauffør_Vinther Lemuchi Javid_Februar_2025_20250316_221253.docx
+2025-03-16 22:12:53,477 [INFO] Sender rapport til chauffør Vinther Lemuchi, Javid
+2025-03-16 22:12:53,479 [ERROR] Fejl ved hentning af chauffør med id Vinther Lemuchi, Javid: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:53,481 [ERROR] Fejl ved hentning af chaufførs email for Vinther Lemuchi, Javid: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 30832 and this is thread id 33096.
+2025-03-16 22:12:53,481 [ERROR] Ingen email fundet for chauffør Vinther Lemuchi, Javid
+2025-03-16 22:12:53,483 [ERROR] Kunne ikke sende rapport til chauffør Vinther Lemuchi, Javid
+2025-03-16 22:13:19,676 [INFO] Starter nedlukning af applikation
+2025-03-16 22:13:19,806 [INFO] Applikation lukket succesfuldt
+2025-03-16 22:13:19,812 [INFO] === Applikation lukker normalt ===
+2025-03-16 22:17:39,514 [INFO] Logging system initialiseret
+2025-03-16 22:17:39,517 [INFO] === Applikation starter ===
+2025-03-16 22:17:39,518 [INFO] Initialiserer ModernRIOMenu
+2025-03-16 22:17:39,842 [INFO] ModernRIOMenu initialiseret succesfuldt
+2025-03-16 22:17:40,021 [INFO] Hovedvindue UI fuldt initialiseret
+2025-03-16 22:17:41,364 [INFO] Bruger klikkede på knap: Rapporter
+2025-03-16 22:17:42,515 [INFO] Rapportvindue fuldt initialiseret
+2025-03-16 22:17:48,494 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 22:17:48,507 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 22:17:48,508 [INFO] Kører standarddata initialiseringer
+2025-03-16 22:17:48,509 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 22:17:48,512 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 22:17:48,512 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 22:17:48,515 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 22:17:48,522 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 22:17:48,522 [INFO] Kører standarddata initialiseringer
+2025-03-16 22:17:48,522 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 22:17:48,524 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 22:17:48,526 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 22:17:48,526 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 22:17:48,537 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 22:17:48,539 [INFO] Kører standarddata initialiseringer
+2025-03-16 22:17:48,540 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 22:17:48,542 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 22:17:48,542 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 22:17:48,542 [INFO] Initialiserer WordReportGenerator med database: databases\chauffør_data_februar_2025.db
+2025-03-16 22:17:48,544 [INFO] Initialiserer database forbindelse til databases/settings.db
+2025-03-16 22:17:48,549 [INFO] Database migrationer kørt succesfuldt
+2025-03-16 22:17:48,549 [INFO] Kører standarddata initialiseringer
+2025-03-16 22:17:48,549 [INFO] Kontrollerer om der findes en standard mail-skabelon
+2025-03-16 22:17:48,551 [INFO] Standard mail-skabelon findes allerede i databasen
+2025-03-16 22:17:48,551 [INFO] Standarddata initialiseringer fuldført
+2025-03-16 22:17:48,553 [INFO] Minimum kilometer sat til: 100.0
+2025-03-16 22:17:59,617 [INFO] Rapport genereret for Andersen, Kent René: rapporter\Fiskelogistik_Chauffør_Andersen Kent René_Februar_2025_20250316_221759.docx
+2025-03-16 22:17:59,674 [INFO] Forbereder data for Andersen, Kent René med email kentrene@msn.com
+2025-03-16 22:18:00,325 [INFO] Rapport genereret for Bering, Claus Holtet: rapporter\Fiskelogistik_Chauffør_Bering Claus Holtet_Februar_2025_20250316_221800.docx
+2025-03-16 22:18:00,358 [INFO] Forbereder data for Bering, Claus Holtet med email clausbering@godmail.dk
+2025-03-16 22:18:01,296 [INFO] Rapport genereret for Brohus, Kent: rapporter\Fiskelogistik_Chauffør_Brohus Kent_Februar_2025_20250316_221801.docx
+2025-03-16 22:18:01,352 [INFO] Forbereder data for Brohus, Kent med email brohus74@gmail.com
+2025-03-16 22:18:02,064 [INFO] Rapport genereret for Dan, Robert-Alexandru: rapporter\Fiskelogistik_Chauffør_Dan Robert-Alexandru_Februar_2025_20250316_221801.docx
+2025-03-16 22:18:02,097 [INFO] Forbereder data for Dan, Robert-Alexandru med email alex_cs2oo9@yahoo.com
+2025-03-16 22:18:02,710 [INFO] Rapport genereret for Flyvbjerg, Gunnar: rapporter\Fiskelogistik_Chauffør_Flyvbjerg Gunnar_Februar_2025_20250316_221802.docx
+2025-03-16 22:18:02,759 [INFO] Forbereder data for Flyvbjerg, Gunnar med email gfit@mail.tele.dk
+2025-03-16 22:18:03,719 [INFO] Rapport genereret for Gherasim, Marius-Daniel: rapporter\Fiskelogistik_Chauffør_Gherasim Marius-Daniel_Februar_2025_20250316_221803.docx
+2025-03-16 22:18:03,774 [INFO] Forbereder data for Gherasim, Marius-Daniel med email mariusdaniel067@gmail.com
+2025-03-16 22:18:04,548 [INFO] Rapport genereret for Jensen, Christian Peter: rapporter\Fiskelogistik_Chauffør_Jensen Christian Peter_Februar_2025_20250316_221804.docx
+2025-03-16 22:18:04,587 [INFO] Forbereder data for Jensen, Christian Peter med email cj@cjt.dk
+2025-03-16 22:18:05,446 [INFO] Rapport genereret for Jensen, Kent: rapporter\Fiskelogistik_Chauffør_Jensen Kent_Februar_2025_20250316_221805.docx
+2025-03-16 22:18:05,477 [INFO] Forbereder data for Jensen, Kent med email kentjensen8@gmail.com
+2025-03-16 22:18:06,501 [INFO] Rapport genereret for Jensen, Lars Henrik: rapporter\Fiskelogistik_Chauffør_Jensen Lars Henrik_Februar_2025_20250316_221806.docx
+2025-03-16 22:18:06,532 [INFO] Forbereder data for Jensen, Lars Henrik med email lhid39@gmail.com
+2025-03-16 22:18:07,660 [INFO] Rapport genereret for Jørgensen, Hans Martin: rapporter\Fiskelogistik_Chauffør_Jørgensen Hans Martin_Februar_2025_20250316_221807.docx
+2025-03-16 22:18:07,698 [INFO] Forbereder data for Jørgensen, Hans Martin med email holmen@hotmail.dk
+2025-03-16 22:18:09,024 [INFO] Rapport genereret for Karlsson, Mike Pete Patrick: rapporter\Fiskelogistik_Chauffør_Karlsson Mike Pete Patrick_Februar_2025_20250316_221808.docx
+2025-03-16 22:18:09,083 [INFO] Forbereder data for Karlsson, Mike Pete Patrick med email mike.bobby1993@outlook.dk
+2025-03-16 22:18:10,378 [INFO] Rapport genereret for Klausen, René: rapporter\Fiskelogistik_Chauffør_Klausen René_Februar_2025_20250316_221810.docx
+2025-03-16 22:18:10,426 [INFO] Forbereder data for Klausen, René med email rene.klausen@hotmail.com
+2025-03-16 22:18:11,739 [INFO] Rapport genereret for Konnerup, Mads Grønbæk: rapporter\Fiskelogistik_Chauffør_Konnerup Mads Grønbæk_Februar_2025_20250316_221811.docx
+2025-03-16 22:18:11,763 [INFO] Forbereder data for Konnerup, Mads Grønbæk med email Konnerup1@live.dk
+2025-03-16 22:18:12,379 [INFO] Rapport genereret for Kristensen, Tom: rapporter\Fiskelogistik_Chauffør_Kristensen Tom_Februar_2025_20250316_221812.docx
+2025-03-16 22:18:12,406 [INFO] Forbereder data for Kristensen, Tom med email tkristensen1@icloud.com
+2025-03-16 22:18:13,216 [INFO] Rapport genereret for Lind, Lars Broberg: rapporter\Fiskelogistik_Chauffør_Lind Lars Broberg_Februar_2025_20250316_221813.docx
+2025-03-16 22:18:13,261 [INFO] Forbereder data for Lind, Lars Broberg med email broberglind@gmail.com
+2025-03-16 22:18:14,180 [INFO] Rapport genereret for Luther, Michael: rapporter\Fiskelogistik_Chauffør_Luther Michael_Februar_2025_20250316_221814.docx
+2025-03-16 22:18:14,224 [INFO] Forbereder data for Luther, Michael med email michaelluther323@gmail.com
+2025-03-16 22:18:14,988 [INFO] Rapport genereret for Mortensen, Taus: rapporter\Fiskelogistik_Chauffør_Mortensen Taus_Februar_2025_20250316_221814.docx
+2025-03-16 22:18:15,047 [INFO] Forbereder data for Mortensen, Taus med email taus@pc.dk
+2025-03-16 22:18:15,927 [INFO] Rapport genereret for Munkbøl, Daniel Maegaard: rapporter\Fiskelogistik_Chauffør_Munkbøl Daniel Maegaard_Februar_2025_20250316_221815.docx
+2025-03-16 22:18:15,953 [INFO] Forbereder data for Munkbøl, Daniel Maegaard med email danielmunkboel@gmail.com
+2025-03-16 22:18:16,808 [INFO] Rapport genereret for Murariu, Daniel: rapporter\Fiskelogistik_Chauffør_Murariu Daniel_Februar_2025_20250316_221816.docx
+2025-03-16 22:18:16,856 [INFO] Forbereder data for Murariu, Daniel med email dandaniel1683@yahoo.com
+2025-03-16 22:18:18,088 [INFO] Rapport genereret for Nepper, Joachim: rapporter\Fiskelogistik_Chauffør_Nepper Joachim_Februar_2025_20250316_221818.docx
+2025-03-16 22:18:18,115 [INFO] Forbereder data for Nepper, Joachim med email jnepsi@gmail.com
+2025-03-16 22:18:18,937 [INFO] Rapport genereret for Nielsen, Hannibal Carl Leen: rapporter\Fiskelogistik_Chauffør_Nielsen Hannibal Carl Leen_Februar_2025_20250316_221818.docx
+2025-03-16 22:18:18,999 [INFO] Forbereder data for Nielsen, Hannibal Carl Leen med email musenhannibal@gmail.com
+2025-03-16 22:18:19,695 [INFO] Rapport genereret for Nielsen, Henrik Kloster: rapporter\Fiskelogistik_Chauffør_Nielsen Henrik Kloster_Februar_2025_20250316_221819.docx
+2025-03-16 22:18:19,722 [INFO] Forbereder data for Nielsen, Henrik Kloster med email henrik.kl@hotmail.com
+2025-03-16 22:18:20,461 [INFO] Rapport genereret for Nielsen, Henrik Nilaus: rapporter\Fiskelogistik_Chauffør_Nielsen Henrik Nilaus_Februar_2025_20250316_221820.docx
+2025-03-16 22:18:20,509 [INFO] Forbereder data for Nielsen, Henrik Nilaus med email henriknilausnielsen@gmail.com
+2025-03-16 22:18:21,610 [INFO] Rapport genereret for Nielsen, Torben Brian: rapporter\Fiskelogistik_Chauffør_Nielsen Torben Brian_Februar_2025_20250316_221821.docx
+2025-03-16 22:18:21,645 [INFO] Forbereder data for Nielsen, Torben Brian med email Tbn_79@hotmail.com
+2025-03-16 22:18:22,582 [INFO] Rapport genereret for Pedersen, Henning: rapporter\Fiskelogistik_Chauffør_Pedersen Henning_Februar_2025_20250316_221822.docx
+2025-03-16 22:18:22,613 [INFO] Forbereder data for Pedersen, Henning med email Hedeboerne@hotmail.dk
+2025-03-16 22:18:23,717 [INFO] Rapport genereret for Petersen, Jan Søndergaard: rapporter\Fiskelogistik_Chauffør_Petersen Jan Søndergaard_Februar_2025_20250316_221823.docx
+2025-03-16 22:18:23,744 [INFO] Forbereder data for Petersen, Jan Søndergaard med email s-d-k@outlook.dk
+2025-03-16 22:18:24,786 [INFO] Rapport genereret for Rasmussen, Christian Bæk: rapporter\Fiskelogistik_Chauffør_Rasmussen Christian Bæk_Februar_2025_20250316_221824.docx
+2025-03-16 22:18:24,819 [INFO] Forbereder data for Rasmussen, Christian Bæk med email christianrasmusen@live.dk
+2025-03-16 22:18:25,679 [INFO] Rapport genereret for Skovborg, Kurt: rapporter\Fiskelogistik_Chauffør_Skovborg Kurt_Februar_2025_20250316_221825.docx
+2025-03-16 22:18:25,720 [INFO] Forbereder data for Skovborg, Kurt med email kurtskovborg@gmail.com
+2025-03-16 22:18:26,898 [INFO] Rapport genereret for Søgaard, Christian Andreas: rapporter\Fiskelogistik_Chauffør_Søgaard Christian Andreas_Februar_2025_20250316_221826.docx
+2025-03-16 22:18:26,956 [INFO] Forbereder data for Søgaard, Christian Andreas med email chras.hanstholm@gmail.com
+2025-03-16 22:18:28,266 [INFO] Rapport genereret for Sørensen, Jørgen: rapporter\Fiskelogistik_Chauffør_Sørensen Jørgen_Februar_2025_20250316_221828.docx
+2025-03-16 22:18:28,320 [INFO] Forbereder data for Sørensen, Jørgen med email jso@fiskelogistik.com
+2025-03-16 22:18:29,380 [INFO] Rapport genereret for Vinther Lemuchi, Javid: rapporter\Fiskelogistik_Chauffør_Vinther Lemuchi Javid_Februar_2025_20250316_221829.docx
+2025-03-16 22:18:29,404 [INFO] Forbereder data for Vinther Lemuchi, Javid med email javidlimoochi@yahoo.co.uk
+2025-03-16 22:18:29,495 [INFO] Sender rapport direkte til kentrene@msn.com for chauffør Andersen, Kent René
+2025-03-16 22:18:29,528 [INFO] Sender rapport direkte til kentrene@msn.com for chauffør Andersen, Kent René
+2025-03-16 22:18:29,533 [INFO] Mail til kentrene@msn.com tilføjet til sendekøen
+2025-03-16 22:18:29,535 [INFO] Mail kø processor startet
+2025-03-16 22:18:29,535 [INFO] Mail kø håndteringstråd startet
+2025-03-16 22:18:29,538 [INFO] Behandler mail kø (1 mails)
+2025-03-16 22:18:29,538 [INFO] Rapport sendt til Andersen, Kent René (kentrene@msn.com)
+2025-03-16 22:18:29,538 [INFO] Rapport sendt succesfuldt til kentrene@msn.com
+2025-03-16 22:18:29,542 [INFO] Opretter forbindelse til smtp.gmail.com:587
+2025-03-16 22:18:29,542 [INFO] Anvender standard SMTP forbindelse
+2025-03-16 22:18:29,589 [INFO] Venter 2 sekunder før afsendelse af næste mail (1/31)
+2025-03-16 22:18:29,706 [INFO] Starter TLS
+2025-03-16 22:18:29,885 [INFO] Logger ind med fiskelogistik.rapport@gmail.com
+2025-03-16 22:18:30,120 [INFO] SMTP forbindelse oprettet succesfuldt
+2025-03-16 22:18:30,120 [INFO] Sender mail til kentrene@msn.com
+2025-03-16 22:18:30,133 [INFO] Fil vedhæftet: Rapport_Andersen, Kent René_20250316.docx (42908 bytes)
+2025-03-16 22:18:31,604 [INFO] Sender rapport direkte til clausbering@godmail.dk for chauffør Bering, Claus Holtet
+2025-03-16 22:18:31,604 [INFO] Sender rapport direkte til clausbering@godmail.dk for chauffør Bering, Claus Holtet
+2025-03-16 22:18:31,604 [INFO] Mail til clausbering@godmail.dk tilføjet til sendekøen
+2025-03-16 22:18:31,610 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:31,610 [INFO] Rapport sendt til Bering, Claus Holtet (clausbering@godmail.dk)
+2025-03-16 22:18:31,612 [INFO] Rapport sendt succesfuldt til clausbering@godmail.dk
+2025-03-16 22:18:31,668 [INFO] Venter 2 sekunder før afsendelse af næste mail (2/31)
+2025-03-16 22:18:31,889 [INFO] Mail sendt til kentrene@msn.com
+2025-03-16 22:18:31,904 [INFO] Mail succes logget for chauffør Andersen, Kent René
+2025-03-16 22:18:32,907 [INFO] Sender mail til clausbering@godmail.dk
+2025-03-16 22:18:32,915 [INFO] Fil vedhæftet: Rapport_Bering, Claus Holtet_20250316.docx (42906 bytes)
+2025-03-16 22:18:33,683 [INFO] Sender rapport direkte til brohus74@gmail.com for chauffør Brohus, Kent
+2025-03-16 22:18:33,685 [INFO] Sender rapport direkte til brohus74@gmail.com for chauffør Brohus, Kent
+2025-03-16 22:18:33,685 [INFO] Mail til brohus74@gmail.com tilføjet til sendekøen
+2025-03-16 22:18:33,685 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:33,685 [INFO] Rapport sendt til Brohus, Kent (brohus74@gmail.com)
+2025-03-16 22:18:33,688 [INFO] Rapport sendt succesfuldt til brohus74@gmail.com
+2025-03-16 22:18:33,748 [INFO] Venter 2 sekunder før afsendelse af næste mail (3/31)
+2025-03-16 22:18:34,355 [INFO] Mail sendt til clausbering@godmail.dk
+2025-03-16 22:18:34,389 [INFO] Mail succes logget for chauffør Bering, Claus Holtet
+2025-03-16 22:18:35,391 [INFO] Sender mail til brohus74@gmail.com
+2025-03-16 22:18:35,403 [INFO] Fil vedhæftet: Rapport_Brohus, Kent_20250316.docx (42907 bytes)
+2025-03-16 22:18:35,765 [INFO] Sender rapport direkte til alex_cs2oo9@yahoo.com for chauffør Dan, Robert-Alexandru
+2025-03-16 22:18:35,769 [INFO] Sender rapport direkte til alex_cs2oo9@yahoo.com for chauffør Dan, Robert-Alexandru
+2025-03-16 22:18:35,770 [INFO] Mail til alex_cs2oo9@yahoo.com tilføjet til sendekøen
+2025-03-16 22:18:35,770 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:35,772 [INFO] Rapport sendt til Dan, Robert-Alexandru (alex_cs2oo9@yahoo.com)
+2025-03-16 22:18:35,773 [INFO] Rapport sendt succesfuldt til alex_cs2oo9@yahoo.com
+2025-03-16 22:18:35,827 [INFO] Venter 2 sekunder før afsendelse af næste mail (4/31)
+2025-03-16 22:18:36,803 [INFO] Mail sendt til brohus74@gmail.com
+2025-03-16 22:18:36,849 [INFO] Mail succes logget for chauffør Brohus, Kent
+2025-03-16 22:18:37,843 [INFO] Sender rapport direkte til gfit@mail.tele.dk for chauffør Flyvbjerg, Gunnar
+2025-03-16 22:18:37,851 [INFO] Sender mail til alex_cs2oo9@yahoo.com
+2025-03-16 22:18:37,874 [INFO] Sender rapport direkte til gfit@mail.tele.dk for chauffør Flyvbjerg, Gunnar
+2025-03-16 22:18:37,877 [INFO] Mail til gfit@mail.tele.dk tilføjet til sendekøen
+2025-03-16 22:18:37,877 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:37,877 [INFO] Rapport sendt til Flyvbjerg, Gunnar (gfit@mail.tele.dk)
+2025-03-16 22:18:37,877 [INFO] Rapport sendt succesfuldt til gfit@mail.tele.dk
+2025-03-16 22:18:37,887 [INFO] Fil vedhæftet: Rapport_Dan, Robert-Alexandru_20250316.docx (42903 bytes)
+2025-03-16 22:18:37,951 [INFO] Venter 2 sekunder før afsendelse af næste mail (5/31)
+2025-03-16 22:18:39,258 [INFO] Mail sendt til alex_cs2oo9@yahoo.com
+2025-03-16 22:18:39,272 [INFO] Mail succes logget for chauffør Dan, Robert-Alexandru
+2025-03-16 22:18:39,965 [INFO] Sender rapport direkte til mariusdaniel067@gmail.com for chauffør Gherasim, Marius-Daniel
+2025-03-16 22:18:39,967 [INFO] Sender rapport direkte til mariusdaniel067@gmail.com for chauffør Gherasim, Marius-Daniel
+2025-03-16 22:18:39,967 [INFO] Mail til mariusdaniel067@gmail.com tilføjet til sendekøen
+2025-03-16 22:18:39,967 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:39,967 [INFO] Rapport sendt til Gherasim, Marius-Daniel (mariusdaniel067@gmail.com)
+2025-03-16 22:18:39,967 [INFO] Rapport sendt succesfuldt til mariusdaniel067@gmail.com
+2025-03-16 22:18:40,032 [INFO] Venter 2 sekunder før afsendelse af næste mail (6/31)
+2025-03-16 22:18:40,274 [INFO] Sender mail til gfit@mail.tele.dk
+2025-03-16 22:18:40,285 [INFO] Fil vedhæftet: Rapport_Flyvbjerg, Gunnar_20250316.docx (42881 bytes)
+2025-03-16 22:18:41,581 [INFO] Mail sendt til gfit@mail.tele.dk
+2025-03-16 22:18:41,627 [INFO] Mail succes logget for chauffør Flyvbjerg, Gunnar
+2025-03-16 22:18:42,041 [INFO] Sender rapport direkte til cj@cjt.dk for chauffør Jensen, Christian Peter
+2025-03-16 22:18:42,041 [INFO] Sender rapport direkte til cj@cjt.dk for chauffør Jensen, Christian Peter
+2025-03-16 22:18:42,050 [INFO] Mail til cj@cjt.dk tilføjet til sendekøen
+2025-03-16 22:18:42,050 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:42,051 [INFO] Rapport sendt til Jensen, Christian Peter (cj@cjt.dk)
+2025-03-16 22:18:42,051 [INFO] Rapport sendt succesfuldt til cj@cjt.dk
+2025-03-16 22:18:42,124 [INFO] Venter 2 sekunder før afsendelse af næste mail (7/31)
+2025-03-16 22:18:42,629 [INFO] Sender mail til mariusdaniel067@gmail.com
+2025-03-16 22:18:42,641 [INFO] Fil vedhæftet: Rapport_Gherasim, Marius-Daniel_20250316.docx (42904 bytes)
+2025-03-16 22:18:44,137 [INFO] Sender rapport direkte til kentjensen8@gmail.com for chauffør Jensen, Kent
+2025-03-16 22:18:44,137 [INFO] Sender rapport direkte til kentjensen8@gmail.com for chauffør Jensen, Kent
+2025-03-16 22:18:44,144 [INFO] Mail til kentjensen8@gmail.com tilføjet til sendekøen
+2025-03-16 22:18:44,144 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:44,144 [INFO] Rapport sendt til Jensen, Kent (kentjensen8@gmail.com)
+2025-03-16 22:18:44,144 [INFO] Rapport sendt succesfuldt til kentjensen8@gmail.com
+2025-03-16 22:18:44,178 [INFO] Mail sendt til mariusdaniel067@gmail.com
+2025-03-16 22:18:44,209 [INFO] Venter 2 sekunder før afsendelse af næste mail (8/31)
+2025-03-16 22:18:44,219 [INFO] Mail succes logget for chauffør Gherasim, Marius-Daniel
+2025-03-16 22:18:45,221 [INFO] Sender mail til cj@cjt.dk
+2025-03-16 22:18:45,233 [INFO] Fil vedhæftet: Rapport_Jensen, Christian Peter_20250316.docx (42877 bytes)
+2025-03-16 22:18:46,229 [INFO] Sender rapport direkte til lhid39@gmail.com for chauffør Jensen, Lars Henrik
+2025-03-16 22:18:46,231 [INFO] Sender rapport direkte til lhid39@gmail.com for chauffør Jensen, Lars Henrik
+2025-03-16 22:18:46,231 [INFO] Mail til lhid39@gmail.com tilføjet til sendekøen
+2025-03-16 22:18:46,231 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:46,231 [INFO] Rapport sendt til Jensen, Lars Henrik (lhid39@gmail.com)
+2025-03-16 22:18:46,231 [INFO] Rapport sendt succesfuldt til lhid39@gmail.com
+2025-03-16 22:18:46,294 [INFO] Venter 2 sekunder før afsendelse af næste mail (9/31)
+2025-03-16 22:18:46,673 [INFO] Mail sendt til cj@cjt.dk
+2025-03-16 22:18:46,719 [INFO] Mail succes logget for chauffør Jensen, Christian Peter
+2025-03-16 22:18:47,721 [INFO] Sender mail til kentjensen8@gmail.com
+2025-03-16 22:18:47,735 [INFO] Fil vedhæftet: Rapport_Jensen, Kent_20250316.docx (42896 bytes)
+2025-03-16 22:18:48,315 [INFO] Sender rapport direkte til holmen@hotmail.dk for chauffør Jørgensen, Hans Martin
+2025-03-16 22:18:48,317 [INFO] Sender rapport direkte til holmen@hotmail.dk for chauffør Jørgensen, Hans Martin
+2025-03-16 22:18:48,317 [INFO] Mail til holmen@hotmail.dk tilføjet til sendekøen
+2025-03-16 22:18:48,320 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:48,320 [INFO] Rapport sendt til Jørgensen, Hans Martin (holmen@hotmail.dk)
+2025-03-16 22:18:48,320 [INFO] Rapport sendt succesfuldt til holmen@hotmail.dk
+2025-03-16 22:18:48,396 [INFO] Venter 2 sekunder før afsendelse af næste mail (10/31)
+2025-03-16 22:18:49,398 [INFO] Mail sendt til kentjensen8@gmail.com
+2025-03-16 22:18:49,440 [INFO] Mail succes logget for chauffør Jensen, Kent
+2025-03-16 22:18:50,406 [INFO] Sender rapport direkte til mike.bobby1993@outlook.dk for chauffør Karlsson, Mike Pete Patrick
+2025-03-16 22:18:50,406 [INFO] Sender rapport direkte til mike.bobby1993@outlook.dk for chauffør Karlsson, Mike Pete Patrick
+2025-03-16 22:18:50,410 [INFO] Mail til mike.bobby1993@outlook.dk tilføjet til sendekøen
+2025-03-16 22:18:50,410 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:50,410 [INFO] Rapport sendt til Karlsson, Mike Pete Patrick (mike.bobby1993@outlook.dk)
+2025-03-16 22:18:50,410 [INFO] Rapport sendt succesfuldt til mike.bobby1993@outlook.dk
+2025-03-16 22:18:50,431 [INFO] Venter 2 sekunder før afsendelse af næste mail (11/31)
+2025-03-16 22:18:50,445 [INFO] Sender mail til lhid39@gmail.com
+2025-03-16 22:18:50,448 [INFO] Fil vedhæftet: Rapport_Jensen, Lars Henrik_20250316.docx (42905 bytes)
+2025-03-16 22:18:51,948 [INFO] Mail sendt til lhid39@gmail.com
+2025-03-16 22:18:51,995 [INFO] Mail succes logget for chauffør Jensen, Lars Henrik
+2025-03-16 22:18:52,448 [INFO] Sender rapport direkte til rene.klausen@hotmail.com for chauffør Klausen, René
+2025-03-16 22:18:52,450 [INFO] Sender rapport direkte til rene.klausen@hotmail.com for chauffør Klausen, René
+2025-03-16 22:18:52,450 [INFO] Mail til rene.klausen@hotmail.com tilføjet til sendekøen
+2025-03-16 22:18:52,450 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:52,450 [INFO] Rapport sendt til Klausen, René (rene.klausen@hotmail.com)
+2025-03-16 22:18:52,454 [INFO] Rapport sendt succesfuldt til rene.klausen@hotmail.com
+2025-03-16 22:18:52,521 [INFO] Venter 2 sekunder før afsendelse af næste mail (12/31)
+2025-03-16 22:18:52,997 [INFO] Sender mail til holmen@hotmail.dk
+2025-03-16 22:18:53,037 [INFO] Fil vedhæftet: Rapport_Jørgensen, Hans Martin_20250316.docx (42894 bytes)
+2025-03-16 22:18:54,491 [INFO] Mail sendt til holmen@hotmail.dk
+2025-03-16 22:18:54,537 [INFO] Mail succes logget for chauffør Jørgensen, Hans Martin
+2025-03-16 22:18:54,539 [INFO] Sender rapport direkte til Konnerup1@live.dk for chauffør Konnerup, Mads Grønbæk
+2025-03-16 22:18:54,545 [INFO] Sender rapport direkte til Konnerup1@live.dk for chauffør Konnerup, Mads Grønbæk
+2025-03-16 22:18:54,545 [INFO] Mail til Konnerup1@live.dk tilføjet til sendekøen
+2025-03-16 22:18:54,545 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:54,548 [INFO] Rapport sendt til Konnerup, Mads Grønbæk (Konnerup1@live.dk)
+2025-03-16 22:18:54,548 [INFO] Rapport sendt succesfuldt til Konnerup1@live.dk
+2025-03-16 22:18:54,615 [INFO] Venter 2 sekunder før afsendelse af næste mail (13/31)
+2025-03-16 22:18:55,540 [INFO] Sender mail til mike.bobby1993@outlook.dk
+2025-03-16 22:18:55,552 [INFO] Fil vedhæftet: Rapport_Karlsson, Mike Pete Patrick_20250316.docx (42891 bytes)
+2025-03-16 22:18:56,638 [INFO] Sender rapport direkte til tkristensen1@icloud.com for chauffør Kristensen, Tom
+2025-03-16 22:18:56,639 [INFO] Sender rapport direkte til tkristensen1@icloud.com for chauffør Kristensen, Tom
+2025-03-16 22:18:56,642 [INFO] Mail til tkristensen1@icloud.com tilføjet til sendekøen
+2025-03-16 22:18:56,642 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:56,644 [INFO] Rapport sendt til Kristensen, Tom (tkristensen1@icloud.com)
+2025-03-16 22:18:56,645 [INFO] Rapport sendt succesfuldt til tkristensen1@icloud.com
+2025-03-16 22:18:56,719 [INFO] Venter 2 sekunder før afsendelse af næste mail (14/31)
+2025-03-16 22:18:57,010 [INFO] Mail sendt til mike.bobby1993@outlook.dk
+2025-03-16 22:18:57,027 [INFO] Mail succes logget for chauffør Karlsson, Mike Pete Patrick
+2025-03-16 22:18:58,031 [INFO] Sender mail til rene.klausen@hotmail.com
+2025-03-16 22:18:58,044 [INFO] Fil vedhæftet: Rapport_Klausen, René_20250316.docx (42895 bytes)
+2025-03-16 22:18:58,737 [INFO] Sender rapport direkte til broberglind@gmail.com for chauffør Lind, Lars Broberg
+2025-03-16 22:18:58,743 [INFO] Sender rapport direkte til broberglind@gmail.com for chauffør Lind, Lars Broberg
+2025-03-16 22:18:58,744 [INFO] Mail til broberglind@gmail.com tilføjet til sendekøen
+2025-03-16 22:18:58,744 [INFO] Mail kø processor kører allerede
+2025-03-16 22:18:58,746 [INFO] Rapport sendt til Lind, Lars Broberg (broberglind@gmail.com)
+2025-03-16 22:18:58,746 [INFO] Rapport sendt succesfuldt til broberglind@gmail.com
+2025-03-16 22:18:58,805 [INFO] Venter 2 sekunder før afsendelse af næste mail (15/31)
+2025-03-16 22:18:59,450 [INFO] Mail sendt til rene.klausen@hotmail.com
+2025-03-16 22:18:59,502 [INFO] Mail succes logget for chauffør Klausen, René
+2025-03-16 22:19:00,637 [INFO] Sender mail til Konnerup1@live.dk
+2025-03-16 22:19:00,652 [INFO] Fil vedhæftet: Rapport_Konnerup, Mads Grønbæk_20250316.docx (42907 bytes)
+2025-03-16 22:19:00,813 [INFO] Sender rapport direkte til michaelluther323@gmail.com for chauffør Luther, Michael
+2025-03-16 22:19:00,816 [INFO] Sender rapport direkte til michaelluther323@gmail.com for chauffør Luther, Michael
+2025-03-16 22:19:00,816 [INFO] Mail til michaelluther323@gmail.com tilføjet til sendekøen
+2025-03-16 22:19:00,816 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:00,817 [INFO] Rapport sendt til Luther, Michael (michaelluther323@gmail.com)
+2025-03-16 22:19:00,817 [INFO] Rapport sendt succesfuldt til michaelluther323@gmail.com
+2025-03-16 22:19:00,860 [INFO] Venter 2 sekunder før afsendelse af næste mail (16/31)
+2025-03-16 22:19:02,155 [INFO] Mail sendt til Konnerup1@live.dk
+2025-03-16 22:19:02,198 [INFO] Mail succes logget for chauffør Konnerup, Mads Grønbæk
+2025-03-16 22:19:02,869 [INFO] Sender rapport direkte til taus@pc.dk for chauffør Mortensen, Taus
+2025-03-16 22:19:02,873 [INFO] Sender rapport direkte til taus@pc.dk for chauffør Mortensen, Taus
+2025-03-16 22:19:02,873 [INFO] Mail til taus@pc.dk tilføjet til sendekøen
+2025-03-16 22:19:02,875 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:02,875 [INFO] Rapport sendt til Mortensen, Taus (taus@pc.dk)
+2025-03-16 22:19:02,875 [INFO] Rapport sendt succesfuldt til taus@pc.dk
+2025-03-16 22:19:02,950 [INFO] Venter 2 sekunder før afsendelse af næste mail (17/31)
+2025-03-16 22:19:03,200 [INFO] Sender mail til tkristensen1@icloud.com
+2025-03-16 22:19:03,215 [INFO] Fil vedhæftet: Rapport_Kristensen, Tom_20250316.docx (42896 bytes)
+2025-03-16 22:19:04,629 [INFO] Mail sendt til tkristensen1@icloud.com
+2025-03-16 22:19:04,672 [INFO] Mail succes logget for chauffør Kristensen, Tom
+2025-03-16 22:19:04,969 [INFO] Sender rapport direkte til danielmunkboel@gmail.com for chauffør Munkbøl, Daniel Maegaard
+2025-03-16 22:19:04,970 [INFO] Sender rapport direkte til danielmunkboel@gmail.com for chauffør Munkbøl, Daniel Maegaard
+2025-03-16 22:19:04,970 [INFO] Mail til danielmunkboel@gmail.com tilføjet til sendekøen
+2025-03-16 22:19:04,970 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:04,970 [INFO] Rapport sendt til Munkbøl, Daniel Maegaard (danielmunkboel@gmail.com)
+2025-03-16 22:19:04,970 [INFO] Rapport sendt succesfuldt til danielmunkboel@gmail.com
+2025-03-16 22:19:05,046 [INFO] Venter 2 sekunder før afsendelse af næste mail (18/31)
+2025-03-16 22:19:05,676 [INFO] Sender mail til broberglind@gmail.com
+2025-03-16 22:19:05,690 [INFO] Fil vedhæftet: Rapport_Lind, Lars Broberg_20250316.docx (42905 bytes)
+2025-03-16 22:19:07,059 [INFO] Sender rapport direkte til dandaniel1683@yahoo.com for chauffør Murariu, Daniel
+2025-03-16 22:19:07,064 [INFO] Sender rapport direkte til dandaniel1683@yahoo.com for chauffør Murariu, Daniel
+2025-03-16 22:19:07,064 [INFO] Mail til dandaniel1683@yahoo.com tilføjet til sendekøen
+2025-03-16 22:19:07,064 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:07,066 [INFO] Rapport sendt til Murariu, Daniel (dandaniel1683@yahoo.com)
+2025-03-16 22:19:07,067 [INFO] Rapport sendt succesfuldt til dandaniel1683@yahoo.com
+2025-03-16 22:19:07,133 [INFO] Venter 2 sekunder før afsendelse af næste mail (19/31)
+2025-03-16 22:19:07,214 [INFO] Mail sendt til broberglind@gmail.com
+2025-03-16 22:19:07,258 [INFO] Mail succes logget for chauffør Lind, Lars Broberg
+2025-03-16 22:19:08,261 [INFO] Sender mail til michaelluther323@gmail.com
+2025-03-16 22:19:08,275 [INFO] Fil vedhæftet: Rapport_Luther, Michael_20250316.docx (42900 bytes)
+2025-03-16 22:19:09,151 [INFO] Sender rapport direkte til jnepsi@gmail.com for chauffør Nepper, Joachim
+2025-03-16 22:19:09,151 [INFO] Sender rapport direkte til jnepsi@gmail.com for chauffør Nepper, Joachim
+2025-03-16 22:19:09,151 [INFO] Mail til jnepsi@gmail.com tilføjet til sendekøen
+2025-03-16 22:19:09,151 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:09,156 [INFO] Rapport sendt til Nepper, Joachim (jnepsi@gmail.com)
+2025-03-16 22:19:09,157 [INFO] Rapport sendt succesfuldt til jnepsi@gmail.com
+2025-03-16 22:19:09,222 [INFO] Venter 2 sekunder før afsendelse af næste mail (20/31)
+2025-03-16 22:19:09,590 [INFO] Mail sendt til michaelluther323@gmail.com
+2025-03-16 22:19:09,637 [INFO] Mail succes logget for chauffør Luther, Michael
+2025-03-16 22:19:10,639 [INFO] Sender mail til taus@pc.dk
+2025-03-16 22:19:10,662 [INFO] Fil vedhæftet: Rapport_Mortensen, Taus_20250316.docx (42906 bytes)
+2025-03-16 22:19:11,234 [INFO] Sender rapport direkte til musenhannibal@gmail.com for chauffør Nielsen, Hannibal Carl Leen
+2025-03-16 22:19:11,234 [INFO] Sender rapport direkte til musenhannibal@gmail.com for chauffør Nielsen, Hannibal Carl Leen
+2025-03-16 22:19:11,241 [INFO] Mail til musenhannibal@gmail.com tilføjet til sendekøen
+2025-03-16 22:19:11,241 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:11,243 [INFO] Rapport sendt til Nielsen, Hannibal Carl Leen (musenhannibal@gmail.com)
+2025-03-16 22:19:11,243 [INFO] Rapport sendt succesfuldt til musenhannibal@gmail.com
+2025-03-16 22:19:11,299 [INFO] Venter 2 sekunder før afsendelse af næste mail (21/31)
+2025-03-16 22:19:11,980 [INFO] Mail sendt til taus@pc.dk
+2025-03-16 22:19:11,995 [INFO] Mail succes logget for chauffør Mortensen, Taus
+2025-03-16 22:19:12,998 [INFO] Sender mail til danielmunkboel@gmail.com
+2025-03-16 22:19:13,009 [INFO] Fil vedhæftet: Rapport_Munkbøl, Daniel Maegaard_20250316.docx (42897 bytes)
+2025-03-16 22:19:13,313 [INFO] Sender rapport direkte til henrik.kl@hotmail.com for chauffør Nielsen, Henrik Kloster
+2025-03-16 22:19:13,317 [INFO] Sender rapport direkte til henrik.kl@hotmail.com for chauffør Nielsen, Henrik Kloster
+2025-03-16 22:19:13,319 [INFO] Mail til henrik.kl@hotmail.com tilføjet til sendekøen
+2025-03-16 22:19:13,319 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:13,319 [INFO] Rapport sendt til Nielsen, Henrik Kloster (henrik.kl@hotmail.com)
+2025-03-16 22:19:13,319 [INFO] Rapport sendt succesfuldt til henrik.kl@hotmail.com
+2025-03-16 22:19:13,406 [INFO] Venter 2 sekunder før afsendelse af næste mail (22/31)
+2025-03-16 22:19:14,480 [INFO] Mail sendt til danielmunkboel@gmail.com
+2025-03-16 22:19:14,526 [INFO] Mail succes logget for chauffør Munkbøl, Daniel Maegaard
+2025-03-16 22:19:15,421 [INFO] Sender rapport direkte til henriknilausnielsen@gmail.com for chauffør Nielsen, Henrik Nilaus
+2025-03-16 22:19:15,422 [INFO] Sender rapport direkte til henriknilausnielsen@gmail.com for chauffør Nielsen, Henrik Nilaus
+2025-03-16 22:19:15,424 [INFO] Mail til henriknilausnielsen@gmail.com tilføjet til sendekøen
+2025-03-16 22:19:15,426 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:15,426 [INFO] Rapport sendt til Nielsen, Henrik Nilaus (henriknilausnielsen@gmail.com)
+2025-03-16 22:19:15,426 [INFO] Rapport sendt succesfuldt til henriknilausnielsen@gmail.com
+2025-03-16 22:19:15,516 [INFO] Venter 2 sekunder før afsendelse af næste mail (23/31)
+2025-03-16 22:19:15,528 [INFO] Sender mail til dandaniel1683@yahoo.com
+2025-03-16 22:19:15,544 [INFO] Fil vedhæftet: Rapport_Murariu, Daniel_20250316.docx (42907 bytes)
+2025-03-16 22:19:17,021 [INFO] Mail sendt til dandaniel1683@yahoo.com
+2025-03-16 22:19:17,037 [INFO] Mail succes logget for chauffør Murariu, Daniel
+2025-03-16 22:19:17,539 [INFO] Sender rapport direkte til Tbn_79@hotmail.com for chauffør Nielsen, Torben Brian
+2025-03-16 22:19:17,541 [INFO] Sender rapport direkte til Tbn_79@hotmail.com for chauffør Nielsen, Torben Brian
+2025-03-16 22:19:17,542 [INFO] Mail til Tbn_79@hotmail.com tilføjet til sendekøen
+2025-03-16 22:19:17,543 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:17,543 [INFO] Rapport sendt til Nielsen, Torben Brian (Tbn_79@hotmail.com)
+2025-03-16 22:19:17,543 [INFO] Rapport sendt succesfuldt til Tbn_79@hotmail.com
+2025-03-16 22:19:17,611 [INFO] Venter 2 sekunder før afsendelse af næste mail (24/31)
+2025-03-16 22:19:18,039 [INFO] Sender mail til jnepsi@gmail.com
+2025-03-16 22:19:18,054 [INFO] Fil vedhæftet: Rapport_Nepper, Joachim_20250316.docx (42905 bytes)
+2025-03-16 22:19:19,628 [INFO] Sender rapport direkte til Hedeboerne@hotmail.dk for chauffør Pedersen, Henning
+2025-03-16 22:19:19,631 [INFO] Sender rapport direkte til Hedeboerne@hotmail.dk for chauffør Pedersen, Henning
+2025-03-16 22:19:19,631 [INFO] Mail til Hedeboerne@hotmail.dk tilføjet til sendekøen
+2025-03-16 22:19:19,631 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:19,631 [INFO] Rapport sendt til Pedersen, Henning (Hedeboerne@hotmail.dk)
+2025-03-16 22:19:19,635 [INFO] Rapport sendt succesfuldt til Hedeboerne@hotmail.dk
+2025-03-16 22:19:19,682 [INFO] Mail sendt til jnepsi@gmail.com
+2025-03-16 22:19:19,717 [INFO] Venter 2 sekunder før afsendelse af næste mail (25/31)
+2025-03-16 22:19:19,721 [INFO] Mail succes logget for chauffør Nepper, Joachim
+2025-03-16 22:19:20,723 [INFO] Sender mail til musenhannibal@gmail.com
+2025-03-16 22:19:20,736 [INFO] Fil vedhæftet: Rapport_Nielsen, Hannibal Carl Leen_20250316.docx (42891 bytes)
+2025-03-16 22:19:21,731 [INFO] Sender rapport direkte til s-d-k@outlook.dk for chauffør Petersen, Jan Søndergaard
+2025-03-16 22:19:21,734 [INFO] Sender rapport direkte til s-d-k@outlook.dk for chauffør Petersen, Jan Søndergaard
+2025-03-16 22:19:21,735 [INFO] Mail til s-d-k@outlook.dk tilføjet til sendekøen
+2025-03-16 22:19:21,736 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:21,736 [INFO] Rapport sendt til Petersen, Jan Søndergaard (s-d-k@outlook.dk)
+2025-03-16 22:19:21,736 [INFO] Rapport sendt succesfuldt til s-d-k@outlook.dk
+2025-03-16 22:19:21,808 [INFO] Venter 2 sekunder før afsendelse af næste mail (26/31)
+2025-03-16 22:19:22,431 [INFO] Mail sendt til musenhannibal@gmail.com
+2025-03-16 22:19:22,476 [INFO] Mail succes logget for chauffør Nielsen, Hannibal Carl Leen
+2025-03-16 22:19:23,481 [INFO] Sender mail til henrik.kl@hotmail.com
+2025-03-16 22:19:23,496 [INFO] Fil vedhæftet: Rapport_Nielsen, Henrik Kloster_20250316.docx (42901 bytes)
+2025-03-16 22:19:23,816 [INFO] Sender rapport direkte til christianrasmusen@live.dk for chauffør Rasmussen, Christian Bæk
+2025-03-16 22:19:23,817 [INFO] Sender rapport direkte til christianrasmusen@live.dk for chauffør Rasmussen, Christian Bæk
+2025-03-16 22:19:23,817 [INFO] Mail til christianrasmusen@live.dk tilføjet til sendekøen
+2025-03-16 22:19:23,817 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:23,819 [INFO] Rapport sendt til Rasmussen, Christian Bæk (christianrasmusen@live.dk)
+2025-03-16 22:19:23,819 [INFO] Rapport sendt succesfuldt til christianrasmusen@live.dk
+2025-03-16 22:19:23,857 [INFO] Venter 2 sekunder før afsendelse af næste mail (27/31)
+2025-03-16 22:19:25,058 [INFO] Mail sendt til henrik.kl@hotmail.com
+2025-03-16 22:19:25,105 [INFO] Mail succes logget for chauffør Nielsen, Henrik Kloster
+2025-03-16 22:19:25,866 [INFO] Sender rapport direkte til kurtskovborg@gmail.com for chauffør Skovborg, Kurt
+2025-03-16 22:19:25,874 [INFO] Sender rapport direkte til kurtskovborg@gmail.com for chauffør Skovborg, Kurt
+2025-03-16 22:19:25,874 [INFO] Mail til kurtskovborg@gmail.com tilføjet til sendekøen
+2025-03-16 22:19:25,874 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:25,874 [INFO] Rapport sendt til Skovborg, Kurt (kurtskovborg@gmail.com)
+2025-03-16 22:19:25,874 [INFO] Rapport sendt succesfuldt til kurtskovborg@gmail.com
+2025-03-16 22:19:25,949 [INFO] Venter 2 sekunder før afsendelse af næste mail (28/31)
+2025-03-16 22:19:26,106 [INFO] Sender mail til henriknilausnielsen@gmail.com
+2025-03-16 22:19:26,120 [INFO] Fil vedhæftet: Rapport_Nielsen, Henrik Nilaus_20250316.docx (42901 bytes)
+2025-03-16 22:19:27,492 [INFO] Mail sendt til henriknilausnielsen@gmail.com
+2025-03-16 22:19:27,539 [INFO] Mail succes logget for chauffør Nielsen, Henrik Nilaus
+2025-03-16 22:19:27,970 [INFO] Sender rapport direkte til chras.hanstholm@gmail.com for chauffør Søgaard, Christian Andreas
+2025-03-16 22:19:27,973 [INFO] Sender rapport direkte til chras.hanstholm@gmail.com for chauffør Søgaard, Christian Andreas
+2025-03-16 22:19:27,974 [INFO] Mail til chras.hanstholm@gmail.com tilføjet til sendekøen
+2025-03-16 22:19:27,976 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:27,976 [INFO] Rapport sendt til Søgaard, Christian Andreas (chras.hanstholm@gmail.com)
+2025-03-16 22:19:27,978 [INFO] Rapport sendt succesfuldt til chras.hanstholm@gmail.com
+2025-03-16 22:19:28,049 [INFO] Venter 2 sekunder før afsendelse af næste mail (29/31)
+2025-03-16 22:19:28,543 [INFO] Sender mail til Tbn_79@hotmail.com
+2025-03-16 22:19:28,572 [INFO] Fil vedhæftet: Rapport_Nielsen, Torben Brian_20250316.docx (42895 bytes)
+2025-03-16 22:19:29,794 [INFO] Mail sendt til Tbn_79@hotmail.com
+2025-03-16 22:19:29,842 [INFO] Mail succes logget for chauffør Nielsen, Torben Brian
+2025-03-16 22:19:30,064 [INFO] Sender rapport direkte til jso@fiskelogistik.com for chauffør Sørensen, Jørgen
+2025-03-16 22:19:30,067 [INFO] Sender rapport direkte til jso@fiskelogistik.com for chauffør Sørensen, Jørgen
+2025-03-16 22:19:30,069 [INFO] Mail til jso@fiskelogistik.com tilføjet til sendekøen
+2025-03-16 22:19:30,069 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:30,069 [INFO] Rapport sendt til Sørensen, Jørgen (jso@fiskelogistik.com)
+2025-03-16 22:19:30,069 [INFO] Rapport sendt succesfuldt til jso@fiskelogistik.com
+2025-03-16 22:19:30,107 [INFO] Venter 2 sekunder før afsendelse af næste mail (30/31)
+2025-03-16 22:19:30,845 [INFO] Sender mail til Hedeboerne@hotmail.dk
+2025-03-16 22:19:30,861 [INFO] Fil vedhæftet: Rapport_Pedersen, Henning_20250316.docx (42873 bytes)
+2025-03-16 22:19:32,130 [INFO] Sender rapport direkte til javidlimoochi@yahoo.co.uk for chauffør Vinther Lemuchi, Javid
+2025-03-16 22:19:32,132 [INFO] Sender rapport direkte til javidlimoochi@yahoo.co.uk for chauffør Vinther Lemuchi, Javid
+2025-03-16 22:19:32,132 [INFO] Mail til javidlimoochi@yahoo.co.uk tilføjet til sendekøen
+2025-03-16 22:19:32,132 [INFO] Mail kø processor kører allerede
+2025-03-16 22:19:32,132 [INFO] Rapport sendt til Vinther Lemuchi, Javid (javidlimoochi@yahoo.co.uk)
+2025-03-16 22:19:32,132 [INFO] Rapport sendt succesfuldt til javidlimoochi@yahoo.co.uk
+2025-03-16 22:19:32,403 [INFO] Mail sendt til Hedeboerne@hotmail.dk
+2025-03-16 22:19:32,431 [INFO] Mail succes logget for chauffør Pedersen, Henning
+2025-03-16 22:19:33,434 [INFO] Sender mail til s-d-k@outlook.dk
+2025-03-16 22:19:33,452 [INFO] Fil vedhæftet: Rapport_Petersen, Jan Søndergaard_20250316.docx (42903 bytes)
+2025-03-16 22:19:35,169 [INFO] Mail sendt til s-d-k@outlook.dk
+2025-03-16 22:19:35,187 [INFO] Mail succes logget for chauffør Petersen, Jan Søndergaard
+2025-03-16 22:19:36,194 [INFO] Sender mail til christianrasmusen@live.dk
+2025-03-16 22:19:36,219 [INFO] Fil vedhæftet: Rapport_Rasmussen, Christian Bæk_20250316.docx (42889 bytes)
+2025-03-16 22:19:37,568 [INFO] Mail sendt til christianrasmusen@live.dk
+2025-03-16 22:19:37,615 [INFO] Mail succes logget for chauffør Rasmussen, Christian Bæk
+2025-03-16 22:19:38,618 [INFO] Sender mail til kurtskovborg@gmail.com
+2025-03-16 22:19:38,637 [INFO] Fil vedhæftet: Rapport_Skovborg, Kurt_20250316.docx (42800 bytes)
+2025-03-16 22:19:40,048 [INFO] Mail sendt til kurtskovborg@gmail.com
+2025-03-16 22:19:40,094 [INFO] Mail succes logget for chauffør Skovborg, Kurt
+2025-03-16 22:19:41,096 [INFO] Sender mail til chras.hanstholm@gmail.com
+2025-03-16 22:19:41,135 [INFO] Fil vedhæftet: Rapport_Søgaard, Christian Andreas_20250316.docx (42893 bytes)
+2025-03-16 22:19:42,791 [INFO] Mail sendt til chras.hanstholm@gmail.com
+2025-03-16 22:19:42,834 [INFO] Mail succes logget for chauffør Søgaard, Christian Andreas
+2025-03-16 22:19:43,836 [INFO] Sender mail til jso@fiskelogistik.com
+2025-03-16 22:19:43,842 [INFO] Fil vedhæftet: Rapport_Sørensen, Jørgen_20250316.docx (42905 bytes)
+2025-03-16 22:19:45,129 [INFO] Mail sendt til jso@fiskelogistik.com
+2025-03-16 22:19:45,134 [INFO] Mail succes logget for chauffør Sørensen, Jørgen
+2025-03-16 22:19:46,170 [INFO] Sender mail til javidlimoochi@yahoo.co.uk
+2025-03-16 22:19:46,197 [INFO] Fil vedhæftet: Rapport_Vinther Lemuchi, Javid_20250316.docx (42895 bytes)
+2025-03-16 22:19:47,531 [INFO] Mail sendt til javidlimoochi@yahoo.co.uk
+2025-03-16 22:19:47,577 [INFO] Mail succes logget for chauffør Vinther Lemuchi, Javid
+2025-03-16 22:20:00,549 [INFO] Starter nedlukning af applikation
+2025-03-16 22:20:00,693 [INFO] Applikation lukket succesfuldt
+2025-03-16 22:20:00,695 [INFO] === Applikation lukker normalt ===

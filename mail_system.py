@@ -253,6 +253,23 @@ class MailSystem:
                             # Bryd løkken hvis det lykkedes
                             break
                             
+                        except smtplib.SMTPServerDisconnected:
+                            # Server disconnection - forsøg at genoprette forbindelsen
+                            self.logger.warning(f"SMTP server forbindelse afbrudt. Forsøger at genoprette ({attempts+1}/{self.max_retries})")
+                            attempts += 1
+                            try:
+                                # Genopret forbindelse
+                                smtp = self.create_smtp_connection(config)
+                                time.sleep(5)  # Vent 5 sekunder før genoprettelse
+                            except Exception as conn_error:
+                                self.logger.error(f"Fejl ved genoprettelse af SMTP forbindelse: {str(conn_error)}")
+                            
+                        except smtplib.SMTPSenderRefused:
+                            # Server afviser afsender - muligvis for mange mails for hurtigt
+                            self.logger.warning("SMTP server afviser afsender - venter længere mellem forsøg")
+                            attempts += 1
+                            time.sleep(10)  # Længere ventetid ved afsenderafvisning
+                            
                         except Exception as e:
                             attempts += 1
                             self.logger.error(f"Fejl ved afsendelse af mail (forsøg {attempts}): {str(e)}")
@@ -262,11 +279,15 @@ class MailSystem:
                                 if 'driver_id' in mail_data:
                                     self._log_mail_error(mail_data['driver_id'], str(e))
                             else:
-                                # Vent før næste forsøg
-                                time.sleep(2)
+                                # Vent før næste forsøg - længere ventetid mellem hver forsøg
+                                time.sleep(2 * attempts)  # Stigende ventetid for hvert forsøg
                                 
                     # Markér mail som håndteret
                     self.mail_queue.task_done()
+                    
+                    # Tilføj en kort pause mellem hver mail i køen for at undgå rate limiting
+                    time.sleep(1)  # 1 sekunds pause mellem hver mail
+                    
             finally:
                 # Luk SMTP forbindelsen
                 try:
@@ -564,6 +585,63 @@ class MailSystem:
             
         except Exception as e:
             self.logger.error(f"Fejl ved afsendelse af rapport: {str(e)}")
+            self.logger.error(traceback.format_exc())
+            return False
+    
+    def send_report_with_email(self, driver_id, report_data, email):
+        """
+        Sender en rapport direkte til en given email uden at tilgå databasen for at hente mail
+        Designet til at løse trådsikkerhedsproblemer med SQLite
+        
+        Args:
+            driver_id: Chauffør ID (kun brugt til logning)
+            report_data: Rapport data (dict med rapport:binære data)
+            email: Email-adresse at sende til
+            
+        Returns:
+            bool: True hvis rapporten blev sendt
+        """
+        try:
+            # Validér input
+            if not email or '@' not in email or '.' not in email:
+                self.logger.error(f"Ugyldig email-adresse for chauffør {driver_id}: {email}")
+                return False
+                
+            if not report_data:
+                self.logger.error(f"Ingen rapport data for chauffør {driver_id}")
+                return False
+                
+            # Ekstrahér navn fra driver_id (typisk format: "Efternavn, Fornavn")
+            driver_name = driver_id
+            
+            # Generer filnavn for vedhæftning
+            filename = f"Rapport_{driver_name}_{datetime.now().strftime('%Y%m%d')}.docx"
+            
+            # Opret emne og brødtekst
+            subject = f"Chauffør Rapport - {driver_name}"
+            html_body = self._create_html_report(report_data, driver_name)
+            
+            # Send mail
+            attachments = None
+            if isinstance(report_data, dict) and 'rapport' in report_data:
+                attachments = {filename: report_data['rapport']}
+                
+            # Send mailen
+            self.logger.info(f"Sender rapport direkte til {email} for chauffør {driver_id}")
+            success = self.send_mail(
+                to=email,
+                subject=subject,
+                body=html_body,
+                attachments=attachments,
+                driver_id=driver_id,
+                is_html=True
+            )
+            
+            self.logger.info(f"Rapport {'sendt' if success else 'ikke sendt'} til {driver_id} ({email})")
+            return success
+            
+        except Exception as e:
+            self.logger.error(f"Fejl ved direkte afsendelse af rapport til {email} for chauffør {driver_id}: {str(e)}")
             self.logger.error(traceback.format_exc())
             return False
     

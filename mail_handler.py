@@ -97,6 +97,37 @@ class MailHandler:
                 trace = ''.join(traceback.format_tb(e.__traceback__))
                 self.logger.error(f"Stacktrace: {trace}")
             raise
+            
+    def send_report_with_email(self, driver_id, report_data, email):
+        """
+        Sender en rapport direkte til en given email uden at tilgå databasen
+        
+        Args:
+            driver_id: Chauffør ID
+            report_data: Rapport data
+            email: Email adresse
+            
+        Returns:
+            bool: True hvis rapporten blev sendt
+        """
+        try:
+            self.logger.info(f"Sender rapport direkte til {email} for chauffør {driver_id}")
+            success = self.mail_system.send_report_with_email(driver_id, report_data, email)
+            
+            if success:
+                self.logger.info(f"Rapport sendt succesfuldt til {email}")
+            else:
+                self.logger.error(f"Kunne ikke sende rapport til {email}")
+                
+            return success
+            
+        except Exception as e:
+            self.logger.error(f"Fejl ved direkte afsendelse af rapport til {email}: {str(e)}")
+            if hasattr(e, '__traceback__'):
+                import traceback
+                trace = ''.join(traceback.format_tb(e.__traceback__))
+                self.logger.error(f"Stacktrace: {trace}")
+            raise
     
     def test_connection(self):
         """

@@ -9,6 +9,7 @@ from datetime import datetime
 import threading
 from word_report import WordReportGenerator
 import sqlite3
+import time
 
 class ReportMailWindow:
     def __init__(self, parent, selected_database, report_type, group_name=None, driver_name=None):
@@ -573,8 +574,42 @@ class ReportMailWindow:
             self.progress_bar.set(0)
             total_drivers = len(drivers_with_email)
             
+            # Indsaml alle nødvendige data på forhånd i hovedtråden
+            # Dette løser trådsikkerhedsproblemet med SQLite
+            driver_data = []
+            for i, driver_id in enumerate(drivers_with_email):
+                try:
+                    # Indlæs rapport data
+                    report_data = self.word_report.get_report_data(driver_id)
+                    
+                    # Hent email fra databasen i hovedtråden
+                    email = self.db.get_driver_email(driver_id)
+                    
+                    # Tilføj til liste hvis data findes
+                    if report_data and email:
+                        logging.info(f"Forbereder data for {driver_id} med email {email}")
+                        driver_data.append({
+                            'id': driver_id,
+                            'report_data': report_data,
+                            'email': email
+                        })
+                    else:
+                        if not report_data:
+                            logging.error(f"Ingen rapport data fundet for {driver_id}")
+                        if not email:
+                            logging.error(f"Ingen email fundet for {driver_id}")
+                except Exception as e:
+                    logging.error(f"Fejl ved forberedelse af data for {driver_id}: {str(e)}")
+            
+            # Opdater totalt antal chauffører
+            total_drivers = len(driver_data)
+            if total_drivers == 0:
+                messagebox.showinfo("Info", "Ingen chauffører med både email og rapport data fundet", parent=self.window)
+                self.progress_frame.pack_forget()
+                return
+                
             def send_reports():
-                for i, driver_id in enumerate(drivers_with_email, 1):
+                for i, data in enumerate(driver_data, 1):
                     try:
                         progress = i / total_drivers
                         self.progress_bar.set(progress)
@@ -582,15 +617,31 @@ class ReportMailWindow:
                             text=f"Sender rapporter... {i}/{total_drivers}"
                         )
                         
-                        report_data = self.word_report.get_report_data(driver_id)
-                        if report_data:
-                            self.mail_handler.send_report(driver_id, report_data)
-                            
-                            row = self.driver_rows[driver_id]
+                        # Send rapporten direkte til MailSystem uden at tilgå databasen igen
+                        # Dette undgår SQLite tråd-fejl
+                        self.mail_handler.send_report_with_email(
+                            data['id'], 
+                            data['report_data'],
+                            data['email']
+                        )
+                        
+                        # Opdater UI
+                        if data['id'] in self.driver_rows:
+                            row = self.driver_rows[data['id']]
                             row['edit_button'].configure(state="disabled", text="Rapport Sendt")
                             
+                        # Tilføj forsinkelse mellem hver mail for at undgå SMTP-begrænsninger
+                        # Kun hvis det ikke er den sidste mail
+                        if i < total_drivers:
+                            logging.info(f"Venter 2 sekunder før afsendelse af næste mail ({i}/{total_drivers})")
+                            time.sleep(2)  # 2 sekunders forsinkelse mellem hver mail
+                            
                     except Exception as e:
-                        logging.error(f"Fejl ved sending af rapport til chauffør {driver_id}: {str(e)}")
+                        logging.error(f"Fejl ved sending af rapport til chauffør {data['id']}: {str(e)}")
+                        if hasattr(e, '__traceback__'):
+                            import traceback
+                            trace = ''.join(traceback.format_tb(e.__traceback__))
+                            logging.error(f"Stacktrace: {trace}")
                         
                 self.progress_label.configure(text="Alle rapporter sendt!")
                 messagebox.showinfo("Success", "Alle rapporter er blevet sendt!", parent=self.window)
@@ -601,6 +652,10 @@ class ReportMailWindow:
             
         except Exception as e:
             logging.error(f"Fejl ved sending af alle rapporter: {str(e)}")
+            if hasattr(e, '__traceback__'):
+                import traceback
+                trace = ''.join(traceback.format_tb(e.__traceback__))
+                logging.error(f"Stacktrace: {trace}")
             messagebox.showerror("Fejl", f"Kunne ikke sende rapporter: {str(e)}", parent=self.window)
             
     def run(self):
