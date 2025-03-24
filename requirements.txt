@@ -1,16 +1,41 @@
 # GUI Framework
-customtkinter
+customtkinter>=5.1.2
+tkinter
 
 # Datahåndtering
-pandas
-openpyxl
+pandas>=1.5.0
+openpyxl>=3.0.10
+sqlite3
+python-dateutil>=2.8.2
 
 # Rapportgenerering
-python-docx
-matplotlib
+python-docx>=0.8.11
+matplotlib>=3.5.3
+fpdf>=1.7.2
+numpy>=1.22.0
+
+# Email håndtering
+smtplib
+email
+requests>=2.27.1
 
 # Billedhåndtering
-Pillow
+Pillow>=9.2.0
 
-# Avanceret logging
-rich 
+# Systemfunktionalitet
+datetime
+threading
+
+# Logging og fejlhåndtering
+logging
+rich>=12.0.0
+traceback
+
+# Specielle dependencies
+unicodedata
+re
+json
+ast
+hashlib
+base64
+shutil
